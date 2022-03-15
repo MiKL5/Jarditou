@@ -1,0 +1,56 @@
+/* GENERAL */
+
+
+/* HEADER */
+/* logo */
+.logojarditou {
+    height : 50px ;
+}
+/* Le slogan doit être aussi grand que Jarditou */
+.slogan {
+    font-size : 100 px ;
+}
+
+/* colonne à droite */
+.row {
+    display : flex ;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}
+
+/* barres de menus (les liens doivent être en blanc) */
+nav{
+    background-color: black ;
+    color : white ;
+    text-indent: 10pt ;
+    padding : 15pt ;   
+}
+/* annonce promotionnelle */
+.promotion {
+width: 100% ;
+height: auto ;
+display: block ;
+}
+
+/* taille du texte */
+/* titre principal 25px */
+h1 {
+    font-size: 20pt;
+}
+/* titres secondaires 13 pt */
+h2 {
+    font-size: 13pt;
+}
+/* paragraphes 10 pt */
+p {
+    font-size: 10pt;
+}
+
+/* Colonne de droite (le texte doit être aligner vers haut à gauche )*/
+.coldroite {
+    background-color : silver ; /* gris clair */
+    width : 100% ;
+    height: auto ;
+    display: block ;
+
+}
