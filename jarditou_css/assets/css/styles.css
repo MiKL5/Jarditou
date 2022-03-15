@@ -1,28 +1,23 @@
+/* HAUT DES PAGES */
 
-/* barre de titre (titlebar) */
+/* barre de titre */
 .titlebar {
     display: flex ;
-    
 }
+
 /* logo */
 .logojarditou {
     height : 50pt ;
     width : auto ;
 }
-/* Le slogan doit être aussi grand que Jarditou */
+
+/* Le slogan doit être aussi grand que Jarditou à côté */
 .slogan {
     font-size : 100 px ;
     flex : 1 ;
     font-size : 1.4rem ;
     text-align : center ;
     margin-bottom: 1%;
-}
-
-/* colonne à droite */
-.row {
-    display : flex ;
-    margin-top: 10pt;
-    margin-bottom: 10pt ;
 }
 
 /* barres de menus (les liens doivent être en blanc) */
@@ -35,32 +30,30 @@
 a  {
     color : white ;
 }
+
+/*---------------------------------------------------------------------------------------------*/
+/*                                              BODY                                           */
+
 /* annonce promotionnelle */
 .promotion {
-width : 100% ;
-height : auto ;
-max-height : 100% ;
-display : block ;
+    width : 100% ;
+    height : auto ;
+    max-height : 100% ;
+    display : block ;
+    }
+
+/*---------------------------------------------------------------------------------------------*/
+/*                                                                                             */
+/*                                            ACCUEIL                                          */
+/* le texte est à gauche et la colonne à droite                                                */
+/* row = ligne en français                                                                     */
+.row {
+    display : flex ;
+    margin-top: 10pt;
+    margin-bottom: 10pt ;
 }
-/* TOUT LE TEXTE*/
-/* taille du texte */
-html {
-    font-size : 100% ;
-}
-/* titre principal 25px */
-h1 {
-    font-size: 1.5rem ;
-}
-/* titres secondaires 13 pt */
-h2 {
-    font-size: 1.1rem;
-}
-/* paragraphes 10 pt */
-p {
-    font-size: 1rem;
-}
-/* COLONNE DE DROITE*/
-/* Colonne de droite (le texte doit être aligner vers haut à gauche )*/
+
+/* colonne à droite */
 .coldroite {
     background-color : silver ; /* gris clair */
     width : 100% ;
@@ -68,8 +61,22 @@ p {
     display: block ;
 }
 
-/* AFFICHAGE RESPONSIVE */
-/* 1 Breackpoint de 768px */
+/*-----------------------------------------------------------------------------------------------*/
+/*                                                                                               */
+/*                                              CONTACT                                          */
+/*                                                                                               */
+/* Cacher l'option : "veillez séléctionner un sujet" à défaut de savoir la griser pour le moemnt */
+
+   .sujet {
+    visibility : hidden ;
+}
+
+
+/*---------------------------------------------------------------------------------------------*/
+/*                                                                                             */
+/*                                       AFFICHAGE RESPONSIVE                                  */
+/* 1 Breackpoint de 768px                                                                      */
+
 @media only screen and (max-width: 768px) {
     /* la colonne de droite disparaît sur les appareils mobile */
     .coldroite {
@@ -82,6 +89,19 @@ p {
     /* h1 {font-size : 40px ;}  -- trop grand à mon goût -- */
 }
 
-.sujet {
-    visibility : hidden ;
+/* TOUT LE TEXTE*/
+html {
+    font-size : 100% ;
+}
+/* titre principal */
+h1 {
+    font-size: 1.5rem ;
+}
+/* titres secondaires */
+h2 {
+    font-size: 1.1rem;
+}
+/* paragraphes */
+p {
+    font-size: 1rem;
 }
