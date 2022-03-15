@@ -72,8 +72,16 @@ p {
 /* 1 Breackpoint de 768px */
 @media only screen and (max-width: 768px) {
     /* la colonne de droite disparaît sur les appareils mobile */
-    .coldroite {display : none;}
+    .coldroite {
+        display : none;
+    }
     /* Menu vertical */
-    .menu {display : grid ;}
+    .menu {
+        display : grid ;
+    }
     /* h1 {font-size : 40px ;}  -- trop grand à mon goût -- */
+}
+
+.sujet {
+    visibility : hidden ;
 }
