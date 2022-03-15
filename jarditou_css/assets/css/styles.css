@@ -1,56 +1,79 @@
-/* GENERAL */
 
-
-/* HEADER */
+/* barre de titre (titlebar) */
+.titlebar {
+    display: flex ;
+    
+}
 /* logo */
 .logojarditou {
-    height : 50px ;
+    height : 50pt ;
+    width : auto ;
 }
 /* Le slogan doit être aussi grand que Jarditou */
 .slogan {
     font-size : 100 px ;
+    flex : 1 ;
+    font-size : 1.4rem ;
+    text-align : center ;
+    margin-bottom: 1%;
 }
 
 /* colonne à droite */
 .row {
     display : flex ;
     margin-top: 10pt;
-    margin-bottom: 10pt;
+    margin-bottom: 10pt ;
 }
 
 /* barres de menus (les liens doivent être en blanc) */
-nav{
+.menu {
     background-color: black ;
-    color : white ;
     text-indent: 10pt ;
     padding : 15pt ;   
 }
+
+a  {
+    color : white ;
+}
 /* annonce promotionnelle */
 .promotion {
-width: 100% ;
-height: auto ;
-display: block ;
+width : 100% ;
+height : auto ;
+max-height : 100% ;
+display : block ;
 }
-
+/* TOUT LE TEXTE*/
 /* taille du texte */
+html {
+    font-size : 100% ;
+}
 /* titre principal 25px */
 h1 {
-    font-size: 20pt;
+    font-size: 1.5rem ;
 }
 /* titres secondaires 13 pt */
 h2 {
-    font-size: 13pt;
+    font-size: 1.1rem;
 }
 /* paragraphes 10 pt */
 p {
-    font-size: 10pt;
+    font-size: 1rem;
 }
-
+/* COLONNE DE DROITE*/
 /* Colonne de droite (le texte doit être aligner vers haut à gauche )*/
 .coldroite {
     background-color : silver ; /* gris clair */
     width : 100% ;
     height: auto ;
     display: block ;
+}
 
+/* AFFICHAGE RESPONSIVE */
+/* 1 Breackpoint de 768px */
+@media only screen and (max-width: 768px) {
+    /* la colonne de droite disparaît sur les appareils mobile */
+    .coldroite {display : none;}
+    /* Menu vertical */
+    .menu {display : grid ;}
+    /* h1 {font-size : 40px ;}  -- trop grand à mon goût -- */
 }

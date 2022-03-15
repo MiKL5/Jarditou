@@ -9,29 +9,28 @@
 </head>
 <body>
     <header>
-        <!-- le logo -->
-        <img class="logojarditou"
-        src="jarditou_css/assets/src/img/jarditou_logo.jpg" 
-        alt="Logo de Jarditou"
-        title="Jarditou">
-                        
-        <p>Tout le jardin</p>
+        <div class="titlebar">
+            <!-- le logo -->
+            <img class="logojarditou"
+            src="jarditou_css/assets/src/img/jarditou_logo.jpg" 
+            alt="Logo de Jarditou"
+            title="Jarditou">
+            <!-- le slogan se place à côté du logo -->
+            <p class="slogan">Tout le jardin</p>
+        </div>
        
     </header>
 
-    <nav>
-            <!-- vers l'index -->
-            <a href="index.html"> Accueil </a>
-            <!-- vers le chemin relatif de tableau.html -->
-            <a href="tableau.html"> Tableau </a>
-            <!-- vers le chemin relatif de contact.html-->
-            <a href="contact.html"> Contact </a>
+    <nav class="menu">                   
+        <a href="index.html#Accueil" title="Accueil">Accueil</a>
+        <a href="tableau.html#Tableau" title="Tableau">Tableau</a>
+        <a href="contact.html#Contact" title="Contact">Contact</a>
     </nav>
         <img src="jarditou_css/assets/src/img/promotion.jpg" 
         art="Promation sur les lames de terasse"
         title="Promotion sur les lames de terasse">
 
-    <h1>Tableau</h1>
+    <h1 id="Tableau" title="Tableau">Tableau</h1>
     <hr>
     <table>
         <thead>
@@ -90,10 +89,10 @@
     <hr>
 
     <footer>
-        <nav>
-            <a href="">Mentions légales</a>
-            <a href="">Horaires</a>
-            <a href="">Plan du site</a>
+        <nav class="menu">
+            <a href="" title="Mentions légales">Mentions légales</a>
+            <a href="" title="Horaires">Horaires</a>
+            <a href="" title="Plan du site">Plan du site</a>
         </nav>
     </footer>
 
