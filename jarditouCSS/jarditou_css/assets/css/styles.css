@@ -20,13 +20,13 @@
     margin-bottom: 1%;
 }
 
-/* barres de menus (les liens doivent être en blanc) */
+/* barres de menus */
 .menu {
     background-color: black ;
     text-indent: 10pt ;
     padding : 15pt ;   
 }
-
+/* Les liens sont en blanc */
 a  {
     color : white ;
 }
