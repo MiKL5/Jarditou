@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="fr">
+
+<title>JARDITOU</title>
+
+<header>
+
+    <img src="jarditou_css/src/img/jarditou_logo.jpg" width="300">
+<p>La qualité depuis 70 ans</p>
+<ul>
+    <li><a href="index.html#Accueil" title="Accueil">Accueil</a></li>
+    <li><a href="tableau.html#Tableau" title="Tableau">Tableau</a></li>
+    <li><a href="contact.html#Contact" title="Contact">Contact</a></li>
+</ul>
+
+</header>
+
+<nav>
+    <img src="jarditou_css/src/img/promotion.jpg">
+</nav>
+
+<body>
+
+    
+    <h1>Contact</h1>
+    <hr>
+    <section>
+        <p>* Ces zones son obligatoires</p>
+        <fieldset> <!-- formulaire -->
+            <legend>
+            Coordonées
+            </legend>
+            <label for="nom">Nom* : </label> <input type="text" name="nom" id="nom" placeholder="LOPER"> <br>
+            <label for="prenom">Prénom* : </label> <input type="text" name="prenom" id="?" placeholder="Dave"> <br>
+            <label for="sexe">Sexe* :  
+                <input type="radio" name="féminin" value="féminin"> Féminin
+                <input type="radio" name="masculin" value="masculin"> Masculin
+            </label> <br>
+            <label for="date">Date de naissance* :</label> <input type="date" name="'ddn" id="date"> <br>
+            <label for="code postal">Code postal* : </label> <input type="text" name="Code postal" id="?" maxlength="5" pattern="[0-9]" placeholder="80000">  <br><!-- maxlength taille maxi-->
+            <label for="adresse">Adresse : </label> <input type="text" name="adresse" id="?" placeholder="numéro et rue"> <br>
+            <label for="ville">Ville : </label> <input type="text" name="ville" id="?" placeholder="Commune"> <br>
+            <label for="?">Email* : </label> <input type="text" placeholder="davelaper@afpa.fr" name="email"> <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+            Votre demande
+            </legend>
+            <label required title="Sujet" for="sujet">Sujet* : </label> <select>
+                <option>Veuillez séléctionner un sujet</opion>
+                <option>Mes commandes</option> 
+                <option>Question sur produit</option> 
+                <option>Réclamation</option> 
+                <option>Autre</option>
+            </select><br>
+        <label for="votre question">Votre question* : </label>
+        <textarea name="Commmentaire" rows="3" cols="17" placeholder="Votre commentaire"></textarea> <br>
+        </fieldset>
+        <br>
+        <input type="checkbox" name="accepter" value="Accepter">* J'accepte le traitement informatique de ce formulaire
+        <br>
+        <br>
+        <input type="submit" name="Envoyer" value="Envoyer">
+        <input type="reset" name="Annuler" value="Annuler">
+    </section>
+
+</body>
+
+<footer>
+
+    <hr>
+    <ul>
+        <li><u>Mentions légales</u></li>
+        <li><u>Horaires</u></li>
+        <li><u>Plan du site</u></li>
+
+</footer>
+
+</html>
