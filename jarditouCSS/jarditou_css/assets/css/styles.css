@@ -31,8 +31,8 @@ a  {
     color : white ;
 }
 
-/*---------------------------------------------------------------------------------------------*/
-/*                                              BODY                                           */
+/*-----------------------------------------------------------------------------*/
+/*                                   BODY                                     */
 
 /* annonce promotionnelle */
 .promotion {
@@ -42,11 +42,11 @@ a  {
     display : block ;
     }
 
-/*---------------------------------------------------------------------------------------------*/
-/*                                                                                             */
-/*                                            ACCUEIL                                          */
-/* le texte est à gauche et la colonne à droite                                                */
-/* row = ligne en français                                                                     */
+/*-----------------------------------------------------------------------------*/
+/*                                   ACCUEIL                                  */
+
+/* le texte est à gauche et la colonne à droite */
+/* row = ligne en français */
 .row {
     display : flex ;
     margin-top: 10pt;
@@ -61,21 +61,21 @@ a  {
     display: block ;
 }
 
-/*-----------------------------------------------------------------------------------------------*/
-/*                                                                                               */
-/*                                              CONTACT                                          */
-/*                                                                                               */
-/* Cacher l'option : "veillez séléctionner un sujet" à défaut de savoir la griser pour le moemnt */
+/*-----------------------------------------------------------------------------*/
+/*                                  CONTACT                                   */
+
+/* Cacher l'option : "veillez séléctionner un sujet"
+   à défaut de savoir la griser */
 
    .sujet {
     visibility : hidden ;
 }
 
 
-/*---------------------------------------------------------------------------------------------*/
-/*                                                                                             */
-/*                                       AFFICHAGE RESPONSIVE                                  */
-/* 1 Breackpoint de 768px                                                                      */
+/*-----------------------------------------------------------------------------*/
+/*                             AFFICHAGE RESPONSIVE                           */
+
+/* 1 Breackpoint de 768px */
 
 @media only screen and (max-width: 768px) {
     /* la colonne de droite disparaît sur les appareils mobile */
