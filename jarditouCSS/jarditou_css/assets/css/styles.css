@@ -47,7 +47,7 @@ a  {
 
 /* le texte est à gauche et la colonne à droite */
 /* row = ligne en français */
-.row {
+.col {
     display : flex ;
     margin-top: 10pt;
     margin-bottom: 10pt ;
