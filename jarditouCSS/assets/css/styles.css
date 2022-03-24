@@ -21,7 +21,7 @@
 }
 
 /* barres de menus */
-.menu {
+nav {
     background-color: black ;
     text-indent: 10pt ;
     padding : 15pt ;   
@@ -31,7 +31,7 @@ a  {
     color : white ;
 }
 
-/*-----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
 /*                                   BODY                                     */
 
 /* annonce promotionnelle */
@@ -42,52 +42,39 @@ a  {
     display : block ;
     }
 
-/*-----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
 /*                                   ACCUEIL                                  */
 
 /* le texte est à gauche et la colonne à droite */
 /* row = ligne en français */
-.col {
+.corps {
     display : flex ;
     margin-top: 10pt;
     margin-bottom: 10pt ;
 }
 
 /* colonne à droite */
-.coldroite {
+aside {
     background-color : silver ; /* gris clair */
     width : 100% ;
     height: auto ;
     display: block ;
 }
 
-/*-----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
 /*                                  CONTACT                                   */
 
 /* Cacher l'option : "veillez séléctionner un sujet"
    à défaut de savoir la griser */
 
+   /* ne sert plus car dans le html option disabled selected
    .sujet {
     visibility : hidden ;
 }
+*/
 
-
-/*-----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
 /*                             AFFICHAGE RESPONSIVE                           */
-
-/* 1 Breackpoint de 768px */
-
-@media only screen and (max-width: 768px) {
-    /* la colonne de droite disparaît sur les appareils mobile */
-    .coldroite {
-        display : none;
-    }
-    /* Menu vertical */
-    .menu {
-        display : grid ;
-    }
-    /* h1 {font-size : 40px ;}  -- trop grand à mon goût -- */
-}
 
 /* TOUT LE TEXTE*/
 html {
@@ -95,13 +82,44 @@ html {
 }
 /* titre principal */
 h1 {
-    font-size: 1.5rem ;
+    font-size : 1.5rem ;
 }
 /* titres secondaires */
 h2 {
-    font-size: 1.1rem;
+    font-size : 1.2rem;
 }
 /* paragraphes */
 p {
-    font-size: 1rem;
+    font-size : 1rem ;
+}
+
+/* 1 Breackpoint de 768px */
+
+@media only screen and (max-width: 768px) {
+    /* la colonne de droite disparaît sur les appareils mobile */
+    aside {
+        display : none ;
+    }
+    /* Menu vertical */
+    nav {
+        display : grid ;
+    }
+    /* h1 {font-size : 40px ;}  -- trop grand à mon goût -- */
+
+    /* TOUT LE TEXTE*/
+    html {
+        font-size : 90% ;
+    }
+    /* titre principal */
+    h1 {
+        font-size : 1.3rem ;
+    }
+    /* titres secondaires */
+    h2 {
+        font-size : 1rem;
+    }
+    /* paragraphes */
+    p {
+        font-size : 1rem ;
+    }
 }
