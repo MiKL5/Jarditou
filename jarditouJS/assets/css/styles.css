@@ -1,0 +1,178 @@
+/* HAUT DES PAGES */
+
+/* barre de titre */
+.titlebar
+{
+    display: flex ;
+}
+
+/* logo */
+.logo
+{
+    height : 50pt ;
+    width : auto ;
+}
+
+/* Le slogan doit être aussi grand que Jarditou à côté */
+.slogan
+{
+    flex : 1 ;
+    font-size : 1.4rem ;
+    text-align : center ;
+    margin-bottom : 1% ;
+}
+
+/* barres de menus */
+.menu
+{
+    background-color: black ;
+    text-indent: 10pt ;
+    padding : 15pt ;   
+}
+/* Les liens sont en blanc */
+a
+{
+    color : white ;
+}
+
+/* promotional ad */
+.ad
+{
+    width : 100% ;
+    height : auto ;
+    max-height : 100% ;
+    display : block ;
+}
+
+/*----------------------------------------------------------------------------*/
+/*                                   ACCUEIL                                  */
+
+/* le texte est à gauche et la colonne à droite */
+/* row = ligne en français */
+.corps
+{
+    display : flex ;
+    margin-top : 10pt ;
+    margin-bottom : 10pt ;
+}
+
+/* colonne à droite */
+aside
+{
+    background-color : silver ; /* gris clair */
+    /*width : 100% ;
+    height: auto ;*/
+    display : flex ;
+}
+
+/*----------------------------------------------------------------------------*/
+/*                                  CONTACT                                   */
+
+/* Cacher l'option : "veillez séléctionner un sujet"
+   à défaut de savoir la griser */
+
+/*.sujet
+{
+    display : none ;
+}*/
+
+/*----------------------------------------------------------------------------*/
+/*                             AFFICHAGE RESPONSIVE                           */
+
+/* aside */
+aside
+{
+    display : flex ;
+    width : 100% ;
+}
+/* TOUT LE TEXTE*/
+html
+{
+    font-size : 100% ;
+}
+/* titre principal */
+h1
+{
+    font-size : 1.5rem ;
+}
+/* titres secondaires */
+h2
+{
+    font-size : 1.2rem;
+}
+/* paragraphes */
+p
+{
+    font-size : 1rem ;
+}
+/* pics */
+/*img
+{
+    height : auto ;
+}*/
+
+
+/* supression du slogan et logo réduit */
+
+@media only screen and (max-width: 480px) {
+    .slogan
+    {
+        display : none ;
+    }
+    .logo
+    {
+        height : 30pt ;
+        width : auto ;
+    }
+}
+
+
+/* 1 Breackpoint de 768px */
+
+@media only screen and (max-width: 768px)
+{
+    /* la colonne de droite disparaît sur les appareils mobile */
+    aside
+    {
+        display : none ;
+    }
+    /* Menu vertical */
+    .menu
+    {
+        display : grid ;
+        font-size : .8rem ;
+    }
+
+    /* TOUT LE TEXTE*/
+    html
+    {
+        font-size : 90% ;
+    }
+    /* titre principal */
+    h1
+    {
+        font-size : 1.3rem ;
+    }
+    /* titres secondaires */
+    h2
+    {
+        font-size : 1rem;
+    }
+    /* paragraphes */
+    p
+    {
+        font-size : .75rem ;
+    }
+    /* pics */
+    /*img
+    {
+        width : 20% ;
+        height : auto ;
+    }*/
+
+    /* TABBLEAU */
+    #container
+    {
+        overflow : auto ;
+    }
+}
