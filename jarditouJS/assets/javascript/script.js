@@ -101,7 +101,7 @@ function verifForm(event)
         return;
     }
 
-    SUJET
+    // SUJET
     var select = document.getElementsByTagName("select");
     if (select.validity.valueMissing)
     {
