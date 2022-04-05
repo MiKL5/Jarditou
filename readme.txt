@@ -8,4 +8,4 @@ jarditouCSS
 
 -- 4 avril 2022 --
 multiplication (javascript)
-jarditouJS (javascript) est en cours
+jarditouJS (javascript)
