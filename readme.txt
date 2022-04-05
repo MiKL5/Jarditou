@@ -5,3 +5,6 @@ TBDev21196
 --------------------------
 jarditouHTML
 jarditouCSS
+
+-- 4 avril 2022 --
+multiplication (javascript)
