@@ -101,9 +101,13 @@ function verifForm(event)
         return;
     }
 
-    // SUJET
-    var select = document.getElementsByTagName("select");
-    if (select.validity.valueMissing)
+    /************************************************************/
+    /********************    SUJET       ************************/ 
+    /************************************************************/
+    var selection = document.getElementById("sujet");
+    var errorSujet = document.getElementById("errorSujet");
+
+    if (selection.value=="")
     {
         event.preventDefault();
         errorSujet.style.color = "red";

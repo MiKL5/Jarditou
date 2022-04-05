@@ -48,7 +48,7 @@
                     <label for="prenom">Prénom* : </label><input type="text" name="prenom" id="prenom" placeholder="Dave" required><br>
                     <span id="errorPrenom"></span><br>
 
-                    <label for="sexe">Sexe* : </label><input type="radio" name="sexe" value="féminin" id="sexe1" required>Féminin<input type="radio" name="sexe" value="masculin" id="sexe2" required>Masculin<br>
+                    <label for="sexe">Sexe* : </label><input type="radio" name="sexe" value="féminin" id="sexe1" required>Féminin<input type="radio" name="sexe" value="masculin" id="sexe2" required checked>Masculin<br>
                     <span id="errorSexe"></span><br>
 
                     <label for="date">Date de naissance* : </label><input type="date" name="ddn" id="date" required><br>
@@ -68,15 +68,15 @@
                     <legend>
                     Votre demande
                     </legend>
-                    <label for="sujet" id="sujet">Sujet* : </label>
-                    <select id ="sujet" required>
-                        <option disabled selected>Veuillez séléctionner un sujet</option>
-                        <option>Mes commandes</option> 
-                        <option>Question sur produit</option> 
-                        <option>Réclamation</option> 
-                        <option>Autre</option>
+                    <label for="sujet">Sujet* : </label>
+                    <select name="sujet" id="sujet">
+                        <option disabled selected value="" >Veuillez séléctionner un sujet</option>
+                        <option value="c">Mes commandes</option> 
+                        <option value="q">Question sur produit</option> 
+                        <option value="r">Réclamation</option> 
+                        <option value="a">Autre</option>
                     </select><br>
-                    <span id = "errorSujet"></span>
+                    <span id = "errorSujet"></span><br><br>
                 <label for="votre question">Votre question* : </label>
                 <textarea name="Commmentaire" rows="3" cols="17" id="commentaire" placeholder="Quelle est votre question ?" required></textarea><br><span id="errorCommentaire"></span>
                 </fieldset>
