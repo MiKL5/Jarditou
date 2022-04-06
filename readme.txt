@@ -7,5 +7,13 @@ jarditouHTML
 jarditouCSS
 
 -- 4 avril 2022 --
-multiplication (javascript)
-jarditouJS (javascript)
+-----------------------
+Multiplication (javascript)
+
+-- 5 avril 2022 --
+-----------------------
+jarditouJS
+
+-- 6 avrili 2022 --
+-----------------------
+Calcul du nombre de moyens, de jeunes et de vieux (javascript)
