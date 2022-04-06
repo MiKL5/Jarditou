@@ -11,7 +11,7 @@ let jeunes=0;
 let moyens=0;
 let vieux=0;
 let age=0;
-let tablo=[]; // tableau fictif
+let tab=[];
 
 while (true)
 {
@@ -31,14 +31,14 @@ while (true)
     if (age >= 100)
     {
         //vieux++;
-        tablo.push(age);
+        tab.push(age);
         break;
     }
     else
     {
-        tablo.push(age);
+        tab.push(age);
     }
 }
-console.log(tablo);
+console.log(tab);
 console.log("il y a "+jeunes+" jeune.s, "+moyens+" intermédiaire.s, "+vieux+" ainé.s.");
 window.alert("il y a "+jeunes+" jeune.s, \n"+moyens+" intermédiaire.s, \n& "+vieux+" ainé.s.");
