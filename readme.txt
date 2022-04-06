@@ -1,8 +1,8 @@
 Techniques de Base du développement d'application
 TBDev21196
 
--- 21 mars 2022 --
---------------------------
+--         21 mars 2022        --
+---------------------------------
 - jarditouHTML
 - jarditouCSS
 
@@ -10,15 +10,15 @@ TBDev21196
 | CE QUI SUIT EST EN JAVASCRIPT |
 ---------------------------------
 
--- 4 avril 2022 --
------------------------
+--         4 avril 2022        --
+---------------------------------
 - Multiplication
 
--- 5 avril 2022 --
------------------------
+--         5 avril 2022        --
+---------------------------------
 - jarditouJS
 
--- 6 avrili 2022 --
------------------------
+--        6 avrili 2022        --
+---------------------------------
 - Calcul du nombre de moyens, de jeunes et de vieux
 - Recherche d'un prénom
