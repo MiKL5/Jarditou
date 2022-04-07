@@ -13,19 +13,21 @@
 
 //----------------------------------------------------------------------------//
 
-
-
-let i ;
-let nb = parseInt(prompt("Ecrivez un nombre"));
-
-// table de multiplications
-for (i=0; i<=10; i++)
+function tableMultiplication(nb)
 {
-    resultat = nb * i ;
 
-    console.log(nb+" * "+i+" = "+resultat) ;
+    // table de multiplications
+    for (var i=0; i<=10; i++)
+    {
+        resultat = nb * i ;
+
+        console.log(nb+" * "+i+" = "+resultat) ;
+    }
+
+    // instructions exécutées après le for (i = 10)
+    // affichage du chiffre ou du nombre multiplicateur
+    console.log("fin de la table de multiplication par "+nb) ;
 }
 
-// instructions exécutées après le for (i = 10)
-// affichage du chiffre ou du nombre multiplicateur
-console.log("fin de la table de multiplication par "+nb) ;
+let n = parseInt(prompt("Ecrivez un nombre"));
+tableMultiplication(n);
