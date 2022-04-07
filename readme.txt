@@ -25,5 +25,4 @@ TBDev21196
 
 --        7 avrili 2022        --
 ---------------------------------
-- Multiplication avec fonction
 - Total d'une commande
