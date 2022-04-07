@@ -22,3 +22,8 @@ TBDev21196
 ---------------------------------
 - Calcul du nombre de moyens, de jeunes et de vieux
 - Recherche d'un prénom
+
+--        7 avrili 2022        --
+---------------------------------
+- Multiplication avec fonction
+- Total d'une commande
