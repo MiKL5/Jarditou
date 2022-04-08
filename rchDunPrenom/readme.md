@@ -1,6 +1,6 @@
 # **Exercice 3 : recherche d'un prénom**
 
-### Cet exercice est en javascript
+### ***Cet exercice est en javascript***
 
 
 * Un prénom est saisi au clavier. On le recherche dans le tableau tab donné ci-après.
