@@ -1,6 +1,6 @@
 # **Exercice 1 - Calcul du nombre de jeunes, de moyens et de vieux**
 
-### ***Cet exercice est en javascript***
+> ### ***Cet exercice est en javascript***
 
 
 
