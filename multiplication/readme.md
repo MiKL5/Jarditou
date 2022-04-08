@@ -1,6 +1,6 @@
 # **Exercice 2 : Table de multiplication**
 
-### ***Cet exercice est en javascript***
+> ### ***Cet exercice est en javascript***
 
 
 
