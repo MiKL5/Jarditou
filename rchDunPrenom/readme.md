@@ -1,6 +1,6 @@
 # **Exercice 3 : recherche d'un prénom**
 
-### ***Cet exercice est en javascript***
+> ### ***Cet exercice est en javascript***
 
 
 
