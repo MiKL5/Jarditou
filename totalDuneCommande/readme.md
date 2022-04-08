@@ -1,6 +1,6 @@
 # **Exercice 4 : total d'une commande**
 
-### ***Cet exercice est en javascript***
+> ### ***Cet exercice est en javascript***
 
 
 
