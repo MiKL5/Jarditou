@@ -8,7 +8,6 @@
 * Le programme demande les âges successifs.
 * Le comptage est arrêté dès la saisie d'un centenaire. Le centenaire est compté.
 
-
-[!TIP]
-
-*NOTA BENE : ça fonctionne mieux avec Firefox*
+___
+>>>*NOTA BENE : ça fonctionne mieux avec Firefox*
+___
