@@ -9,5 +9,5 @@ Le message doit apparaitre sous la case et :
 
 ___
 >>> NOTA :
-    Javascript est un langage de scripte basé sur les objets.
+    Javascript est un langage de scripte basé objet.
 ___
