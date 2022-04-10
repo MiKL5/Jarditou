@@ -1,10 +1,8 @@
 # **Exercice 4 : total d'une commande**
-
 > ### ***Cet exercice est en javascript***
 
 
-
-*A partir de la saisie du prix unitaire noté PU d'un produit et de la quantité commandée QTECOM, afficher le prix à payer PAP, en détaillant la remise REM et le port PORT, sachant que :*
+*À partir de la saisie du prix unitaire noté PU d'un produit et de la quantité commandée QTECOM, afficher le prix à payer PAP, en détaillant la remise REM et le port PORT, sachant que :*
 
 * TOT = ( PU * QTECOM )
 * la remise est de 5% si TOT est compris entre 100 et 200 € et de 10% au-delà
