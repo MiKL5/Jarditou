@@ -23,7 +23,7 @@
 - jarditouJS
 
 ---------------------------------
--          6 avril 2022         |
+|          6 avril 2022         |
 ---------------------------------
 - Calcul du nombre de moyens, de jeunes et de vieux
 - Recherche d'un prénom
