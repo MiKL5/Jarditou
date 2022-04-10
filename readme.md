@@ -1,42 +1,20 @@
 ___
 # **Techniques de base du développement d'application**
 
+           Création d'un site web
 
-
-
-           21 mars 2022         
-
-- jarditouHTML
-- jarditouCSS
+- jarditouHTML ·> HTML only
+- jarditouCSS ·> avec le CSS
+- jarditouJS ·> inclus le JavaScript
  
 
----------------------------------
+___
 
 > #### ***CE QUI SUIT EST EN JAVASCRIPT***
 
+           Exercices       
 
-
-
-           4 avril 2022         
-
-- Multiplication
-
-
-___
-           5 avril 2022         
-
-
-- jarditouJS
-
-
-___
-           6 avril 2022          
-
-- Calcul du nombre de moyens, de jeunes et de vieux
-- Recherche d'un prénom
-
-
-___
-          7 avrili 2022          
-
-- Total d'une commande
+- Exercice 1 : calcul du nombre de moyens, de jeunes et d'ainés
+- Exercice 2 : table de multiplication
+- Exercice 3 : recherche de prénom
+- Exercice 4 : total d'une commande
