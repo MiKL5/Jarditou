@@ -1,3 +1,4 @@
+___
 # **Techniques de Base du développement d'application**
 
 
@@ -11,7 +12,7 @@
 
 ---------------------------------
 
-> #### ***CE QUI SUIT EST EN*** JAVASCRIPT
+> #### ***CE QUI SUIT EST EN JAVASCRIPT***
 
 
 
