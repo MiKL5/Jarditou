@@ -3,9 +3,9 @@ ___
 
     Jarditou
 
-    - jarditouHTML ·> html only
-    - jarditouCSS ··> avec le CSS
-    - jarditouJS ···> inclus le JavaScript
+    1. jarditouHTML ·> html only
+    2. jarditouCSS ··> avec le CSS
+    3. jarditouJS ···> inclus le JavaScript
  
 
 ___
