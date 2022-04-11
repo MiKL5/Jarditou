@@ -3,7 +3,7 @@ ___
 
     Jarditou
 
-    - jarditouHTML ·> HTML only
+    - jarditouHTML ·> html only
     - jarditouCSS ··> avec le CSS
     - jarditouJS ···> inclus le JavaScript
  
