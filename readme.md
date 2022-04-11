@@ -1,7 +1,7 @@
 ___
 # **Techniques de base du développement d'application**
 
-           Création d'un site web
+           Création du site web "Jarditou"
 
 - jarditouHTML ·> HTML only
 - jarditouCSS ·> avec le CSS
