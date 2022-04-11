@@ -4,8 +4,8 @@ ___
     Jarditou
 
     - jarditouHTML ·> HTML only
-    - jarditouCSS ·> avec le CSS
-    - jarditouJS ·> inclus le JavaScript
+    - jarditouCSS ··> avec le CSS
+    - jarditouJS ···> inclus le JavaScript
  
 
 ___
