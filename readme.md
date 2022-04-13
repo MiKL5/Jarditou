@@ -3,9 +3,9 @@ ___
 
     Jarditou
 
-    1. jarditouHTML ·> html only
-    2. jarditouCSS ··> avec le CSS
-    3. jarditouJS ···> inclus le JavaScript
+    1. jarditouHTML ·> html only ;
+    2. jarditouCSS ··> with CSS ;
+    3. jarditouJS ···> includes JavaScript.
  
 
 ___
@@ -15,7 +15,7 @@ ___
 
     Exercices
 
-    - Exercice 1 ·> calcul du nombre de moyens, de jeunes et d'ainés
-    - Exercice 2 ·> table de multiplication
-    - Exercice 3 ·> recherche de prénom
-    - Exercice 4 ·> total d'une commande
+    - Exercice 1 ·> calcul du nombre de jeunes, de moyens et d'ainés ;
+    - Exercice 2 ·> table de multiplication ;
+    - Exercice 3 ·> recherche de prénom ;
+    - Exercice 4 ·> total d'une commande.
