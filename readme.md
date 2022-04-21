@@ -3,9 +3,10 @@ ___
 
     Jarditou
 
-    1. jarditouHTML ·> html only ;
-    2. jarditouCSS ··> with CSS ;
-    3. jarditouJS ···> includes JavaScript.
+    1. jarditouHTML ······> HTML only ;
+    2. jarditouCSS ·······> with CSS ;
+    3. jarditouJS ········> includes Javascript ;
+    4. jarditouBootstrap ·> avec le framework Bootstrap.
  
 
 ___
