@@ -22,5 +22,5 @@ La page HTML doit :
 
 ___
 >>> NOTA :  
-    Bootstrap est un framework qui simplifie le codage en saas et javacript et par conséquent, permet de gagner du temps pour mettre en page et dynamiser le site.
+    Bootstrap est un framework qui simplifie le codage en saas et javacript et par conséquent, permet de gagner du temps pour mettre en page et dynamiser le site en générant le CSS et le Javascript.
 ___
