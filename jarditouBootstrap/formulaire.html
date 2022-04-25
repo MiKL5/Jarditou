@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,55 +10,69 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Jarditou</title>
 </head>
+
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <header class="form-inline"><!-- le logo et le slogan sur la même ligne -->
-                <!-- le logo -->               
-                <!-- d-sm-block : si le block devien petit alors l'affichage change et d-none les éléments ne sont plus affichés -->                
+        <header>
+            <!-- le logo et le slogan sur la même ligne -->
+            <div class="row">
+                <!-- le logo -->
+                <!-- d-sm-block : si le block devien petit alors l'affichage change et d-none les éléments ne sont plus affichés -->
                 <img class="col-3 d-none d-sm-block" src="src/img/jarditou_logo.jpg" alt="Logo de Jarditou" title="Logo de Jarditou" width="200">
                 <!-- le slogan -->
-                <h3 class="col-9 d-sm-block d-none text-right">Tout le jardin</h3><!-- text-capitalize = 1re letre de chq mot en maj-->
-            </header>
-        </div><!-- end of  row -->
-        <!-- Menu de navigaton d'en-haut -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand">Jarditou.com</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <h3 class="col-9 d-sm-block d-none text-right">Tout le jardin</h3>
+                <!-- text-capitalize = 1re letre de chq mot en maj-->
+            </div>
+            <!-- end of  row -->
+            <!-- Menu de navigaton d'en-haut -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand">Jarditou.com</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto"><!-- liste -->
-                    <li class="nav-item"><!-- accueil -->
-                        <a class="nav-link" href="index.html" title="Accueil" alt="Accueil">Accueil</a>
-                    </li>
-                    <li class="nav-item"><!-- tableau -->
-                        <a class="nav-link" href="board.html" title="Tableau" alt="Tableau">Tableau</a>
-                    </li>
-                    <li class="nav-item"><!-- contact -->
-                        <a class="nav-link" href="formulaire.html" title="Contact" alt="Contact">Contact</a>
-                    </li>
-                </ul>
-            
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Votre promotion" aria-label="Votre promotion">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
-                </form>
-            </div><!-- fin de la liste -->
-        </nav><!-- fin du menu d'en-haut-->
-        <!-- promotion -->            
-        <img class="img-fluid vw-100" src="src/img/promotion.jpg" alt="Promotion sur les lames de terasse" title="Promotion sur les lames de terasse"><!-- mettre img-fluid comme pour le container et ne pas ommettre le vieuwport vw=100 -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <!-- liste -->
+                        <li class="nav-item">
+                            <!-- accueil -->
+                            <a class="nav-link" href="index.html" title="Accueil" alt="Accueil">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- tableau -->
+                            <a class="nav-link" href="board.html" title="Tableau" alt="Tableau">Tableau</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- contact -->
+                            <a class="nav-link" href="formulaire.html" title="Contact" alt="Contact">Contact</a>
+                        </li>
+                    </ul>
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Votre promotion" aria-label="Votre promotion">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+                    </form>
+                </div>
+                <!-- fin de la liste -->
+            </nav>
+            <!-- fin du menu d'en-haut-->
+            <!-- promotion -->
+            <img class="img-fluid vw-100" src="src/img/promotion.jpg" alt="Promotion sur les lames de terasse" title="Promotion sur les lames de terasse">
+            <!-- mettre img-fluid comme pour le container et ne pas ommettre le vieuwport vw=100 -->
+        </header>
         <!-- le formulaire -->
         <section>
             <br>
             <p>* Ces zones sont obligatoires</p>
-            <form action="http://bienvu.net/script.php " method="post"><!-- formulaire -->
+            <form action="http://bienvu.net/script.php " method="post">
+                <!-- formulaire -->
                 <div class="form-row">
                     <div class="col-12">
                         <fieldset>
-                            <legend class="font-weight-bold">Vos coordonées</legend><!-- en gras -->
+                            <legend class="font-weight-bold">Vos coordonées</legend>
+                            <!-- en gras -->
                             <!-- Nom -->
-                            <label for="validationCustom01">Nom*</label><!--<input type="text" name="nom" id="nom" placeholder="LOPER"> <br>-->
+                            <label for="validationCustom01">Nom*</label>
+                            <!--<input type="text" name="nom" id="nom" placeholder="LOPER"> <br>-->
                             <input type="text" class="form-control" id="validationCustom01" value="Nom" placeholder="LOPER" required>
                             <div class="valid-feedback"></div>
                             <!-- Prénom -->
@@ -72,86 +87,87 @@
                                     <label class="form-check-label" for="Féminin">
                                     Féminin
                                     </label>
-                                </div>
-                                <div class="form-check form-check-inline"><!-- form-check-inline pour une seule ligne-->
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="Masculin" value="option2">
-                                    <label class="form-check-label" for="Masculin">
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <!-- form-check-inline pour une seule ligne-->
+                        <input class="form-check-input" type="radio" name="gridRadios" id="Masculin" value="option2">
+                        <label class="form-check-label" for="Masculin">
                                     Masculin
                                     </label>
-                                </div>
-                            </div>                                
-                            </label> <br>
-                            <!-- Naissence -->
-                            <label for="validationCustom06">Date de naissance*</label>
-                            <input type="date" class="form-control" id="validationCustom06" required>
-                            <div class="invalid-feedback"></div>
-                            <!-- CP -->
-                            <label for="validationCustom06">Code postal</label>
-                            <input type="text" class="form-control" id="validationCustom06" placeholder="Exemple de code postal : 80000" required>
-                            <div class="invalid-feedback"></div>
-                            <!-- Adresse -->
-                            <label for="validationCustom07">Adresse</label>
-                            <input type="text" class="form-control" id="validationCustom07" value="Adresse" placeholder="numéro et nom de la rue" required>
-                            <div class="valid-feedback"></div>
-                            <!-- Ville -->
-                            <label for="validationCustom08">Ville</label>
-                            <input type="text" class="form-control" id="validationCustom08" value="Ville" required placeholder="Commune">
-                            <div class="valid-feedback"></div>
-                            <!-- Courriel -->
-                            <label for="validationCustom09">Email*</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="email@domaine.xx" required>
-                            <div class="valid-feedback"></div>
-                        </fieldset>
-                        <br>
-                        <fieldset>
-                            <legend>
-                            Votre demande
-                            </legend>
-                            <!--<label required title="Sujet" for="sujet" id="Sujet">Sujet* : </label> <select>
+                    </div>
+                </div>
+                </label> <br>
+                <!-- Naissence -->
+                <label for="validationCustom06">Date de naissance*</label>
+                <input type="date" class="form-control" id="validationCustom06" required>
+                <div class="invalid-feedback"></div>
+                <!-- CP -->
+                <label for="validationCustom06">Code postal</label>
+                <input type="text" class="form-control" id="validationCustom06" placeholder="Exemple de code postal : 80000" required>
+                <div class="invalid-feedback"></div>
+                <!-- Adresse -->
+                <label for="validationCustom07">Adresse</label>
+                <input type="text" class="form-control" id="validationCustom07" value="Adresse" placeholder="numéro et nom de la rue" required>
+                <div class="valid-feedback"></div>
+                <!-- Ville -->
+                <label for="validationCustom08">Ville</label>
+                <input type="text" class="form-control" id="validationCustom08" value="Ville" required placeholder="Commune">
+                <div class="valid-feedback"></div>
+                <!-- Courriel -->
+                <label for="validationCustom09">Email*</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="email@domaine.xx" required>
+                <div class="valid-feedback"></div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>
+                        Votre demande
+                    </legend>
+                    <!--<label required title="Sujet" for="sujet" id="Sujet">Sujet* : </label> <select>
                                 <option selected disabled>Veuillez séléctionner un sujet</option>
                                 <option>Mes commandes</option> 
                                 <option>Question sur produit</option> 
                                 <option>Réclamation</option> 
                                 <option>Autre</option>
                             </select><br>-->
-                            <div class="dropdown">
-                                <label required title="Sujet" for="sujet" id="Sujet">Sujet*</label><br>
-                                <button class="btn btn-light btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown">
+                        <label required title="Sujet" for="sujet" id="Sujet">Sujet*</label><br>
+                        <button class="btn btn-light btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Veuillez séléctinner un sujet
                                 </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">Mes commandes</a>
-                                  <a class="dropdown-item" href="#">Question sur un produit</a>
-                                  <a class="dropdown-item" href="#">Réclamation</a>
-                                  <a class="dropdown-item" href="#">Autre</a>
-                                </div>
-                              </div>
-                        <label for="validationTextarea">Votre quesction*</label>
-                        <textarea class="form-control" id="validationTextarea" placeholder="Saissez votre question ou commentaire ici" required></textarea>
-                        <div class="invalid-feedback"></div>
-                        </fieldset>
-                        <!-- Case cochée par défaut car elle ne sera pas oubliée de ce fait -->
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Mes commandes</a>
+                            <a class="dropdown-item" href="#">Question sur un produit</a>
+                            <a class="dropdown-item" href="#">Réclamation</a>
+                            <a class="dropdown-item" href="#">Autre</a>
+                        </div>
+                    </div>
+                    <label for="validationTextarea">Votre quesction*</label>
+                    <textarea class="form-control" id="validationTextarea" placeholder="Saissez votre question ou commentaire ici" required></textarea>
+                    <div class="invalid-feedback"></div>
+                </fieldset>
+                <!-- Case cochée par défaut car elle ne sera pas oubliée de ce fait -->
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
                                 * J'accepte le traitement informatique de ce formulaire
                             </label>
-                          </div>
-                        <!-- les boutons du formulaire -->
-                        <button type="submit" class="btn btn-dark">Envoyer</button>
-                        <button type="reset" class="btn btn-dark">Annuler</button>
-                    </div>
                 </div>
-            </form>
-        </section>
-        <footer>
-            <hr>
-            <!-- Menu de navigaton de Bootstrap -->
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <!-- les boutons du formulaire -->
+                <button type="submit" class="btn btn-dark">Envoyer</button>
+                <button type="reset" class="btn btn-dark">Annuler</button>
+    </div>
+    </div>
+    </form>
+    </section>
+    <footer>
+        <hr>
+        <!-- Menu de navigaton de Bootstrap -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <!-- Toggler/collapsible Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
-            </button>   
+            </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -164,13 +180,16 @@
                         <a class="nav-link" href="" title="Plan du site" alt="Plan du site">Plan du site</a>
                     </li>
                 </ul>
-            </div> 
-            </nav><!-- fin du menu -->
-        </footer>
-    </div><!-- end of container-fluid -->
+            </div>
+        </nav>
+        <!-- fin du menu -->
+    </footer>
+    </div>
+    <!-- end of container-fluid -->
     <!-- intégration des fichies javascript pour Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
+
 </html>
