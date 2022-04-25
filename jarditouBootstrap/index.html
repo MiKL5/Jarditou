@@ -12,99 +12,93 @@
 
     <body>
         <div class="container-fluid">
-                <div class="row"><!-- Attn aux div pour que les éléments ne soient pas décalés -->
-                    <header class="form-inline"><!-- le logo et le slogan sur la même ligne -->
-                        <!-- le logo -->               
-                        <!-- d-sm-block : si le block devien petit alors l'affichage change et d-none les éléments ne sont plus affichés -->                
-                        <img class="col-3 d-none d-sm-block" src="src/img/jarditou_logo.jpg" alt="Logo de Jarditou" title="Logo de Jarditou" width="200">
-                        <!-- le slogan -->
-                        <h3 class="col-9 d-sm-block d-none text-right">Tout le jardin</h3><!-- text-capitalize = 1re letre de chq mot en maj-->
-                    </header>
-                </div><!-- end of row -->
-                <!-- menu de navigaton d'en-haut -->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand">Jarditou.com</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto"><!-- liste -->
-                            <li class="nav-item"><!-- accueil -->
-                                <a class="nav-link" href="index.html" title="Accueil" alt="Accueil">Accueil</a>
+            <div class="row"><!-- Attn aux div pour que les éléments ne soient pas décalés -->
+                <header class="form-inline"><!-- le logo et le slogan sur la même ligne -->
+                    <!-- le logo -->               
+                    <!-- d-sm-block : si le block devien petit alors l'affichage change et d-none les éléments ne sont plus affichés -->                
+                    <img class="col-3 d-none d-sm-block" src="src/img/jarditou_logo.jpg" alt="Logo de Jarditou" title="Logo de Jarditou" width="200">
+                    <!-- le slogan -->
+                    <h3 class="col-9 d-sm-block d-none text-right">Tout le jardin</h3><!-- text-capitalize = 1re letre de chq mot en maj-->
+                </header>
+            </div><!-- end of row -->
+            <!-- menu de navigaton d'en-haut -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand">Jarditou.com</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto"><!-- liste -->
+                        <li class="nav-item"><!-- accueil -->
+                            <a class="nav-link" href="index.html" title="Accueil" alt="Accueil">Accueil</a>
+                        </li>
+                        <li class="nav-item"><!-- tableau -->
+                            <a class="nav-link" href="board.html" title="Tableau" alt="Tableau">Tableau</a>
+                        </li>
+                        <li class="nav-item"><!-- contact -->
+                            <a class="nav-link" href="formulaire.html" title="Contact" alt="Contact">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- fin de la liste d'en-haut-->
+                    <!-- la zone de rch dans la div pour le responsive doit-être à droite -->
+                    <form class="form-inline my-2 my-lg-0"><!-- my marge h et bas et mx marge horizontal -->
+                        <input class="form-control mr-sm-2" type="search" placeholder="Votre promotion" aria-label="Votre promotion">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+                    </form>
+                </div><!-- fin de la div de la navbar d'en-haut -->
+            </nav><!-- fin du menu d'en-haut -->
+
+            <!-- texte et colonne côte-à-côte sauf pour les mobile l'un sous l'autre, la promo toujours au dessus (12 cols) donc [img-fluid vw-100]-->
+            <div class="row justify-content-between"><!-- finira ligne 78 -->
+                <!-- promotion -->            
+                <img class="img-fluid vw-100" src="src/img/promotion.jpg" alt="Promotion sur les lames de terasse" title="Promotion sur les lames de terasse"><!-- mettre img-fluid comme pour le container et ne pas ommettre le vieuwport vw=100 -->
+                <!-- le corps -->
+                <div class="col-12 col-md-8 shadow p-1 mb-0"><!--   -->
+                    <section>
+                        <article>
+                            <h2>L'entreprise</h2>
+                            <p>Notre entreprise familliale met tout son savoir à votre deposition dans le domaine du jardi et du paysage.</p>
+                            <p>Créée il y 70 ans, notre entreprise vend fleurs, arbustes,matérils à main et motorisés.</p>    
+                            <p>Implantée à Amiens, nous intervenons dans tout le département de la Somme : Albert, Doullens, Péronne, Abbevile, Corbie.</p>
+                            <h2>Qualité</h2>
+                            <p>Nous mettons à votre disposition un service personnalisé, avec 1 seul interlocuteur durant tout votre projet.</p>
+                            <p>Vous serez séduit par notre expertise, nos cométences et notre sérieux.</p>
+                            <h2>Devis gratuit</h2>
+                            <p>Vous venez bien sûr contacter pour de plus amples informations ou pour une demande d'intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement.</p>
+                        </article>
+                    </section>
+                </div><!-- fin de la div du texte débutée ligne 57-->
+                <div class="col-12 col-md-4 bg-warning text-center shadow p-1 mb-0"><!-- shadow = ombre (même sans les paramètres p-1 et mb-1 c'était identique à celle du texte) en définitif mb-0-->
+                    <aside>
+                        <h2>[Colonne de droite]</h2>
+                    </aside>
+                </div><!-- fin de la div aside -->
+            </div><!-- fin de row justify débutée ligne 53 -->
+
+            <footer>
+                <hr>
+                <!-- Menu de navigaton de bas de page -->
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                    <!-- Toggler (bascule) / collapsible (retactable) Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>   
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="" title="Mentions légales" alt="Mentions légales">Mentions légales</a>
                             </li>
-                            <li class="nav-item"><!-- tableau -->
-                                <a class="nav-link" href="board.html" title="Tableau" alt="Tableau">Tableau</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" title="Horaires" alt="Horaires">Horaires</a>
                             </li>
-                            <li class="nav-item"><!-- contact -->
-                                <a class="nav-link" href="formulaire.html" title="Contact" alt="Contact">Contact</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" title="Plan du site" alt="Plan du site">Plan du site</a>
                             </li>
                         </ul>
-                        <!-- fin de la liste d'en-haut-->
-                        <!-- la zone de rch dans la div pour le responsive doit-être à droite -->
-                        <form class="form-inline my-2 my-lg-0"><!-- my marge h et bas et mx marge horizontal -->
-                            <input class="form-control mr-sm-2" type="search" placeholder="Votre promotion" aria-label="Votre promotion">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
-                        </form>
-                    </div><!-- fin de la div de la navbar d'en-haut -->
-                </nav><!-- fin du menu d'en-haut -->
-
-
-                <!-- texte et colonne côte-à-côte sauf pour les mobile l'un sous l'autre, la promo toujours au dessus (12 cols) donc [img-fluid vw-100]-->
-                <div class="row justify-content-between">
-                    <!-- promotion -->            
-                    <img class="img-fluid vw-100" src="src/img/promotion.jpg" alt="Promotion sur les lames de terasse" title="Promotion sur les lames de terasse"><!-- mettre img-fluid comme pour le container et ne pas ommettre le vieuwport vw=100 -->
-                    <!-- le corps -->
-                    <div class="col-12 col-md-8 shadow p-1 mb-0"><!--   -->
-                        <section>
-                            <article>
-                                <h2>L'entreprise</h2>
-                                <p>Notre entreprise familliale met tout son savoir à votre deposition dans le domaine du jardi et du paysage.</p>
-                                <p>Créée il y 70 ans, notre entreprise vend fleurs, arbustes,matérils à main et motorisés.</p>    
-                                <p>Implantée à Amiens, nous intervenons dans tout le département de la Somme : Albert, Doullens, Péronne, Abbevile, Corbie.</p>
-                                <h2>Qualité</h2>
-                                <p>Nous mettons à votre disposition un service personnalisé, avec 1 seul interlocuteur durant tout votre projet.</p>
-                                <p>Vous serez séduit par notre expertise, nos cométences et notre sérieux.</p>
-                                <h2>Devis gratuit</h2>
-                                <p>Vous venez bien sûr contacter pour de plus amples informations ou pour une demande d'intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement.</p>
-                            </article>
-                        </section>
-                    </div><!-- fin de la div du texte -->
-
-                    <div class="col-12 col-md-4 bg-warning text-center shadow p-1 mb-0"><!-- shadow = ombre (même sans les paramètres p-1 et mb-1 c'était identique à celle du texte) en définitif mb-0-->
-                        <aside>
-                            <h2>[Colonne de droite]</h2>
-                        </aside>
-                    </div><!-- fin de la div aside -->
-                </div><!-- fin de row justify -->
-
-                <footer>
-                    <hr>
-                    <!-- Menu de navigaton de bas de page -->
-                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-
-                        <!-- Toggler (bascule) / collapsible (retactable) Button -->
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>   
-                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="" title="Mentions légales" alt="Mentions légales">Mentions légales</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="" title="Horaires" alt="Horaires">Horaires</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="" title="Plan du site" alt="Plan du site">Plan du site</a>
-                                </li>
-                            </ul>
-                        </div> <!-- fin de la div de la navbar du bas -->
-
-                    </nav><!-- fin de la navbar -->
-
-                </footer>
-
-        </div><!-- end of container-fluid -->
+                    </div> <!-- fin de la div de la navbar du bas -->
+                </nav><!-- fin de la navbar débutée ligne 83 -->
+            </footer>
+        </div><!-- end of container-fluid débuté ligne 14 -->
 
         <!-- intégration des fichies javascript pour Bootstrap -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
