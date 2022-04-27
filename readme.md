@@ -1,5 +1,5 @@
 ___
-# **Techniques de base du développement d'application**
+# **Développement web**
 
     Jarditou
 
