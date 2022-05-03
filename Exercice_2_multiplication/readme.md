@@ -13,4 +13,4 @@
 
 
 >>>**NOTA BENE** :
-    L'affichage à lieu dans une console
+    *L'affichage à lieu dans une console*
