@@ -9,3 +9,8 @@
     * *1 x 7 = 7*
     * *2 x 7 = 14*
     * *3 x 7 = 21 ...*
+
+
+
+>>>**NOTA BENE** :
+    L'affichage à lieu dans une console
