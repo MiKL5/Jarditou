@@ -1,3 +1,3 @@
 # **Évalutation SQL**
 
-    Les requ$etes et la table sont dans le dossier évaluation SQL
+    Voici la table et les requêtes.
