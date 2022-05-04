@@ -20,7 +20,7 @@
 </head>
 <body>
 <?php
-// Définir le nombre de colonnes et de lignes à 14 celon l'exercice
+// Définir le nombre de colonnes et de lignes à 14
 $nbcols = 14;
 $nbrows = 14;
 // Construire la table allant de 0 à 12
@@ -42,7 +42,7 @@ for ($rows =0; $rows <= 12; $rows++)
     // la colonne part aussi de 0
     for ($cols = 0; $cols <= 12; $cols++)
     // multiplication
-    echo( '<td>' .$cols*$rows.'</td>');
+    echo('<td>' .$cols*$rows.'</td>');
     echo('</tr>');
 }
 echo("</table>");
