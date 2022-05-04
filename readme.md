@@ -1,6 +1,5 @@
-___
 # **Développement web**
-
+___
     Jarditou
 
     1. jarditouHTML ······> HTML only ;
