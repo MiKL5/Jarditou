@@ -1,5 +1,6 @@
+#  **Mois de l annee non bisextile**
 
-# **Mois de l annee non bisextile**
+> ### ***en PHP***
 
     Créer un tableau associant à chaque mois de l’année le nombre de jours du mois.
     Utilisez le nom des mois comme clés du tableau associatif.
