@@ -14,9 +14,17 @@ ___
 > #### ***CE QUI SUIT EST EN JAVASCRIPT***
 
 
-    Exercices
-
     - Exercice 1 ·> calcul du nombre de jeunes, de moyens et d'ainés ;
     - Exercice 2 ·> table de multiplication ;
     - Exercice 3 ·> recherche de prénom ;
     - Exercice 4 ·> total d'une commande.
+
+> #### ***CE QUI SUIT EST EN SQL***
+
+    - Exercice 5 ·> Northwind
+
+> #### ***CE QUI SUIT EST EN PHP***
+
+    - Exercice 6 ·> Nombres impairs
+    - Exercice 7 ·> Sentence
+    - Exercice 8 ·> Table de multiplication
