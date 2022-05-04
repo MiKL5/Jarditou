@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Mois de l'année non bisextile</title>
-    <!-- Présentation -->
+    <!-- Apparence -->
     <style> 
         table, th, td {
             <!-- border: .1rem solid black; -->
             border-collapse: collapse;
             text-align: center;
             white-space: center;
-            margin-top:5vh;
-            margin-bottom:5vh;
-            margin-left:5vh;
-            margin-right:5vh;
+            margin-top:6vh;
+            margin-bottom:6vh;
+            margin-left:6vh;
+            margin-right:6vh;
         }
         th, td {
             width: 15rem;
