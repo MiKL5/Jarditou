@@ -13,10 +13,10 @@ ___
 > #### ***CE QUI SUIT EST EN JAVASCRIPT***
 
 
-    - Exercice 1 ·> calcul du nombre de jeunes, de moyens et d'ainés ;
-    - Exercice 2 ·> table de multiplication ;
-    - Exercice 3 ·> recherche de prénom ;
-    - Exercice 4 ·> total d'une commande.
+    - Exercice 1 ·> Calcul du nombre de jeunes, de moyens et d'ainés ;
+    - Exercice 2 ·> Table de multiplication ;
+    - Exercice 3 ·> Recherche de prénom ;
+    - Exercice 4 ·> Total d'une commande.
 
 > #### ***CE QUI SUIT EST EN SQL***
 
