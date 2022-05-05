@@ -29,7 +29,7 @@
     // Lister les mois et le nombre de jours
     $jourMois = array('Janvier'=>31,'Février' =>28, 'Mars'=>31, 'Avril'=>30,'Mai'=>31,'Juin'=>30,'Juillet'=>31,'Août'=>31,'Septembre'=>30,'Octobre'=>31,'Novembre'=>30,'Décembre'=> 31);
     // Création du tableau et des titres des colonnes
-    echo'<table class="table-dark table-hover table-bordered table-striped"><tr><th>Mois </th> <th>Nombre de jours </th></tr>'."\n";
+    echo'<table class="table-dark table-hover table-bordered table-striped"><tr><th>Mois</th> <th>Nombre de jours</th></tr>'."\n";
     // Tri par le mois le plus court
     asort($jourMois);
     // La boucle foreach pour parcourir le tableau
