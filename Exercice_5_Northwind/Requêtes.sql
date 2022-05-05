@@ -9,7 +9,7 @@
 
 	SELECT CompanyName AS Société, ContactName AS Contact, ContactTitle AS Fonction, Phone AS Téléphone
 	FROM customers
-    WHERE customers.Country LIKE 'France'
+    WHERE Country LIKE 'France'
 
 
 -- 2- Liste des produits vendus par le fournisseur "Exotic Liquids" :
