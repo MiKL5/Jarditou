@@ -2,10 +2,10 @@
 ___
     Jarditou
 
-    1. jarditouHTML ······> HTML only ;
-    2. jarditouCSS ·······> with CSS ;
-    3. jarditouJS ········> includes Javascript ;
-    4. jarditouBootstrap ·> avec le framework Bootstrap.
+    1. jarditouHTML ······> HTML only
+    2. jarditouCSS ·······> with CSS
+    3. jarditouJS ········> includes Javascript
+    4. jarditouBootstrap ·> avec le framework Bootstrap
  
 
 ___
@@ -13,10 +13,10 @@ ___
 > #### ***CE QUI SUIT EST EN JAVASCRIPT***
 
 
-    - Exercice 1 ·> Calcul du nombre de jeunes, de moyens et d'ainés ;
-    - Exercice 2 ·> Table de multiplication ;
-    - Exercice 3 ·> Recherche de prénom ;
-    - Exercice 4 ·> Total d'une commande.
+    - Exercice 1 ·> Calcul du nombre de jeunes, de moyens et d'ainés
+    - Exercice 2 ·> Table de multiplication
+    - Exercice 3 ·> Recherche de prénom
+    - Exercice 4 ·> Total d'une commande
 
 > #### ***CE QUI SUIT EST EN SQL***
 
