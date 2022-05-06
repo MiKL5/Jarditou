@@ -21,7 +21,7 @@
 
 -- 3- Nombre de produits mis à disposition par les fournisseurs français (tri par nombre de produits décroissant) :
 
-	SELECT CompanyName, UnitsInStock AS nb_products
+	SELECT CompanyName AS Fournisseur, UnitsInStock AS nb_products
 	FROM suppliers
     JOIN products ON suppliers.SupplierID = products.SupplierID
     WHERE Country = 'France'
@@ -38,7 +38,7 @@
 -- 5- Liste des clients dont le montant cumulé de toutes les commandes passées est supérieur à 30000 € :
 -- NB: chiffre d'affaires (CA) = total des ventes
 
-    SELECT CompanyName AS "Customers", SUM(`order details`.unitPrice * `order details`.Quantity) AS CA, ShipCountry as "Country"
+    SELECT CompanyName AS "Customers", SUM(`order details`.unitPrice * `order details`.Quantity) AS CA, Country as "Country"
     FROM customers
     JOIN orders ON customers.CustomerID = orders.CustomerID
     JOIN `order details` ON orders.OrderID = `order details`.OrderID 
