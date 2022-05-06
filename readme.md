@@ -1,4 +1,5 @@
 # **Développement web**
+
 ___
     Jarditou
 
@@ -24,8 +25,9 @@ ___
 
 > #### ***CE QUI SUIT EST EN PHP***
 
-    - Exercice 6 ·> Nombres impairs
-    - Exercice 7 ·> Sentence
-    - Exercice 8 ·> Table de multiplication
-    - Exercice 9 ·> Mois de l'année non bisextile
+    - Exercice 6 ··> Nombres impairs
+    - Exercice 7 ··> Sentence
+    - Exercice 8 ··> Table de multiplication
+    - Exercice 9 ··> Mois de l'année non bisextile
+    - Exercice 10 ·> Capitales
     - Exercice 11 ·> Départements
