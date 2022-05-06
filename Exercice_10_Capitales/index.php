@@ -15,10 +15,12 @@
             border-collapse: collapse;
             text-align: center;
             white-space: center;
-
         }
-        th, td {
-            height: 3rem;
+        th{
+            height:6rem;
+        }
+        td {
+            height: 1rem;
         }
     </style>
     <?php
@@ -90,13 +92,13 @@
                 // Pays, Toujours trier avant !
                 asort($List);
                 // suppression des capitales ne commençant pas par B
-                foreach ($List as $key => $value)
-                {
-                    if ($key[0] != "B")
-                    {
-                        unset ($List[$key]);
-                    }                    
-                }
+                // foreach ($List as $key => $value)
+                // {
+                //     if ($key[0] != "B")
+                //     {
+                //         unset ($List[$key]);
+                //     }                    
+                // }
                 
                 // affiche le tableau
                 foreach($List as $Capitale => $Pays) : ?>
