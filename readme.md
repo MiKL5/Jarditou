@@ -1,7 +1,7 @@
 # **Développement web**
 
 ___
-    Jarditou
+    Projets Jarditou
 
     1. jarditouHTML ······> HTML only
     2. jarditouCSS ·······> with CSS
