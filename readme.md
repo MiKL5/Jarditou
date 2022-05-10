@@ -1,7 +1,8 @@
 # **Développement web**
-
+---
+> ## Projets
 ___
-    Projets Jarditou
+    Jarditou
 
     1. jarditouHTML ······> HTML only
     2. jarditouCSS ·······> with CSS
@@ -11,7 +12,9 @@ ___
 
 ___
 
-> #### ***CE QUI SUIT EST EN JAVASCRIPT***
+> ## Exercices
+---
+>> #### ***CE QUI SUIT EST EN JAVASCRIPT***
 
 
     - Exercice 1 ·> Calcul du nombre de jeunes, de moyens et d'ainés
@@ -19,11 +22,11 @@ ___
     - Exercice 3 ·> Recherche de prénom
     - Exercice 4 ·> Total d'une commande
 
-> #### ***CE QUI SUIT EST EN SQL***
+>> #### ***CE QUI SUIT EST EN SQL***
 
     - Exercice 5 ·> Northwind
 
-> #### ***CE QUI SUIT EST EN PHP***
+>> #### ***CE QUI SUIT EST EN PHP***
 
     - Exercice 6 ··> Nombres impairs
     - Exercice 7 ··> Sentence
