@@ -11,7 +11,7 @@
         // tableau
         $tab = array(4,3,8,2);
         // calcul
-        echo array_sum($tab);
+        echo "La somme des valeurs du tableau est ".array_sum($tab).".";
     ?>
 </body>
 </html>
