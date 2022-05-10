@@ -31,3 +31,4 @@ ___
     - Exercice 9 ··> Mois de l'année non bisextile
     - Exercice 10 ·> Capitales
     - Exercice 11 ·> Départements
+    - Exercice 13 ·> Calcul de la somme des valeurs d'un tableau
