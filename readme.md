@@ -35,3 +35,5 @@ ___
     - Exercice 10 ·> Capitales
     - Exercice 11 ·> Départements
     - Exercice 13 ·> Calcul de la somme des valeurs d'un tableau
+    - Exercice 14 ·> Vérifier la compléxité d'un mot de passe
+    - Exercice 15 ·> Dates et heures
