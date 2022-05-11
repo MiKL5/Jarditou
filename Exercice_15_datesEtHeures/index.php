@@ -108,7 +108,7 @@
     $date = date("d-m-Y H-i-s" ,1000200000);
     echo ($date)."<br>";
     $date2 = date("d/m/Y" ,1000200000);
-    echo ("A la date du ".$date2." il s'est passé le crash de 2 avions a NY");
+    echo ("A la date du ".$date2." crash de 2 avions a NY");
     ?>
 </body>
 </html>
