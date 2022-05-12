@@ -17,23 +17,25 @@ ___
 >> #### ***CE QUI SUIT EST EN JAVASCRIPT***
 
 
-    - Exercice 1 ·> Calcul du nombre de jeunes, de moyens et d'ainés
-    - Exercice 2 ·> Table de multiplication
-    - Exercice 3 ·> Recherche de prénom
-    - Exercice 4 ·> Total d'une commande
+    * Exercice 1 ·> Calcul du nombre de jeunes, de moyens et d'ainés
+    * Exercice 2 ·> Table de multiplication
+    * Exercice 3 ·> Recherche de prénom
+    * Exercice 4 ·> Total d'une commande
 
 >> #### ***CE QUI SUIT EST EN SQL***
 
-    - Exercice 5 ·> Northwind
+    * Exercice 5 ·> Northwind
+    * Exercice 6 ·> Northwind
+    * Exercice 7 ·> Northwind
 
 >> #### ***CE QUI SUIT EST EN PHP***
 
-    - Exercice 6 ··> Nombres impairs
-    - Exercice 7 ··> Sentence
-    - Exercice 8 ··> Table de multiplication
-    - Exercice 9 ··> Mois de l'année non bisextile
-    - Exercice 10 ·> Capitales
-    - Exercice 11 ·> Départements
-    - Exercice 13 ·> Calcul de la somme des valeurs d'un tableau
-    - Exercice 14 ·> Vérifier la compléxité d'un mot de passe
-    - Exercice 15 ·> Dates et heures
+    * Exercice 8 ··> Nombres impairs
+    * Exercice 9 ··> Sentence
+    * Exercice 10 ·> Table de multiplication
+    * Exercice 11 ·> Mois de l'année non bisextile
+    * Exercice 12 ·> Capitales
+    * Exercice 13 ·> Départements
+    * Exercice 15 ·> Calcul de la somme des valeurs d'un tableau
+    * Exercice 16 ·> Vérifier la compléxité d'un mot de passe
+    * Exercice 17 ·> Dates et heures
