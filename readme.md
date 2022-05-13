@@ -39,3 +39,4 @@ ___
     * Exercice 15 ·> Calcul de la somme des valeurs d'un tableau
     * Exercice 16 ·> Vérifier la compléxité d'un mot de passe
     * Exercice 17 ·> Dates et heures
+    * Exercice 18 ·> Lecture d'un fichier
