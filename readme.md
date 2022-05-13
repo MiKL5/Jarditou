@@ -24,8 +24,8 @@ ___
 
 >> #### ***CE QUI SUIT EST EN SQL***
 
-    * Exercice 5 ·> Northwind
-    * Exercice 6 ·> Northwind
+    * Exercice 5 ·> Hotel
+    * Exercice 6 ·> Papyrus
     * Exercice 7 ·> Northwind
 
 >> #### ***CE QUI SUIT EST EN PHP***
