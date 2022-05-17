@@ -15,7 +15,7 @@
     { 
         // Lecture d'une ligne, le contenu de la ligne est affecté sous forme de liens
         $ligne = fgets($fp, 4096); 
-        echo "<a href=>" .$ligne ."<br> </a>"; 
+        echo "<a href=>" .$ligne."<br> </a>"; 
     }    
     ?>
 </body>

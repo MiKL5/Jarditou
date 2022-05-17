@@ -16,7 +16,7 @@
         // longueur
         if(strlen($mdp) < 8)
         {
-            $error[] = "Trop court ! Huit caractères nécésaires.";
+            $error[] = "Trop court ! Huit caractères nécéssaires.";
         }
         // nombre de chiffre
         if(!preg_match("#[0-9]+#", $mdp))
