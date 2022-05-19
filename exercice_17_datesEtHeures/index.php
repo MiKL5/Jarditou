@@ -69,7 +69,7 @@
     echo "4. Montrez que la date du 32/17/2019 est erronée.<br>";
     // Montrer que la date du 32/17/2019 est erronée.
     // vérif
-    $date = DateTime::createFromFormat("d-m-Y", 2019 - 17 - 32);
+    $date = DateTime::createFromFormat("d-m-Y", 2019-12-30);
     $error = DateTime::getLastErrors();
     if ($date = 1) {
         echo "Date fausse.";
