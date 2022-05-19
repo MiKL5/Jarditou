@@ -9,7 +9,7 @@
 	 4. jarditouBootstrap ·> avec le framework Bootstrap
 ---
 	Velvet Record
-	 1. Velvet Record ·····> PHP et SQL *(in progress ...)*
+	 1. Velvet Record ·····> PHP et SQL (in progress ...)
 ___
 
 > ## Exercices
