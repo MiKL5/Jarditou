@@ -22,11 +22,10 @@
     // DEUX FAÇONS DE CODER    
     echo "C'est la semaine " . date_format($date, "W" . ".");           // version procédurale
     echo "<br>C'est la semaine " . $date->format("W") . ".<br>";        // version objet
-
     // $date = "2019/07/14";
     // var_dump($week);
     // echo date("W")
-    echo "<hr>";
+    ?> <hr> <?php
     //----------------------------------------------------------------------------------------------------
     echo "2. Combien reste-t-il de jours avant la fin de votre formation ?<br>";
     // Nombe de semaines avant la fin de la formation
@@ -38,13 +37,12 @@
     echo "il reste " . $interval->format("%a") . " jours";
     // en semaines
     echo ", soit " . $interval->format("%D") . " semaines";
-    echo "<hr>";
+    ?> <hr> <?php
     //-----------------------------------------------------------------------------------------------------
     echo "3. Comment déterminer si une année est bissextile ?<br>";
     // Déterminé une année bisextile
     // année choisi 2022
     $baseDate = "2024-05-10";
-
     $Year = new DateTime($baseDate);
     // garder que l'annèe
     $B = $Year->format("L");
@@ -54,7 +52,6 @@
     } else {
         echo $Year->format("Y") . " est non bisextile";
     }
-
     // echo $Y = $Year->format("Y");
     // var_dump($Y);
     echo "<br>";
@@ -67,7 +64,7 @@
         echo $Year->format("Y") . " est non bisextile";
     }
     // var_dump($maDate);
-    echo "<hr>";
+    ?> <hr> <?php
     //-----------------------------------------------------------------------------------------------------
     echo "4. Montrez que la date du 32/17/2019 est erronée.<br>";
     // Montrer que la date du 32/17/2019 est erronée.
@@ -79,18 +76,14 @@
     } else {
         echo "Date vraie.";
     }
-
-    echo "<hr>";
+    ?> <hr> <?php
     //-----------------------------------------------------------------------------------------------------
     echo "5. Affichez l'heure courante sous cette forme : 11h25.<br>";
     // afficher l'heure actuelle sous la forme 11h25.
     $heureactuelle  = date("H\hi");
     // var_dump($heureactuelle);
     echo $heureactuelle;
-
-    echo "<hr>";
-
-
+    ?> <hr> <?php
     //-----------------------------------------------------------------------------------------------------
     echo "6. Ajoutez 1 mois à la date courante.<br>";
     // ajouter un mois à la date courante
@@ -99,10 +92,9 @@
     $datecourante = new DateTime("+1 months");
     // affichage
     echo "La date est le" . $datecourante->format("d/m/Y") . ".";
-    echo "<br>";
-    echo "<hr>";
+    ?> <br> <hr> <?php
     //-----------------------------------------------------------------------------------------------------
-    echo "Que s'est-il passé le 1000200000 ?<br>";
+    ?> <p>Que s'est-il passé le 1000200000 ?</p> <?php
     // que s'est-il passé le 1000200000 ?
     // var_dump($unknowdate = "1000200000");    
     // var_dump($unknowdate = new DateTime(""));
