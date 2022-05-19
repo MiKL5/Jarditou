@@ -12,6 +12,7 @@
 
 <body>
     <!--  pour remonter faire ../  -->
+    <!-- PDO -> PHP Data Object -->
 </body>
 
 </html>
