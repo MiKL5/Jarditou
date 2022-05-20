@@ -17,6 +17,12 @@
             <!-- devra aller chercher les éléments dans la bdd -->
             <label for="exampleFormControlSelect1">Artiste</label>
             <select class="form-control" id="exampleFormControlSelect1">
+                <?php
+                foreach( artist in artists) : ?>
+                    <option value="PAR L ID CAR SI DEUX NOM IDENTIQUE JE SERAIS COINCÉ"><?=artist.nom?></option>
+                <?php
+                endforeach;
+                ?>
             <option>1</option>
             <option>2</option>
             <option>3</option>

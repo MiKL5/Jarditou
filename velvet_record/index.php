@@ -27,7 +27,7 @@
 
     <!-- 2 boutons -->
     <div class="text-center">
-        <button type="submit" class="btn btn-light btn-lg mx-5">S'inscrire</button>
-        <button type="submit" class="btn btn-light btn-lg mx-5">Se connecter</button>
+        <button type="button" class="btn btn-light btn-lg mx-5">S'inscrire</button>
+        <button type="submit" class="btn btn-light btn-lg mx-5"><a href="./php/artist_ajout.php">Se connecter</a></button>
     </div> <!-- End of div button -->
 </div> <!-- End of container -->
