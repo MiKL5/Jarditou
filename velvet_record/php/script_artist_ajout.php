@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Script d'ajout d'un.e artiste</title>
-</head>
-<body>
-<!-- faie artist_ajout  -->
-
-
-
-
-
-
-
-    <!--
 <?php
     // Récupération du Nom :
     if (isset($_POST['nom']) && $_POST['nom'] != "") {
@@ -66,6 +48,10 @@
     
     // Fermeture du script
     exit;
-?> -->
-</body>
-</html>
+    ?>
+<!-- en PHP, les données envoyées en POST sont stockées dans la superglobale $_POST. Chaque input du formulaire portant un attribut name génère une cellule dans $_POST (qui est un tableau associatif), accessible grâce à la syntaxe suivante : $valeur_input = $_POST["attribut_name"]. -->
+
+
+<!-- NB: comme notre colonne artist_id est en AUTO INCREMENT, nous n'avons pas besoin d'associer une valeur pour cette colonne. -->
+
+<!-- on a placé tout notre traitement dans un TRY ... CATCH afin de récupérer le message d'erreur du SGBDr (MariaDB, MySQL, etc.) le cas échéant, grâce aux informations retournées par la méthode errorInfo() de PDO. -->

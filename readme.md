@@ -1,5 +1,8 @@
-﻿# **Développement web**
+﻿
+# **Développement web**
+
 ---
+
 > ## Projets
  
 	Jarditou
@@ -26,6 +29,7 @@ ___
 	* Exercice 7 ·> Northwind
 
 >> #### ***CE QUI SUIT EST EN PHP***
+
 	* Exercice 8 ··> Nombres impairs
 	* Exercice 9 ··> Sentence
 	* Exercice 10 ·> Table de multiplication

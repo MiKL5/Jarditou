@@ -1,4 +1,4 @@
-// On charge l'enregistrement correspondant à l'ID passé en paramètre :
+<!-- On charge l'enregistrement correspondant à l'ID passé en paramètre :
     require "db.php";
     $db = connexionBase();
     $requete = $db->prepare("SELECT * FROM artist WHERE artist_id=?");
@@ -6,10 +6,10 @@
     $myArtist = $requete->fetch(PDO::FETCH_OBJ);
     $requete->closeCursor();
 
-// bloc html ci-aprés
+// bloc html ci-aprés -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
