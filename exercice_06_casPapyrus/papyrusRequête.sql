@@ -77,6 +77,12 @@ FROM fournis
 JOIN entcom ON fournis.numfou = entcom.numfou
 JOIN ligcom ON entcom.numcom = ligcom.numcom
 WHERE YEAR(datcom) IN (2022);
+-- FOÇON 3
+SELECT nomfou, entcom.numfou
+FROM fournis, entcom
+WHERE fournis.numfou = entcom.numfou
+-- ORDER BY YEAR(datcom) IN (2022);
+
 
 -- 13 Coder de 2 manières différentes la requête suivante : Lister les commandes dont le fournisseur est celui de la commande n°70210.
 -- Afficher numéro de commande et date
