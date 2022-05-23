@@ -100,6 +100,7 @@
     // var_dump($unknowdate = new DateTime(""));
     // echo $unknowdate->format ('U = d/m/Y');
     $date = date("d-m-Y H-i-s", 1000200000);
+    // echo ($date = date("d-m-Y H-i-s", 1000200000)); // echo fonctonne s'il n'y a pas <br>
     echo ($date) . "<br>";
     $date2 = date("d/m/Y", 1000200000);
     echo ("À la date du " . $date2 . ", crash de 2 avions a NY");
