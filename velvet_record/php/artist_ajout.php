@@ -19,7 +19,7 @@
             <select class="form-control" id="exampleFormControlSelect1">
                 <?php
                 foreach( artist in artists) : ?>
-                    <option value="PAR L ID CAR SI DEUX NOM IDENTIQUE JE SERAIS COINCÉ"><?=artist.nom?></option>
+                    <option value="SELECT * FROM artist JOIN disc ON artist.artist_id = disc.artist_id;"><?=artist.nom?></option>
                 <?php
                 endforeach;
                 ?>
