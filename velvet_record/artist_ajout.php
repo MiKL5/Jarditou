@@ -18,16 +18,11 @@
             <label for="exampleFormControlSelect1">Artiste</label>
             <select class="form-control" id="exampleFormControlSelect1">
                 <?php
-                foreach( artist in artists) : ?>
-                    <option value="SELECT * FROM artist JOIN disc ON artist.artist_id = disc.artist_id;"><?=artist.nom?></option>
+                foreach(artist -> artists) ?>
+                    <option value="SELECT artist_name FROM artist JOIN disc ON artist.artist_id = disc.artist_id GROUP BY artist_name;"><?=artist.nom?></option>
                 <?php
                 endforeach;
                 ?>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
             </select><br>
             <p>Année</p>
             <input type="text" class="form-control" id="Année" placeholder="Entrer l'année'"><br>
