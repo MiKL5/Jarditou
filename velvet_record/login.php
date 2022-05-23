@@ -1,16 +1,19 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page de connexion</title>
-</head>
-<body>
 
 
 <?php
+
+include 'db.php';
 // INSCRIPTION
+$connexion = ConnexionBase();
+$req = $connexion->prepare("select * from record where id = :id and name = :name");
+$req->bindValue(':id', $id);
+$req->bindValue(':name', $name);
+$req->execute();
+
+$result = $req->fetch(PDO::FETCH_ASSOC);
+
+print_r($result);
+
 foreach() {
 
 }
@@ -20,8 +23,8 @@ foreach() {
 foreach(login) {
 CREATE TABLE login (
     user_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    prenom VARCHAR(30) NOT NULL,
-    nom VARCHAR(30) NOT NULL,
+    firstname VARCHAR(30) NOT NULL,
+    name VARCHAR(30) NOT NULL,
     email VARCHAR(50),
     passwd VARCHAR(20) NOT NULL,
     reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP

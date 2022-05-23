@@ -10,6 +10,19 @@
 </head>
 <body>
     <!-- Formulaire d'ajout d'artiste -->
+    <?php include "db.php"; 
+
+    $db = ConnexionBase();
+
+    $conn = $db->prepare("SELECT artist_name, artist.artist_id as id FROM artist, disc WHERE artist.artist_id = disc.artist_id GROUP BY artist_name");
+    $conn->execute();
+
+
+    $result = $conn->fetchAll(PDO::FETCH_OBJ);
+    print_r($result);
+
+    ?>
+
     <form action="">
         <h1>Ajouter un vinyle</h1>
             <p>Titre</p>
@@ -18,11 +31,10 @@
             <label for="exampleFormControlSelect1">Artiste</label>
             <select class="form-control" id="exampleFormControlSelect1">
                 <?php
-                foreach(artist -> artists) ?> {
-                    <option value="SELECT artist_name FROM artist JOIN disc ON artist.artist_id = disc.artist_id GROUP BY artist_name;"><?=artist.nom?></option>
-                }
+                foreach ( $result as $name ) : ?>
+                    <option value="<?=$name->id?>"><?=$name->artist_name?></option>
                 <?php
-                // endforeach;
+                endforeach;
                 ?>
             </select><br>
             <p>Année</p>
