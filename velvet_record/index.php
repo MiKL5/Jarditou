@@ -19,7 +19,7 @@
 <div class="container">
     <div class="d-flex">
     <!-- record ecrit avec unb fil jack le c est un casque et le o un vinyle le fil pas derrière le casque et ressot par le trou du vinyle pour donner une impressionde relief -->
-    <p>Un câble mini-jack écrira re passera devant le casque qui est le c,<br> puis derrière le vinyle pour ressortir par le trou <br> et écrire le r et le d, la prise est donc vers haut.</p><hr>
+    <p>Un câble mini-jack écrira re, passera devant le casque qui est le c,<br> puis derrière le vinyle pour ressortir par le trou <br> et écrire rd, la prise est donc la barre du d.</p><hr>
     <img src="img/logotype/casqueRecord.png" alt="logocasque" title="logocasque" class="rounded mx-auto d-block">
     <img src="img/logotype/vinyle.png" alt="logocasque" title="logocasque" class="rounded mx-auto d-block">
     <br>
@@ -29,7 +29,7 @@
 
     <!-- 2 boutons -->
     <div class="text-center">
-        <button type="button" class="btn btn-light btn-lg mx-5">S'inscrire</button>
-        <button type="submit" class="btn btn-light btn-lg mx-5"><a href="./php/artist_ajout.php">Se connecter</a></button>
+        <button type="button" class="btn btn-light btn-lg mx-5"><a href="./php/login.php">S'inscrire</a></button>
+        <button type="button" class="btn btn-light btn-lg mx-5"><a href="./php/login.php">Se connecter</a></button>
     </div> <!-- End of div button -->
 </div> <!-- End of container -->
