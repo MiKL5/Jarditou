@@ -11,6 +11,20 @@
 </head>
 
 <body>
+
+<?php include "db.php"; // connexion à la base de données
+
+$db = ConnexionBase(); // connexion
+
+$disques = $db->prepare("SELECT * as id FROM artist, disc WHERE artist.artist_id = disc.artist_id GROUP BY artist_name");
+$disques->execute();
+
+
+$result = $disques->fetchAll(PDO::FETCH_OBJ);
+print_r($result); // pour voir si les infos remontent
+
+?>
+
   <div class="container">
     <div class="row">
       <div class="col col-11">
