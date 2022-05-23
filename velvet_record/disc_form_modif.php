@@ -11,44 +11,56 @@
 </head>
 
 <body>
-    <div class="container">
+
+    <?php include "db.php";
+
+    $db = ConnexionBase();
+
+    $conn = $db->prepare("SELECT artist_name, artist.artist_id as id FROM artist, disc WHERE artist.artist_id = disc.artist_id GROUP BY artist_name");
+    $conn->execute();
+
+
+    $result = $conn->fetchAll(PDO::FETCH_OBJ);
+    // print_r($result); // pour voir si les infos remontent
+    ?>
+
+    <form class="container" action="">
         <h1>Modifier un vinyle</h1>
-        <form action="">
-            <fieldset>
-                <label>Titre</label>
-                <input type="text" class="form-control" id="NOM" placeholder="Entrer le titre"><br>
-                <!-- <p>Artiste</p> -->
-                <!-- La liste devra interroger une bdd -->
-                <label for="exampleFormControlSelect1">Artiste</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select><br>
-                <label>Année</label>
-                <input type="text" class="form-control" id="Année" placeholder="Entrer l'année'"><br> <!-- si insactif readonly -->
-                <label>Genre</label>
-                <input type="text" class="form-control" id="Genre" placeholder="Entrer le genre"><br>
-                <label>Label</label>
-                <input type="text" class="form-control" id="Label" placeholder="Entrer le label (EMI, Warner, Polygram, Universal ...)"><br>
-                <label>Prix</label>
-                <input type="text" class="form-control" id="Prix" placeholder="Entrer le titre"><br>
-                <label>Image</label><br>
-                <input for="insertPicture" type="file" class="form-control-file" id="insertPicture"><br>
-                <!-- aperçu de l'image -->
-                <img src="..." alt="..." class="rounded float-left img-fluid img-thumbnail"><br><br>
-                <div class="d-flex">
+        <fieldset>
+            <label>Titre</label>
+            <input type="text" class="form-control" id="NOM" placeholder="Entrer le titre"><br>
+            <!-- <p>Artiste</p> -->
+            <!-- La liste devra interroger une bdd -->
+            <label for="exampleFormControlSelect1">Artiste</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <?php
+                foreach ($result as $name) : ?>
+                    <option value="<?= $name->id ?>"><?= $name->artist_name ?></option>
+                <?php
+                endforeach;
+                ?>
+            </select><br>
+            <label>Année</label>
+            <input type="text" class="form-control" id="Année" placeholder="Entrer l'année'"><br> <!-- si insactif readonly -->
+            <label>Genre</label>
+            <input type="text" class="form-control" id="Genre" placeholder="Entrer le genre"><br>
+            <label>Label</label>
+            <input type="text" class="form-control" id="Label" placeholder="Entrer le label (EMI, Warner, Polygram, Universal ...)"><br>
+            <label>Prix</label>
+            <input type="text" class="form-control" id="Prix" placeholder="Entrer le titre"><br>
+            <label>Image</label><br>
+            <input for="insertPicture" type="file" class="form-control-file" id="insertPicture"><br>
+            <!-- aperçu de l'image -->
+            <img src="..." alt="..." class="rounded float-left img-fluid img-thumbnail"><br><br>
+            <div class="d-flex">
                 <!-- les boutons ont une couleurs inhérente leur utilité -->
                 <!-- bouton ajouter -->
                 <button type="submit" class="btn btn-secondary btn-sm mx-1">Modifier</button>
                 <!-- bouton retour -->
                 <button type="return" class="btn btn-warning btn-sm mx-1">Retour</button>
-                </div> <!-- End of div for button -->
-            </fieldset>
-        </form>
-    </div> <!-- End of container -->
+            </div> <!-- End of div for button -->
+        </fieldset>
+    </form><!-- End of container -->
 
 </body>
 

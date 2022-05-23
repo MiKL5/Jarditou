@@ -22,6 +22,7 @@
     $result = $detail->fetchAll(PDO::FETCH_OBJ);
     print_r($result); // pour voir si les infos remontent
 
+    $title = 'title';
     ?>
 
     <div class="container">
