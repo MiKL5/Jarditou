@@ -7,7 +7,6 @@
     $requete->closeCursor();
 
 // bloc html ci-aprés -->
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -17,16 +16,30 @@
     <title>artist_form</title>
 </head>
 <body>
+
+<?php include "db.php";
+    
+    $db = ConnexionBase();
+
+    $myArtist = $db->prepare("SELECT artist.artist_id, artist_name , artist_url FROM artist;");
+    $myArtist->execute();
+
+
+    $result = $myArtist->fetchAll(PDO::FETCH_ASSOC);
+    print_r($result); // pour voir si les infos remontent
+
+?>
+
 <form action ="script_artist_modif.php" method="post">
 
 <input type="hidden" name="id" value="<?= $myArtist->artist_id ?>">
 
-<label for="nom_for_label">Nom de l'artiste :</label><br>
-<input type="text" name="nom" id="nom_for_label" value="<?= $myArtist->artist_name ?>">
+<label for="artist">Nom de l'artiste :</label><br>
+<input type="text" name="name_artist" id="artist" value="<?= $myArtist->artist_name ?>">
 <br><br>
 
-<label for="url_for_label">Adresse site internet :</label><br>
-<input type="text" name="url" id="url_for_label" value="<?= $myArtist->artist_url ?>">
+<label for="url">Adresse site internet :</label><br>
+<input type="text" name="url" id="url" value="<?= $myArtist->artist_url ?>">
 <br><br>
 
 <input type="reset" value="Annuler">

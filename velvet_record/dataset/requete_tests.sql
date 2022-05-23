@@ -18,3 +18,6 @@ SELECT artist_name, artist.artist_id as id FROM artist, disc WHERE artist.artist
 
 - disc_detail
 SELECT disc_title as title, artist_name as artist, disc_year as year, disc_genre as genre, disc_label as label, disc_price as price FROM artist, disc WHERE artist.artist_id = disc.artist_id;
+
+- artist_form
+SELECT artist.artist_id, artist_name , artist_url FROM artist;
