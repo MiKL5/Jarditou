@@ -11,10 +11,13 @@
 
 <?php
 // INSCRIPTION
-foreach()
+foreach() {
+
+}
 
 
 // Créétion de la table
+foreach(login) {
 CREATE TABLE login (
     user_id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     prenom VARCHAR(30) NOT NULL,
@@ -23,10 +26,14 @@ CREATE TABLE login (
     passwd VARCHAR(20) NOT NULL,
     reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
+}
+
 // --------------------------------------------------------------------------
 
 // CONNEXION
+foreach() {
 
+}
 
 ?>
     
