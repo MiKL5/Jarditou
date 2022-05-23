@@ -16,3 +16,5 @@ SELECT artist_name, artist.artist_id as id FROM artist, disc WHERE artist.artist
 - connection des users
 
 
+- disc_detail
+SELECT * FROM artist, disc WHERE artist.artist_id = disc.artist_id;

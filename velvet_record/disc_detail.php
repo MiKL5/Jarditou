@@ -11,6 +11,19 @@
 </head>
 
 <body>
+    <?php include "db.php";
+    
+    $db = ConnexionBase();
+
+    $detail = $db->prepare("SELECT disc_title as title, artist_name as artist, disc_year as year, disc_genre as genre, disc_label as label, disc_price as price FROM artist, disc WHERE artist.artist_id = disc.artist_id;");
+    $detail->execute();
+
+
+    $result = $detail->fetchAll(PDO::FETCH_OBJ);
+    print_r($result); // pour voir si les infos remontent
+
+    ?>
+
     <div class="container">
     <h1>Détails</h1>
         <div class="row">
@@ -20,11 +33,11 @@
                         <div class="col-5">
                             <!-- col left -->
                             <label>Titre</label>
-                            <input type="text" class="form-control" name="title" readonly /><br>
+                            <input type="text" class="form-control" name="$title" readonly /><br>
                             <label>Année</label>
                             <input type="text" class="form-control" name="year" readonly /><br>
                             <label>Label</label>
-                            <input class="input-group-text form-control" name="label" /><br>
+                            <input class="input-group-text form-control" name="label" readonly /><br>
                             <!-- the image will be displayed by crossing the tables of the database -->
                             <label>Image</label><br>
                             <img src="..." alt="..." class="rounded float-left img-fluid img-thumbnail">

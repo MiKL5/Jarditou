@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Ajouter un.e artiste</title>
 </head>
 <body>
@@ -19,11 +19,11 @@
 
 
     $result = $conn->fetchAll(PDO::FETCH_OBJ);
-    print_r($result);
+    // print_r($result); // pour voir si les infos remontent
 
     ?>
 
-    <form action="">
+    <form class="container" action="">
         <h1>Ajouter un vinyle</h1>
             <p>Titre</p>
             <input type="text" class="form-control" id="NOM" placeholder="Entrer le titre"><br>
@@ -38,7 +38,7 @@
                 ?>
             </select><br>
             <p>Année</p>
-            <input type="text" class="form-control" id="Année" placeholder="Entrer l'année'"><br>
+            <input type="text" class="form-control" id="Année" placeholder="Entrer l'année"><br>
             <p>Genre</p>
             <input type="text" class="form-control" id="Genre" placeholder="Entrer le genre"><br>
             <p>Label</p>
@@ -47,7 +47,7 @@
             <input type="text" class="form-control" id="Prix" placeholder="Entrer le titre"><br>
             <p>Image</p>
             <label for="insertPicture"></label>
-            <input type="file" class="form-control-file" id="insertPicture"><br>
+            <input type="file" class="form-control-file" id="insertPicture"><br><br>
             <!-- bouton ajouter -->
             <button type="submit" class="btn btn-success btn-sm">Ajouter</button>
             <!-- bouton retour -->
