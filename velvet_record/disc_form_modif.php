@@ -49,9 +49,9 @@
             <label>Prix</label>
             <input type="text" class="form-control" id="Prix" placeholder="Entrer le titre"><br>
             <label>Image</label><br>
-            <input for="insertPicture" type="file" class="form-control-file" id="insertPicture"><br>
+            <input for="insertPicture" type="file" class="btn btn-light form-control-file" id="insertPicture"><br>
             <!-- aperçu de l'image -->
-            <img src="..." alt="..." class="rounded float-left img-fluid img-thumbnail"><br><br>
+            <img src="file" alt="..." class="rounded float-left img-fluid img-thumbnail"><br><br>
             <div class="d-flex">
                 <!-- les boutons ont une couleurs inhérente leur utilité -->
                 <!-- bouton ajouter -->
