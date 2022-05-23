@@ -1,6 +1,6 @@
 <?php
     // On se connecte à la BDD via notre fichier db.php :
-    require "db.php"; // (Bureau/Docs/pdo/php/db.php)
+    require "db.php"; // (Bureau/Docs/pdo/php/db.php) // require est un iclude qui affiche les erreurs
     $db = connexionBase();
 
     // On récupère l'ID passé en paramètre :

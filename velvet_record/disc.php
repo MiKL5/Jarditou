@@ -1,3 +1,6 @@
+<!-- aller chercher include php en bas du fichier -->
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <!-- Bootstrap -->
@@ -16,12 +19,12 @@
 
 $db = ConnexionBase(); // connexion
 
-$disques = $db->prepare("SELECT * as id FROM artist, disc WHERE artist.artist_id = disc.artist_id GROUP BY artist_name");
+$disques = $db->prepare("SELECT * FROM disc, artist WHERE artist.artist_id = disc.artist_id;;");
 $disques->execute();
 
 
 $result = $disques->fetchAll(PDO::FETCH_OBJ);
-print_r($result); // pour voir si les infos remontent
+// print_r($result); // pour voir si les infos remontent
 
 ?>
 
@@ -29,7 +32,7 @@ print_r($result); // pour voir si les infos remontent
     <div class="row">
       <div class="col col-11">
         <!-- le nombre de disques doit être calculer pas php par COUNT voir si RECURSIVE (car il faut mettre à jour en temps réel) est une bonne option sinon _NORMAL -->
-        <h1 class="font-weight-bold">Liste des disques (nombre de disque)</h1>
+        <h1 class="font-weight-bold">Liste des disques (<?= count($result) ?>)</h1>
       </div> <!-- End of col-11 , liste des disques -->
       <div class="col-1">
         <!-- Un lien vers le formulaire d'ajout doit se trouvé à côté du titre en bout de ligne -->
@@ -41,57 +44,34 @@ print_r($result); // pour voir si les infos remontent
   <!-- deux colonnes contenant deux colonnes -->
   <div class="container">
     <!-- CETTE PORTION DEVRA ÊTRE REPRODUITE PAR PHP À CHAQUE NOUVELLE LIGNE -->
-    <div class="row">
-      <div class=" col-12 col-xl">
-        <!-- lvl1 left -->
-        <div class="row">
-          <!-- for sub-column -->
-          <div class="col-6">
-            <!-- column 1 -->
-            <div class="row">
-              <!-- so that the columns are in their place -->
-              <div class="col-3">
-                <label>Jaquette</label><br>
-              </div> <!-- End of sub-column 1 left -->
-              <!-- column 2 -->
-              <div class="col-1">
-                <!-- Les infos émanent de la bdd et sont sur fond blanc comme le texte -->
-                <label>Titre</label><br>
-                <label>Artiste</label><br>
-                <label>Label</label><br>
-                <label>Année</label><br>
-                <label>Genre</label><br>
-                <br>
-                <a class="btn btn-sm btn-primary" href="artist_detail.php" role="button">Détails</a>
-              </div> <!-- End of sub-column 2 right -->
-            </div> <!-- End of row right -->
-          </div> <!-- End of col-6 right -->
-          <!-- lvl1 right -->
-          <div class="col-6">
-            <!-- column 1 -->
-            <div class="row">
-              <div class="col-3">
-                <label>Jaquette</label><br>
-              </div> <!-- End of sub-column 1 right -->
-              <!-- column 2 -->
-              <div class="col-1">
-                <!-- Les infos émanent de la bdd et sont sur fond blanc comme le texte -->
-                <label>Titre</label>
-                <label>Artiste</label>
-                <label>Label</label>
-                <label>Année</label>
-                <label>Genre</label>
-                <br>
-                <br>
-                <!-- Ajout d'un boutton détail en primary -->
-                <a class="btn btn-sm btn-primary" href="artist_detail.php" role="button">Détails</a>
-              </div> <!-- End of sub-column 2 right -->
-            </div> <!-- End of row left -->
-          </div> <!-- End of col-6 left -->
-        </div> <!-- End of row 2 , without there are not 2 columns -->
-      </div> <!-- End of col-12 col-xl-->
-    </div> <!-- End of row -->
+    
+    <div class="row row-cols-1 row-cols-md-2">
+    <?php foreach ($result as $disc) : ?>
+      <div class="card mb-3 border-0" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/jaquettes/<?= $disc->disc_picture?>" class="img-fluid rounded" alt="...">
+          </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><?=$disc->disc_title?></h5>
+                <p>Label : <?=$disc->disc_label?></p>
+                <p>Année : <?=$disc->disc_year?></p>
+                <p>Genre : <?=$disc->disc_genre?></p>
+                <p>Prix : <?=$disc->disc_price?></p>
+                <p>boutton Détail</p>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+        
+      <?php endforeach; ?>
+
+    </div> 
+    
   </div> <!-- End of container -->
 </body>
 
 </html>
+
