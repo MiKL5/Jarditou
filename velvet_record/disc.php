@@ -13,8 +13,8 @@
 
 <?php include "db.php"; // connexion à la base de données
 $db = ConnexionBase(); // connexion
-// éviter l'injection SQL
-$disques = $db->prepare("SELECT * FROM disc, artist WHERE artist.artist_id = disc.artist_id;")
+// éviter l'injection SQL [ prepare(la requête) puis execute() ]
+$disques = $db->prepare("SELECT * FROM disc, artist WHERE artist.artist_id = disc.artist_id;");
 $disques->execute();
 // Récupèration des lignes restantes d'un ensemble de résultats
 $result = $disques->fetchAll(PDO::FETCH_OBJ);
