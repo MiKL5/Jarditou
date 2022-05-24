@@ -49,8 +49,7 @@
     // Fermeture du script
     exit;
     ?>
-<!-- en PHP, les données envoyées en POST sont stockées dans la superglobale $_POST. Chaque input du formulaire portant un attribut name génère une cellule dans $_POST (qui est un tableau associatif), accessible grâce à la syntaxe suivante : $valeur_input = $_POST["attribut_name"]. -->
-
+<!-- Chaque input du formulaire portant un attribut name génère une cellule dans $_POST (qui est un tableau associatif), accessible grâce à la syntaxe suivante : $valeur_input = $_POST["attribut_name"]. -->
 
 <!-- NB: comme notre colonne artist_id est en AUTO INCREMENT, nous n'avons pas besoin d'associer une valeur pour cette colonne. -->
 

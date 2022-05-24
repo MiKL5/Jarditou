@@ -20,7 +20,11 @@ $result = $conn->fetchAll(PDO::FETCH_OBJ);
 
 // ajout à la table disc [utiliser insert into]
 
-$newdisc = "INSERT INTO disc (disc_title, disc_year, disc_genre, disc_label, disc_price, disc_picture) VALUES ($disc_title=$_GET['disc_title']; $disc_year=$_GET['disc_year']; $disc_genre=$_GET['disc_genre']; $disc_label=$_GET['disc_label']; $disc_price=$_GET['disc_price'];)";
+// $newdisc = "INSERT INTO disc (disc_title, disc_year, disc_genre, disc_label, disc_price, disc_picture) VALUES ($disc_title=$_GET['disc_title']; $disc_year=$_GET['disc_year']; $disc_genre=$_GET['disc_genre']; $disc_label=$_GET['disc_label']; $disc_price=$_GET['disc_price'];)";
+
+// cf script_artist_ajout
+//header("Location: script_artist_ajout.php");
+
 ?>
     <!-- Formulaire d'ajout de vinyle -->
     <form class="container" method="GET" action="">
