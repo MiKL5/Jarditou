@@ -1,12 +1,14 @@
-<!-- On charge l'enregistrement correspondant à l'ID passé en paramètre :
+<?php
+// On charge l'enregistrement correspondant à l'ID passé en paramètre :
     require "db.php";
     $db = connexionBase();
     $requete = $db->prepare("SELECT * FROM artist WHERE artist_id=?");
     $requete->execute(array($_GET["id"]));
-    $myArtist = $requete->fetch(PDO::FETCH_OBJ);
+    $myArtist = $requete->fetch();
     $requete->closeCursor();
     
-// bloc html ci-aprés -->
+// bloc html ci-aprés
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -18,47 +20,47 @@
 </head>
 <body>
 
-<?php include "db.php";
+<?php //include "db.php";
     
-    $db = ConnexionBase();
+    // $db = ConnexionBase();
 
-    $name = '';
-    $url = '';
-    //  Get artist par l'id
+    // $name = '';
+    // $url = '';
+    // //  Get artist par l'id
 
 
-    // Vérification des champs non vide
-    // if ($_POST['submit'])
-    // {
-    //     if($_POST['name'] != '' ){
-    //         $name = $_POST['name'];
-    //     }
-    // }
+    // // Vérification des champs non vide
+    // // if ($_POST['submit'])
+    // // {
+    // //     if($_POST['name'] != '' ){
+    // //         $name = $_POST['name'];
+    // //     }
+    // // }
 
-        $myArtist = $db->prepare("SELECT * FROM artist WHERE artist_id = 1;");
-        // $myArtist->bindValue(':artist_id', $artist_id);
-        // $myArtist->bindValue(':artist_name', $artist_name);
-        // $myArtist->bindValue(':artist_url', $artist_url);
-        $myArtist->execute();
+    //     $myArtist = $db->prepare("SELECT * FROM artist WHERE artist_id = 1;");
+    //     // $myArtist->bindValue(':artist_id', $artist_id);
+    //     // $myArtist->bindValue(':artist_name', $artist_name);
+    //     // $myArtist->bindValue(':artist_url', $artist_url);
+    //     $myArtist->execute();
 
     
 
 
-    $result = $myArtist->fetch(PDO::FETCH_ASSOC);
+    // $result = $myArtist->fetch(PDO::FETCH_ASSOC);
     // print_r($result); // pour voir si les infos remontent
 
 ?>
 
 <form action ="script_artist_modif.php" method="post">
 
-<input type="hidden" name="id" value="<?= $result['artist_id'] ?>">
+<input type="hidden" name="id" value="<?= $myArtist['artist_id'] ?>">
 
 <label for="artist">Nom de l'artiste :</label><br>
-<input type="text" name="name" id="artist" value="<?= $result['artist_name'] ?>">
+<input type="text" name="name" id="artist" value="<?= $myArtist['artist_name'] ?>">
 <br><br>
 
 <label for="url">Adresse site internet :</label><br>
-<input type="text" name="url" id="url" value="<?= $result['artist_url'] ?>">
+<input type="text" name="url" id="url" value="<?= $myArtist['artist_url'] ?>">
 <br><br>
 
 <!-- bouton midifier -->

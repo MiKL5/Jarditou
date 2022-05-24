@@ -3,20 +3,20 @@
     require "db.php"; // (Bureau/Docs/pdo/php/db.php) // require est un iclude qui affiche les erreurs
     $db = connexionBase();
     // On récupère l'ID passé en paramètre :
-    $id = $_GET["artist.artist_id"];
+    $id = $_GET["id"];
 // éviter l'injection SQL [ prepare(la requête) puis execute() ]
     // On crée une requête préparée avec condition de recherche :
-    $requete = $db->prepare("SELECT * FROM artist WHERE artist_id=disc.artist_id");
+    $requete = $db->prepare("SELECT * FROM artist WHERE artist_id=?");
     // on ajoute l'ID du disque passé dans l'URL en paramètre et on exécute :
-    $requete->execute(array($id));
+    $requete->execute(array($id)); //il va le mettre sur le ?
     // Récupèration des lignes restantes d'un ensemble de résultats
     // on récupère le 1e (et seul) résultat :
     $myArtist = $requete->fetch(PDO::FETCH_OBJ);
     // on clôt la requête en BDD
     $requete->closeCursor();
 
-    print_r($requete); // pour voir si les infos remontent
-    print_r($myArtist); // pour voir si les infos remontent
+    // print_r($requete); // pour voir si les infos remontent
+    // print_r($myArtist); // pour voir si les infos remontent
 ?>
 
 <!DOCTYPE html>
@@ -28,11 +28,11 @@
         <title>PDO - Détail</title>
     </head>
     <body>
-        Artiste N°<?php echo $myArtist->artist_id ?>
+        <!-- Artiste N°<?php echo $myArtist->artist_id ?>
         Nom de l'artiste : <?= $myArtist->artist_name ?>
-        Site Internet : <?= $myArtist->artist_url ?>
+        Site Internet : <?= $myArtist->artist_url ?> -->
 
-        <?php var_dump($myArtist)?>
+        <?php // var_dump($myArtist)?>
 <!-- afficher un msg si la bdd est introuvable ->
 
 
@@ -55,7 +55,7 @@
 <!-- https://urlduserveurlocal/artist_form.php?id=8 -->
 
 <!-- injecter les différentes informations dans le champ de formulaire -->
-<form action ="script_artist_modif.php" method="post">
+<!-- <form action ="script_artist_modif.php" method="post">
 
 <input type="hidden" name="id" value="<?= $myArtist->artist_id ?>">
 
@@ -72,46 +72,48 @@
 
 </form>
 
-    </body>
+    </body> -->
 </html>
 
 
 <!-- PEUT-ÊTRE AVANT (EN HAUT) -->
 <?php
     // Récupération des valeurs :
-    $id = (isset($_POST['id']) && $_POST['id'] != "") ? $_POST['id'] : Null;
-    $nom = (isset($_POST['nom']) && $_POST['nom'] != "") ? $_POST['nom'] : Null;
-    $url = (isset($_POST['url']) && $_POST['url'] != "") ? $_POST['url'] : Null;
+    // $id = (isset($_POST['id']) && $_POST['id'] != "") ? $_POST['id'] : Null;
+    // $nom = (isset($_POST['nom']) && $_POST['nom'] != "") ? $_POST['nom'] : Null;
+    // $url = (isset($_POST['url']) && $_POST['url'] != "") ? $_POST['url'] : Null;
 
-    // En cas d'erreur, on renvoie vers le formulaire
-    if ($id == Null) {
-        header("Location: artists.php");
-    }
-    elseif ($nom == Null || $url == Null) {
-        header("Location: artist_form.php?id=".$id);
-        exit;
-    }
+    // // En cas d'erreur, on renvoie vers le formulaire
+    // if ($id == Null) {
+    //     header("Location: artists.php");
+    // }
+    // elseif ($nom == Null || $url == Null) {
+    //     header("Location: artist_form.php?id=".$id);
+    //     exit;
+    // }
 
-    // Si la vérification des données est ok :
-    require "db.php"; 
-    $db = connexionBase();
+    // // Si la vérification des données est ok :
+    // require "db.php"; 
+    // $db = connexionBase();
 
-    try {
-        // Construction de la requête UPDATE sans injection SQL :
-        $requete = $db->prepare("UPDATE artist SET artist_name = :nom, artist_url = :url WHERE artist_id = :id;");
-        $requete->bindValue(":id", $id, PDO::PARAM_INT);
-        $requete->bindValue(":nom", $nom, PDO::PARAM_STR);
-        $requete->bindValue(":url", $url, PDO::PARAM_STR);
+    // try {
+    //     // Construction de la requête UPDATE sans injection SQL :
+    //     $requete = $db->prepare("UPDATE artist SET artist_name = :nom, artist_url = :url WHERE artist_id = :id;");
+    //     $requete->bindValue(":id", $id, PDO::PARAM_INT);
+    //     $requete->bindValue(":nom", $nom, PDO::PARAM_STR);
+    //     $requete->bindValue(":url", $url, PDO::PARAM_STR);
 
-        $requete->execute();
-        $requete->closeCursor();
-    }
+    //     $requete->execute();
+    //     $requete->closeCursor();
+    // }
 
-    catch (Exception $e) {
-        echo "Erreur : " . $requete->errorInfo()[2] . "<br>";
-        die("Fin du script (script_artist_modif.php)");
-    }
+    // catch (Exception $e) {
+    //     echo "Erreur : " . $requete->errorInfo()[2] . "<br>";
+    //     die("Fin du script (script_artist_modif.php)");
+    // }
 
-    // Si OK: redirection vers la page artist_detail.php
-    header("Location: artist_detail.php?id=" . $id);
-    exit;
+    // // Si OK: redirection vers la page artist_detail.php
+    // header("Location: artist_detail.php?id=" . $id);
+    // exit;
+
+    ?>
