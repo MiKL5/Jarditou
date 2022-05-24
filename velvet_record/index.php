@@ -29,7 +29,7 @@
 
     <!-- 2 boutons -->
     <div class="text-center">
-        <button type="button" class="btn btn-light btn-lg mx-5"><a href="./php/login.php">S'inscrire</a></button>
-        <button type="button" class="btn btn-light btn-lg mx-5"><a href="./php/login.php">Se connecter</a></button>
+        <a href="./php/login.php"><button type="button" class="btn btn-light btn-lg mx-5">S'inscrire</button></a>
+        <a href="./php/login.php"><button type="button" class="btn btn-light btn-lg mx-5">Se connecter</button></a>
     </div> <!-- End of div button -->
 </div> <!-- End of container -->

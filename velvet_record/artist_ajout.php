@@ -9,23 +9,26 @@
     <title>Ajouter un.e artiste</title>
 </head>
 <body>
-    <!-- Formulaire d'ajout d'artiste -->
-    <?php include "db.php"; 
+<?php include "db.php"; // connexion à la base de données
+$db = ConnexionBase(); // connexion
+// éviter l'injection SQL [ prepare(la requête) puis execute() ]
+$conn = $db->prepare("SELECT artist_name, artist.artist_id as id FROM artist, disc WHERE artist.artist_id = disc.artist_id GROUP BY artist_name");
+$conn->execute();
+// Récupèration des lignes restantes d'un ensemble de résultats
+$result = $conn->fetchAll(PDO::FETCH_OBJ);
+// print_r($result); // pour voir si les infos remontent
 
-    $db = ConnexionBase();
+// ajout à la table disc [utiliser inset into]
+// table disc
+$newdisc = "INSERT INTO disc (disc_title, disc_year, disc_genre, disc_label, disc_price, disc_picture) VALUES ($disc_title=$_GET['disc_title']; $disc_year=$_GET['disc_year']; $disc_genre=$_GET['disc_genre']; $disc_label=$_GET['disc_label']; $disc_price=$_GET['disc_price'];)";
+// table artist
+$newdisc = "INSERT INTO artist (artist_name) VALUES ($artis_nam=$_GET['artist_name'];)";
 
-    $conn = $db->prepare("SELECT artist_name, artist.artist_id as id FROM artist, disc WHERE artist.artist_id = disc.artist_id GROUP BY artist_name");
-    $conn->execute();
-
-
-    $result = $conn->fetchAll(PDO::FETCH_OBJ);
-    // print_r($result); // pour voir si les infos remontent
-
-    ?>
-
+?>
+    <!-- Formulaire d'ajout de vinyle -->
     <form class="container" action="">
-        <h1>Ajouter un vinyle</h1>
-            <p>Titre</p>
+        <h2>Ajouter un vinyle</h2>
+            <label>Titre</label>
             <input type="text" class="form-control" id="NOM" placeholder="Entrer le titre"><br>
             <!-- devra aller chercher les éléments dans la bdd -->
             <label for="exampleFormControlSelect1">Artiste</label>
@@ -37,21 +40,21 @@
                 endforeach;
                 ?>
             </select><br>
-            <p>Année</p>
+            <label>Année</label>
             <input type="text" class="form-control" id="Année" placeholder="Entrer l'année"><br>
-            <p>Genre</p>
+            <label>Genre</label>
             <input type="text" class="form-control" id="Genre" placeholder="Entrer le genre"><br>
-            <p>Label</p>
+            <label>Label</label>
             <input type="text" class="form-control" id="Label" placeholder="Entrer le label (EMI, Warner, Polygram, Universal ...)"><br>
-            <p>Prix</p>
+            <label>Prix</label>
             <input type="text" class="form-control" id="Prix" placeholder="Entrer le titre"><br>
-            <p>Image</p>
+            <label>Image</label><br>
             <label for="insertPicture"></label>
             <input type="file" class="form-control-file" id="insertPicture"><br><br>
             <!-- bouton ajouter -->
             <button type="submit" class="btn btn-success btn-sm">Ajouter</button>
             <!-- bouton retour -->
-            <button type="return" class="btn btn-warning btn-sm">Retour</button>
+            <a href="disc.php"><button type="button" class="btn btn-warning btn-sm">Retour</button></a>
     </form>
 </body>
 </html>

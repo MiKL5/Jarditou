@@ -16,7 +16,7 @@ $db = ConnexionBase(); // connexion
 // éviter l'injection SQL [ prepare(la requête) puis execute() ]
 $disques = $db->prepare("SELECT * FROM disc, artist WHERE artist.artist_id = disc.artist_id;");
 $disques->execute();
-// Récupèration des lignes restantes d'un ensemble de résultats
+
 $result = $disques->fetchAll(PDO::FETCH_OBJ);
 // print_r($result); // pour voir si les infos remontent
 ?>
@@ -53,7 +53,7 @@ $result = $disques->fetchAll(PDO::FETCH_OBJ);
                 <label>Année : <?=$disc->disc_year?></label><br>
                 <label>Genre : <?=$disc->disc_genre?></label><br>
                 <label>Prix : <?=$disc->disc_price?></label><br>
-                <a href="artist_ajout.php"><button type="button" class="btn btn-sm btn-primary">Détails</button></a> <!--- vers artist_detail -->
+                <a href="artist_detail.php"><button type="button" class="btn btn-sm btn-primary">Détails</button></a> <!--- vers artist_detail -->
               </div> <!-- End of div card -->
             </div> <!-- End of div pour les infos des disques -->
         </div> <!-- End of row gutter (goutière) -->
