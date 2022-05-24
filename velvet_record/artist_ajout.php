@@ -18,15 +18,12 @@ $conn->execute();
 $result = $conn->fetchAll(PDO::FETCH_OBJ);
 // print_r($result); // pour voir si les infos remontent
 
-// ajout à la table disc [utiliser inset into]
-// table disc
-$newdisc = "INSERT INTO disc (disc_title, disc_year, disc_genre, disc_label, disc_price, disc_picture) VALUES ($disc_title=$_GET['disc_title']; $disc_year=$_GET['disc_year']; $disc_genre=$_GET['disc_genre']; $disc_label=$_GET['disc_label']; $disc_price=$_GET['disc_price'];)";
-// table artist
-$newdisc = "INSERT INTO artist (artist_name) VALUES ($artis_nam=$_GET['artist_name'];)";
+// ajout à la table disc [utiliser insert into]
 
+$newdisc = "INSERT INTO disc (disc_title, disc_year, disc_genre, disc_label, disc_price, disc_picture) VALUES ($disc_title=$_GET['disc_title']; $disc_year=$_GET['disc_year']; $disc_genre=$_GET['disc_genre']; $disc_label=$_GET['disc_label']; $disc_price=$_GET['disc_price'];)";
 ?>
     <!-- Formulaire d'ajout de vinyle -->
-    <form class="container" action="">
+    <form class="container" method="GET" action="">
         <h2>Ajouter un vinyle</h2>
             <label>Titre</label>
             <input type="text" class="form-control" id="NOM" placeholder="Entrer le titre"><br>

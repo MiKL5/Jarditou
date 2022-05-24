@@ -2,20 +2,21 @@
     // On se connecte à la BDD via notre fichier db.php :
     require "db.php"; // (Bureau/Docs/pdo/php/db.php) // require est un iclude qui affiche les erreurs
     $db = connexionBase();
-
     // On récupère l'ID passé en paramètre :
-    $id = $_GET["id"];
-
+    $id = $_GET["artist.artist_id"];
+// éviter l'injection SQL [ prepare(la requête) puis execute() ]
     // On crée une requête préparée avec condition de recherche :
-    $requete = $db->prepare("SELECT * FROM artist WHERE artist_id=?");
+    $requete = $db->prepare("SELECT * FROM artist WHERE artist_id=disc.artist_id");
     // on ajoute l'ID du disque passé dans l'URL en paramètre et on exécute :
     $requete->execute(array($id));
-
+    // Récupèration des lignes restantes d'un ensemble de résultats
     // on récupère le 1e (et seul) résultat :
     $myArtist = $requete->fetch(PDO::FETCH_OBJ);
-
     // on clôt la requête en BDD
     $requete->closeCursor();
+
+    print_r($requete); // pour voir si les infos remontent
+    print_r($myArtist); // pour voir si les infos remontent
 ?>
 
 <!DOCTYPE html>
