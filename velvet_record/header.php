@@ -24,8 +24,8 @@
                     </ul>
                     </div> <!-- End of div col-8-->
                     <div col-4>
-                    <!-- <input class="form-control" type="search" placeholder="Que cherchez vous ?" aria-label="Que cherchez vous ?">
-                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Rechercher</button> -->
+                    <input class="form-control" type="search" placeholder="Que cherchez vous ?" aria-label="Que cherchez vous ?">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Rechercher</button>
 </div>
                 </div>
                 <!-- fin de la liste -->
