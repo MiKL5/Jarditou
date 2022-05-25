@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/styles_disc.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <title>Liste des disques</title>
 </head>
@@ -21,7 +22,7 @@ $result = $disques->fetchAll(PDO::FETCH_OBJ);
 // print_r($result); // pour voir si les infos remontent
 ?>
 
-  <div class="container">
+  <div class="container conteneur">
     <div class="row">
       <div class="col col-8">
         <!-- le nombre de disques doit être calculer pas php par COUNT voir si RECURSIVE (car il faut mettre à jour en temps réel) est une bonne option sinon _NORMAL -->
@@ -30,7 +31,7 @@ $result = $disques->fetchAll(PDO::FETCH_OBJ);
       </div> <!-- End of col-11 , liste des disques -->
       <div class="col-1">
         <!-- Un lien vers le formulaire d'ajout doit se trouvé à côté du titre en bout de ligne -->
-        <a class="btn btn-sm btn-success" href="script_artist_ajout.php" role="button">Ajouter</a> <!--- vers le formulaire d'ajout (artist_ajout) -->
+        <a class="btnadd btn btn-sm btn-success mx-1" href="script_artist_ajout.php" role="button">Ajouter</a> <!--- vers le formulaire d'ajout (artist_ajout) -->
       </div> <!-- End of col-1 , button 'ajouter' -->
     </div> <!-- End of row -->
   </div> <!-- End of container -->
@@ -42,17 +43,17 @@ $result = $disques->fetchAll(PDO::FETCH_OBJ);
     <?php foreach ($result as $disc) : ?>
       <div class="card mb-3 border-0" style="max-width: 540px;">
         <div class="row g-0">
-          <div class="col-md-4">
+          <div class="col-md-5">
             <img src="img/jaquettes/<?= $disc->disc_picture?>" class="img-fluid rounded" alt="...">
           </div> <!-- End of col for "jaquette" -->
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title"><?=$disc->disc_title?></h5>
-                <label><?=$disc->artist_name?></label><br>
-                <label>Label : <?=$disc->disc_label?></label><br>
-                <label>Année : <?=$disc->disc_year?></label><br>
-                <label>Genre : <?=$disc->disc_genre?></label><br>
-                <label>Prix : <?=$disc->disc_price?></label><br>
+            <div class="col-md-7">
+              <div class="card border-0">
+                <h5 class="title"><?=$disc->disc_title?></h5>
+                <p><?=$disc->artist_name?></p>
+                <p>Label : <?=$disc->disc_label?></p>
+                <p>Année : <?=$disc->disc_year?></p>
+                <p>Genre : <?=$disc->disc_genre?></p>
+                <p>Prix : <?=$disc->disc_price?></p>
                 <a href="artist_detail.php"><button type="button" class="btn btn-sm btn-primary">Détails</button></a> <!--- vers artist_detail -->
               </div> <!-- End of div card -->
             </div> <!-- End of div pour les infos des disques -->
