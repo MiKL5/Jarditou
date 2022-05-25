@@ -60,8 +60,9 @@
                 <p>Année : <?= $disc->disc_year ?></p>
                 <p>Genre : <?= $disc->disc_genre ?></p>
                 <p>Prix : <?= $disc->disc_price ?></p>
-                <a href="artist_detail.php"><button type="button" class="btn btn-sm btn-primary">Détails</button></a>
-                <!--- vers artist_detail -->
+                <a href="disc_detail.php?id=<?= $disc->artist_id ?>"><button 
+                type="button" class="btn btn-sm btn-primary">Détails</button></a>
+                <!--- vers disc detail et pas artist_detail -->
               </div> <!-- End of div card -->
             </div> <!-- End of div pour les infos des disques -->
           </div> <!-- End of row gutter (goutière) -->

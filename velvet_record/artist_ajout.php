@@ -9,6 +9,11 @@
     <title>Ajouter un.e artiste</title>
 </head>
 <body>
+<?php
+    include "header.php";
+    ?>
+
+
 <?php include "db.php"; // connexion à la base de données
 $db = ConnexionBase(); // connexion
 // éviter l'injection SQL [ prepare(la requête) puis execute() ]
@@ -45,9 +50,10 @@ $result = $conn->fetchAll(PDO::FETCH_OBJ);
             <label for="insertPicture"></label>
             <input type="file" class="form-control-file" id="insertPicture"><br><br>
             <!-- bouton ajouter -->
-            <button type="submit" class="btn btn-success btn-sm">Ajouter</button>
+            <button type="submit" class="btn btn-success btn-sm mb-3">Ajouter</button>
             <!-- bouton retour -->
-            <a href="disc.php"><button type="button" class="btn btn-warning btn-sm">Retour</button></a>
+            <a href="disc.php"><button type="button" class="btn btn-warning btn-sm mb-3">Retour</button></a>
     </form>
-</body>
-</html>
+    <?php
+    include "footer.php";
+    ?>

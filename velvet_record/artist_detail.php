@@ -46,7 +46,7 @@ $requete->closeCursor();
 
     <body>
         <div class="container bg-light rounded mt-3 mb-3">
-            <!-- Artiste N° <?php echo $myArtist->artist_id ?><br> -->
+            Artiste N° <?php echo $myArtist->artist_id ?><br>
             <div class="input-group"><!-- Site de l'artiste -->
             <span class="input-group-text mt-3" id="basic-addon3">Artiste n°</span>
             <input type="text" class="form-control mt-3" id="basic-url" placeholder="<?= $myArtist->artist_id ?>"  aria-describedby="basic-addon3" >
@@ -71,5 +71,3 @@ $requete->closeCursor();
     <?php
     include "footer.php";
     ?>
-
-        
