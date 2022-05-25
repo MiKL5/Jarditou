@@ -1,8 +1,3 @@
-/* Le titre doit être éloigner du bord */
-.conteneur {
-    padding: 5px 0px 0px 0px;
-    /* margin-top: 100px; */
-}
 /* le boutton 'ajouter' doit-être plus espacé */
 .btnadd {
     margin-top: 8px;
