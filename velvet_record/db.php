@@ -1,4 +1,4 @@
-
+<!-- Database function library -->
 <?php
     function ConnexionBase() {
         //  try catch essai attrape

@@ -2,13 +2,15 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet"> <!-- Feuille de style générale -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Artiste</title>
 </head>
 <body>
 <?php
+include "header.php";
 
 // on importe le contenu du fichier "db.php"
 include "db.php";
@@ -23,10 +25,8 @@ $tableau = $requete->fetchAll(PDO::FETCH_OBJ);
 $requete->closeCursor();
 
 ?>
-// Début de page : traitement PHP + entête HTML
-// ...
-
-<h1>Liste des disques (nb)</h1><!-- ajout d'un bouton 'Ajouter' en bout de ligne -->
+<div class="container">
+<h1>Liste des artistes (<?= COUNT($tableau) ?>)</h1><!-- ajout d'un bouton 'Ajouter' en bout de ligne -->
 
     <table>
         <tr>
@@ -41,15 +41,18 @@ $requete->closeCursor();
             <td><?= $artist->artist_id ?></td>
             <td><?= $artist->artist_name ?></td>
             <!-- Ici, on ajoute un lien par artiste pour accéder à sa fiche : -->
-            <td><a href="artist_detail.php?id=<?= $artist->artist_id ?>">Détail</a></td>
+            <td><a href="artist_detail.php?id=<?= $artist->artist_id ?>"><button type="button" class="btn btn-outline-primary btn-sm mx-5">Détails</button></a></td>
         </tr>
         <?php endforeach; ?>
 
     </table>
 
-// Fin de page : fermetures de blocs HTML
+    <a class="btn btn-sm btn-success mt-3 mb-5" href="script_artist_ajout.php" role="button">Ajouter</a>
 
+    </div>
 </body>
 
 </body>
-</html>
+<?php
+include "footer.php";
+?>

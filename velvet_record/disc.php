@@ -11,17 +11,21 @@
   <title>Liste des disques</title>
 </head>
 
+<?php
+  include "header.php";
+?>
+
 <body>
 
-<?php include "db.php"; // connexion à la base de données
-$db = ConnexionBase(); // connexion
-// éviter l'injection SQL [ prepare(la requête) puis execute() ]
-$disques = $db->prepare("SELECT * FROM disc, artist WHERE artist.artist_id = disc.artist_id;");
-$disques->execute();
+  <?php include "db.php"; // connexion à la base de données
+  $db = ConnexionBase(); // connexion
+  // éviter l'injection SQL [ prepare(la requête) puis execute() ]
+  $disques = $db->prepare("SELECT * FROM disc, artist WHERE artist.artist_id = disc.artist_id;");
+  $disques->execute();
 
-$result = $disques->fetchAll(PDO::FETCH_OBJ);
-// print_r($result); // pour voir si les infos remontent
-?>
+  $result = $disques->fetchAll(PDO::FETCH_OBJ);
+  // print_r($result); // pour voir si les infos remontent
+  ?>
 
   <div class="container conteneur">
     <div class="row">
@@ -32,7 +36,8 @@ $result = $disques->fetchAll(PDO::FETCH_OBJ);
       </div> <!-- End of col-11 , liste des disques -->
       <div class="col-1">
         <!-- Un lien vers le formulaire d'ajout doit se trouvé à côté du titre en bout de ligne -->
-        <a class="btnadd btn btn-sm btn-success mx-1" href="script_artist_ajout.php" role="button">Ajouter</a> <!--- vers le formulaire d'ajout (artist_ajout) -->
+        <a class="btnadd btn btn-sm btn-success mx-1" href="script_artist_ajout.php" role="button">Ajouter</a>
+        <!--- vers le formulaire d'ajout (artist_ajout) -->
       </div> <!-- End of col-1 , button 'ajouter' -->
     </div> <!-- End of row -->
   </div> <!-- End of container -->
@@ -41,29 +46,31 @@ $result = $disques->fetchAll(PDO::FETCH_OBJ);
   <div class="container">
     <!-- CETTE PORTION DEVRA ÊTRE REPRODUITE PAR PHP À CHAQUE NOUVELLE LIGNE -->
     <div class="row row-cols-1 row-cols-md-2">
-    <?php foreach ($result as $disc) : ?>
-      <div class="card mb-3 border-0" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-5">
-            <img src="img/jaquettes/<?= $disc->disc_picture?>" class="img-fluid rounded" alt="...">
-          </div> <!-- End of col for "jaquette" -->
+      <?php foreach ($result as $disc) : ?>
+        <div class="card mb-3 border-0" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <img src="img/jaquettes/<?= $disc->disc_picture ?>" class="img-fluid rounded" alt="...">
+            </div> <!-- End of col for "jaquette" -->
             <div class="col-md-7">
               <div class="card border-0">
-                <h5 class="title"><?=$disc->disc_title?></h5>
-                <p><?=$disc->artist_name?></p>
-                <p>Label : <?=$disc->disc_label?></p>
-                <p>Année : <?=$disc->disc_year?></p>
-                <p>Genre : <?=$disc->disc_genre?></p>
-                <p>Prix : <?=$disc->disc_price?></p>
-                <a href="artist_detail.php"><button type="button" class="btn btn-sm btn-primary">Détails</button></a> <!--- vers artist_detail -->
+                <h5 class="title"><?= $disc->disc_title ?></h5>
+                <p><?= $disc->artist_name ?></p>
+                <p>Label : <?= $disc->disc_label ?></p>
+                <p>Année : <?= $disc->disc_year ?></p>
+                <p>Genre : <?= $disc->disc_genre ?></p>
+                <p>Prix : <?= $disc->disc_price ?></p>
+                <a href="artist_detail.php"><button type="button" class="btn btn-sm btn-primary">Détails</button></a>
+                <!--- vers artist_detail -->
               </div> <!-- End of div card -->
             </div> <!-- End of div pour les infos des disques -->
-        </div> <!-- End of row gutter (goutière) -->
-      </div> <!-- End of card -->
+          </div> <!-- End of row gutter (goutière) -->
+        </div> <!-- End of card -->
       <?php endforeach; ?>
     </div> <!-- End of row row -->
   </div> <!-- End of container -->
 </body>
 
-</html>
-
+<?php
+include "footer.php";
+?>

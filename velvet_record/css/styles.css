@@ -2,3 +2,15 @@
 .conteneur {
     padding: 5px 0px 0px 0px;
 }
+
+.navbar {
+    /* display: inline-block; */
+    /* display: grid; */
+    /* display: none; */
+}
+
+.ftr {
+    /* display: none; */
+    position:static;
+    border-bottom: 0rem;
+}
