@@ -1,6 +1,6 @@
 # **JARDITOU**
 
-> Version CSS   
+> Version CSS
 
 Utiliser le CSS pour rendre le site attrayant et adaptable à tous les écrans. Pour ce fare créer un fichier nommmer style.css.
 
