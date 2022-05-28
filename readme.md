@@ -15,7 +15,7 @@ Jarditou
 ```
 Velvet Record
 ```
-5. [Velvet Record](https://github.com/MiKL5/Jarditou/tree/master/velvet_record) ·····> PHP et SQL (in progress ...)
+5. [Velvet Record](https://github.com/MiKL5/Jarditou/tree/master/velvet_record) ·····> PHP and SQL (in progress ...)
 
 ___
 
