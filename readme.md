@@ -4,9 +4,12 @@
 ---
 
 > ## Projets
+
 ```
 Jarditou
 ```
+![Logo Jarditou](jarditouCSS\src\img\jarditou_logo.jpg "Logo Jarditou")
+
 1. [JarditouHTML](https://github.com/MiKL5/Jarditou/tree/master/jarditouHTML) · · · ·> HTML only
 2. [JarditouCSS](https://github.com/MiKL5/Jarditou/tree/master/jarditouCSS)  · · · · · ·> with CSS
 3. [JarditouJS](https://github.com/MiKL5/Jarditou/tree/master/jarditouJS) · · · · · · · ·> includes Javascript
@@ -15,6 +18,8 @@ Jarditou
 ```
 Velvet Record
 ```
+![Le mot record sera écrit par un câble mini jack le casque et le c le vinyle le o](velvet_record\img\logotype\casqueRecord.png "Velvet Record") ![Le mot record sera écrit par un câble mini jack le casque et le c le vinyle le o](velvet_record\img\logotype\Vinyle.png)
+
 5. [Velvet Record](https://github.com/MiKL5/Jarditou/tree/master/velvet_record) · · · · ·> PHP and SQL (in progress ...)
 
 ___
