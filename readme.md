@@ -19,7 +19,6 @@ Jarditou
 Velvet Record
 ```
 ![Le mot record sera écrit par un câble mini jack le casque et le c le vinyle le o](velvet_record/img/logotype/casqueRecord.png "Velvet Record") ![Le mot record sera écrit par un câble mini jack le casque et le c le vinyle le o](velvet_record/img/logotype/vinyle.png)
-https://github.com/MiKL5/Jarditou/blob/master/velvet_record/img/logotype/Vinyle.png
 
 5. [Velvet Record](https://github.com/MiKL5/Jarditou/tree/master/velvet_record) · · · · ·> PHP and SQL (in progress ...)
 
