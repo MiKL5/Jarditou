@@ -7,15 +7,15 @@
 ```
 Jarditou
 ```
-1. [JarditouHTML](https://github.com/MiKL5/Jarditou/tree/master/jarditouHTML) ······> HTML only
-2. [JarditouCSS](https://github.com/MiKL5/Jarditou/tree/master/jarditouCSS) ·······> with CSS
-3. [JarditouJS](https://github.com/MiKL5/Jarditou/tree/master/jarditouJS) ········> includes Javascript
-4. [JarditouBootstrap](https://github.com/MiKL5/Jarditou/tree/master/jarditouBootstrap) ·> avec le framework Bootstrap
+1. [JarditouHTML](https://github.com/MiKL5/Jarditou/tree/master/jarditouHTML) · · · · > HTML only
+2. [JarditouCSS](https://github.com/MiKL5/Jarditou/tree/master/jarditouCSS)  · · · · · · > with CSS
+3. [JarditouJS](https://github.com/MiKL5/Jarditou/tree/master/jarditouJS) · · · · · · · · > includes Javascript
+4. [JarditouBootstrap](https://github.com/MiKL5/Jarditou/tree/master/jarditouBootstrap) · > avec le framework Bootstrap
 
 ```
 Velvet Record
 ```
-5. [Velvet Record](https://github.com/MiKL5/Jarditou/tree/master/velvet_record) ·····> PHP and SQL (in progress ...)
+5. [Velvet Record](https://github.com/MiKL5/Jarditou/tree/master/velvet_record) · · · · · > PHP and SQL (in progress ...)
 
 ___
 
@@ -37,8 +37,8 @@ ___
 
 >> #### ***CE QUI SUIT EST EN PHP***
 
-* [Exercice 8](https://github.com/MiKL5/Jarditou/tree/master/exercice_08_nbImpairs) ··> Nombres impairs
-* [Exercice 9](https://github.com/MiKL5/Jarditou/tree/master/exercice_09_sentence) ··> Sentence
+* [Exercice 8](https://github.com/MiKL5/Jarditou/tree/master/exercice_08_nbImpairs) · ·> Nombres impairs
+* [Exercice 9](https://github.com/MiKL5/Jarditou/tree/master/exercice_09_sentence) · ·> Sentence
 * [Exercice 10](https://github.com/MiKL5/Jarditou/tree/master/exercice_10_tableMultiplication) ·> Table de multiplication
 * [Exercice 11](https://github.com/MiKL5/Jarditou/tree/master/exercice_11_moisDeLanneeNonBisectile) ·> Mois de l'année non bissextile
 * [Exercice 12](https://github.com/MiKL5/Jarditou/tree/master/exercice_12_Capitales) ·> Capitales
