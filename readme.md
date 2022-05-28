@@ -7,15 +7,15 @@
 ```
 Jarditou
 ```
-1. [JarditouHTML](https://github.com/MiKL5/Jarditou/tree/master/jarditouHTML) · · · · > HTML only
-2. [JarditouCSS](https://github.com/MiKL5/Jarditou/tree/master/jarditouCSS)  · · · · · · > with CSS
-3. [JarditouJS](https://github.com/MiKL5/Jarditou/tree/master/jarditouJS) · · · · · · · · > includes Javascript
-4. [JarditouBootstrap](https://github.com/MiKL5/Jarditou/tree/master/jarditouBootstrap) · > avec le framework Bootstrap
+1. [JarditouHTML](https://github.com/MiKL5/Jarditou/tree/master/jarditouHTML) · · · ·> HTML only
+2. [JarditouCSS](https://github.com/MiKL5/Jarditou/tree/master/jarditouCSS)  · · · · · ·> with CSS
+3. [JarditouJS](https://github.com/MiKL5/Jarditou/tree/master/jarditouJS) · · · · · · · ·> includes Javascript
+4. [JarditouBootstrap](https://github.com/MiKL5/Jarditou/tree/master/jarditouBootstrap) ·> avec le framework Bootstrap
 
 ```
 Velvet Record
 ```
-5. [Velvet Record](https://github.com/MiKL5/Jarditou/tree/master/velvet_record) · · · · · > PHP and SQL (in progress ...)
+5. [Velvet Record](https://github.com/MiKL5/Jarditou/tree/master/velvet_record) · · · · ·> PHP and SQL (in progress ...)
 
 ___
 
