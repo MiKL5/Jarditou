@@ -1,5 +1,7 @@
 # **JARDITOU**
 
+> Avec javascript
+
 Dans un fichier nommé "scritp.js".
 
     Le formulaire de contact ne doit être soumis que lorsque les mentions obligatoires sont correctement renseignées.
