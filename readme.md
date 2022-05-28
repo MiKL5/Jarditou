@@ -10,7 +10,7 @@ Jarditou
 1. [JarditouHTML](https://github.com/MiKL5/Jarditou/tree/master/jarditouHTML) ······> HTML only
 2. [JarditouCSS](https://github.com/MiKL5/Jarditou/tree/master/jarditouCSS) ·······> with CSS
 3. [JarditouJS](https://github.com/MiKL5/Jarditou/tree/master/jarditouJS) ········> includes Javascript
-4. [JarditouBootstrap](https://github.com/MiKL5/Jarditou/tree/master/jarditouBs) ·> avec le framework Bootstrap
+4. [JarditouBootstrap](https://github.com/MiKL5/Jarditou/tree/master/jarditouBootstrap) ·> avec le framework Bootstrap
 
 ```
 Velvet Record
