@@ -20,21 +20,21 @@ ___
 > ## Exercices
 
 >> #### ***CE QUI SUIT EST EN JAVASCRIPT***
-```
+
 * Exercice 1 ·> Calcul du nombre de jeunes, de moyens et d'ainés
 * Exercice 2 ·> Table de multiplication
 * Exercice 3 ·> Recherche de prénom
 * Exercice 4 ·> Total d'une commande
-```
+
 >> #### ***CE QUI SUIT EST EN SQL***
-```
+
 * Exercice 5 ·> Hotel
 * Exercice 6 ·> Papyrus
 * Exercice 7 ·> Northwind
-```
+
 
 >> #### ***CE QUI SUIT EST EN PHP***
-```
+
 * Exercice 8 ··> Nombres impairs
 * Exercice 9 ··> Sentence
 * Exercice 10 ·> Table de multiplication
@@ -45,4 +45,3 @@ ___
 * Exercice 16 ·> Vérifier la complexité d'un mot de passe
 * Exercice 17 ·> Dates et heures
 * Exercice 18 ·> Lecture d'un fichier
-```
