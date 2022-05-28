@@ -39,6 +39,6 @@ La responsivité
 
 ___
 
->>> NOTA :
-    CSS : cascading style sheet (feuille de style en cascade).
+>>> NOTA :  
+CSS : cascading style sheet (feuille de style en cascade).
 ___
