@@ -5,9 +5,7 @@
 
 > ## Projets
 
-```
-Jarditou
-```
+
 ![Logo Jarditou](jarditouCSS/src/img/jarditou_logo.jpg "Logo Jarditou")
 
 1. [JarditouHTML](https://github.com/MiKL5/Jarditou/tree/master/jarditouHTML) · · · ·> HTML only
