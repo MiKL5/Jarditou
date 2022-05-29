@@ -16,9 +16,13 @@
     $db = ConnexionBase();
 
     $detail = $db->prepare("SELECT disc_title as title, artist_name as artist, disc_year as year, disc_genre as genre, disc_label as label, disc_price as price FROM artist, disc WHERE artist.artist_id = disc.artist_id;");
-    $detail->bindValue(':title', $title);
-    $detail->bindValue(':id', $id);
-    $detail->bindValue(':id', $id);
+    $detail->bindValue(':title', $disc_name);
+    $detail->bindValue(':id', $disc_id); // pk
+    $detail->bindValue(':year', $disc_year);
+    $detail->bindValue(':label', $disc_label);
+    $detail->bindValue(':artist', $artist_name);
+    $detail->bindValue(':genre', $disc_genre);
+    $detail->bindValue(':price', $disc_price);
     $detail->execute();
 
 
