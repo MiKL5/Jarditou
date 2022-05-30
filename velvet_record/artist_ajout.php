@@ -11,7 +11,7 @@
 <body>
 <?php
     include "header.php";
-    ?>
+?>
 
 
 <?php include "db.php"; // connexion à la base de données
@@ -50,7 +50,7 @@ $result = $conn->fetchAll(PDO::FETCH_OBJ);
             <label for="insertPicture"></label>
             <input type="file" class="form-control-file" id="insertPicture"><br><br>
             <!-- bouton ajouter -->
-            <button type="submit" class="btn btn-success btn-sm mb-3">Ajouter</button>
+            <a href="script_artist_ajout.php"<button type="submit" class="btn btn-success btn-sm mb-3">Ajouter</button></a>
             <!-- bouton retour -->
             <a href="disc.php"><button type="button" class="btn btn-warning btn-sm mb-3">Retour</button></a>
     </form>

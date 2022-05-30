@@ -9,7 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Modifier un vinyle</title>
 </head>
-
+<?php
+    include 'header.php';
+?>
 <body>
 
     <?php include "db.php";
@@ -28,7 +30,7 @@
         <h1>Modifier un vinyle</h1>
         <fieldset>
             <label>Titre</label>
-            <input type="text" class="form-control" id="NOM" placeholder="Entrer le titre"><br>
+            <input type="text" class="form-control" id="NOM"><br>
             <!-- <p>Artiste</p> -->
             <!-- La liste devra interroger une bdd -->
             <label for="exampleFormControlSelect1">Artiste</label>
@@ -41,27 +43,27 @@
                 ?>
             </select><br>
             <label>Année</label>
-            <input type="text" class="form-control" id="Année" placeholder="Entrer l'année'"><br> <!-- si insactif readonly -->
+            <input type="text" class="form-control" id="Année"><br> <!-- si insactif readonly -->
             <label>Genre</label>
-            <input type="text" class="form-control" id="Genre" placeholder="Entrer le genre"><br>
+            <input type="text" class="form-control" id="Genre"><br>
             <label>Label</label>
-            <input type="text" class="form-control" id="Label" placeholder="Entrer le label (EMI, Warner, Polygram, Universal ...)"><br>
+            <input type="text" class="form-control" id="Label" placeholder="EMI, Warner, Polygram, Universal ..."><br>
             <label>Prix</label>
-            <input type="text" class="form-control" id="Prix" placeholder="Entrer le titre"><br>
+            <input type="text" class="form-control" id="Prix"><br>
             <label>Image</label><br>
             <input for="insertPicture" type="file" class="btn btn-light form-control-file" id="insertPicture"><br>
-            <!-- aperçu de l'image -->
-            <img src="file" alt="..." class="rounded float-left img-fluid img-thumbnail"><br><br>
             <div class="d-flex">
                 <!-- les boutons ont une couleurs inhérente leur utilité -->
                 <!-- bouton ajouter -->
-                <button type="submit" class="btn btn-secondary btn-sm mx-1">Modifier</button>
+                <button type="submit" class="btn btn-secondary btn-sm mx-1 mt-3 mb-3">Modifier</button>
                 <!-- bouton retour -->
-                <button type="return" class="btn btn-warning btn-sm mx-1">Retour</button>
+                <a href="disc.php>"<button type="button" class="btn btn-warning btn-sm mx-1 mt-3 mb-3">Retour</button></a>
             </div> <!-- End of div for button -->
         </fieldset>
     </form><!-- End of container -->
 
 </body>
 
-</html>
+<?php
+    include 'footer.php';
+?>

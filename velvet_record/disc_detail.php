@@ -72,7 +72,7 @@
                             <!-- bouton midifier -->
                             <button type="submit" class=" btn btn-secondary btn-sm mx-1 mb-4">Modifier</button>
                             <!-- bouton retour -->
-                            <button type="reset" class="btn btn-danger btn-sm mx-1 mb-4">Supprimer</button>
+                            <a href="script"<button type="button" class="btn btn-danger btn-sm mx-1 mb-4">Supprimer</button>
                             <!-- bouton ajouter -->
                             <a href="disc.php"><button type="button" class=" btn btn-warning btn-sm mx-1 mb-4">Retour</button></a>
                         </div> <!-- Fin de la div pour les bouttons -->

@@ -29,20 +29,25 @@
             <label>Genre</label>
             <input type=" text" class="form-control" name="genre" placeholder="Saisir le genre musical">
             <label>Label</label>
-            <input type=" text" class="form-control" name="label" placeholder="Saisir le label">
+            <input type=" text" class="form-control" name="label" placeholder="EMI, Warner, Polygram, Universal ...)">
             <label>Prix</label>
             <input type=" text" class="form-control" name="price" placeholder="Saisir le prix">
             <label>Jaquette</label><br>
+            <label for="insertPicture"></label>
+            <input type="file" class="form-control-file" id="insertPicture"><br><br>
             <!--<input type=" titre" class="form-control" name="jaquette"">-->
-            <img src=" inm/jaquette <?= $disc->disc_picture ?>" alt="..." class="rounded float-left img-fluid img-thumbnail"><br><br>
+            <!-- <img src=" inm/jaquette <?= $disc->disc_picture ?>" alt="..." class="rounded float-left img-fluid img-thumbnail"><br><br> -->
             <div class="d-flex">
                 <!-- les boutons ont une couleurs inhérente leur utilité -->
                 <!-- bouton midifier -->
-                <button type="submit" class="btn btn-success btn-sm mx-1 mb-3">Ajouter</button>
+                <a href="#"<button type="submit" class="btn btn-success btn-sm mx-1 mb-3">Ajouter</button></a>
                 <!-- bouton ajouter -->
-                <button type="return" class="btn btn-warning btn-sm mx-1 mb-3">Retour</button>
+                <a href="disc.php"<button type="button" class="btn btn-warning btn-sm mx-1 mb-3">Retour</button></a>
             </div> <!-- End of div for button -->
         </form>
+
+
+
     </div> <!-- End of container -->
 
     <!-- Correspondance avec la BBD -->
