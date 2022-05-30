@@ -10,14 +10,14 @@
 
     <nav class="col-12 navbar navbar-expand-lg bg-danger rounded justify-content">
         <div class="row">
-            <a class="navbar-brand" href="index.php"><img src="img/logotype/vinyle.png" alt="logo de Velvet record" width="30" height="24" class="">Velvet Record</a>          
+            <a class="navbar-brand text-light" href="index.php"><img src="img/logotype/vinyle.png" alt="logo de Velvet record" width="30" height="24" class="">Velvet Record</a>          
             <button class="col-1 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-3"> <!-- liste -->
-                    <li class=""> <!-- accueil -->
+<!--
+            <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-3"> <!-- liste --><!--
+                    <li class=""> <!-- accueil --><!--
                         <a class="nav-link" href="index.php" title="Retour à l'accueil" alt="Retour à l'accueil">Accueil</a>
                     </li>
                 </ul>
@@ -25,9 +25,9 @@
                 <div class="">
                 <input class="form-control" type="search" placeholder="Que cherchez vous ?">
                 <button class="btn btn-outline-light" type="submit">Rechercher</button>
-            </div>
-        </div> <!-- 
-            </div> <!-- End of list -->
+            </div>-->
+        </div>
+        </div> <!-- End of list -->
             
     </nav>
 

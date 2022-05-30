@@ -10,6 +10,10 @@
     <title>À propos des disques</title>
 </head>
 
+<?php
+    include 'header.php';
+?>
+
 <body>
     <?php include 'db.php';
     $db = ConnexionBase(); // connexion à la base
@@ -23,7 +27,7 @@
                                 disc_label as label, 
                                 disc_price as price, 
                                 disc_picture as picture 
-                            FROM artist JOIN disc ON artist.artist_id = disc.artist_id 
+                            FROM artist, disc 
                             WHERE disc.disc_id = :id");
 
     $detail->bindValue(':id', $id, PDO::PARAM_INT);
@@ -50,7 +54,7 @@
                             <input class="form-control" value="<?= $result['label'] ?>" /><br>
                             <!-- the image will be displayed by crossing the tables of the database -->
                             <label>Image</label><br>
-                            <img src="img/jaquettes/<?= $result['picture'] ?>" alt="..." class="rounded float-left img-fluid mb-5">
+                            <img src="img/jaquettes/<?= $result['picture'] ?>" alt="..." class="rounded float-left img-fluid mb-3">
                         </div> <!-- End of col left -->
                         <div class="col-1"></div>
                         <div class="col-5"> <!-- col right -->
@@ -66,18 +70,20 @@
                         <!-- Trois boutons ayant une couleurs inhérente à leur utilité -->
                         <div class="d-flex">
                             <!-- bouton midifier -->
-                            <button type="submit" class=" btn btn-secondary btn-sm mx-1">Modifier</button>
+                            <button type="submit" class=" btn btn-secondary btn-sm mx-1 mb-4">Modifier</button>
                             <!-- bouton retour -->
-                            <button type="reset" class="btn btn-danger btn-sm mx-1">Supprimer</button>
+                            <button type="reset" class="btn btn-danger btn-sm mx-1 mb-4">Supprimer</button>
                             <!-- bouton ajouter -->
-                            <a href="disc.php"><button type="submit" class=" btn btn-warning btn-sm mx-1">Retour</button></a>
+                            <a href="disc.php"><button type="" class=" btn btn-warning btn-sm mx-1 mb-4">Retour</button></a>
                         </div> <!-- Fin de la div pour les bouttons -->
                 </form>
             </div> <!-- End of col-12 -->
-        </div>
-    </div> <!-- End of container -->
-
+        </div> <!-- End of row -->
+    </div> 
+    </div><!-- End of container -->
 
 </body>
 
-</html>
+<?php
+    include "footer.php";
+?>
