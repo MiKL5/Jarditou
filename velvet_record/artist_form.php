@@ -32,7 +32,7 @@
     // print_r($result); // pour voir si les infos remontent
 
 ?>
-// bloc html ci-aprés
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>

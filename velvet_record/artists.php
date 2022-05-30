@@ -41,7 +41,7 @@ $requete->closeCursor();
             <td><?= $artist->artist_id ?></td>
             <td><?= $artist->artist_name ?></td>
             <!-- Ici, on ajoute un lien par artiste pour accéder à sa fiche : -->
-            <td><a href="artist_detail.php?id=<?= $artist->artist_id ?>"><button type="button" class="btn btn-outline-primary btn-sm mx-5">Détails</button></a></td>
+            <td><a href="artist_detail.php?id=<?= $artist->artist_id ?>"><button type="button" class="btn btn-inline-danger btn-sm mx-5">Détails</button></a></td>
         </tr>
         <?php endforeach; ?>
 

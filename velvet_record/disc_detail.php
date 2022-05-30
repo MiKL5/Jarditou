@@ -11,25 +11,28 @@
 </head>
 
 <body>
-    <?php include "db.php";
-    
-    $db = ConnexionBase();
+    <?php include 'db.php';
+    $db = ConnexionBase(); // connexion à la base
+    $id = $_GET['id'];
 
-    $detail = $db->prepare("SELECT disc_title as title, artist_name as artist, disc_year as year, disc_genre as genre, disc_label as label, disc_price as price FROM artist, disc WHERE artist.artist_id = disc.artist_id;");
-    $detail->bindValue(':title', $disc_name);
-    $detail->bindValue(':id', $disc_id); // pk
-    $detail->bindValue(':year', $disc_year);
-    $detail->bindValue(':label', $disc_label);
-    $detail->bindValue(':artist', $artist_name);
-    $detail->bindValue(':genre', $disc_genre);
-    $detail->bindValue(':price', $disc_price);
+    $detail = $db->prepare("SELECT 
+                                disc_title as title, 
+                                artist_name as artist, 
+                                disc_year as year, 
+                                disc_genre as genre, 
+                                disc_label as label, 
+                                disc_price as price, 
+                                disc_picture as picture 
+                            FROM artist JOIN disc ON artist.artist_id = disc.artist_id 
+                            WHERE disc.disc_id = :id");
+
+    $detail->bindValue(':id', $id, PDO::PARAM_INT);
     $detail->execute();
 
+    $result = $detail->fetch(PDO::FETCH_ASSOC);
+    // print_r($result); // pour voir si les infos remontent
+    // var_dump($result);
 
-    $result = $detail->fetchAll(PDO::FETCH_OBJ);
-    print_r($result); // pour voir si les infos remontent
-
-    $title = 'title';
     ?>
 
     <div class="container">
@@ -38,38 +41,36 @@
             <div class=col-12>
                 <form action="">
                     <div class="row">
-                        <div class="col-5">
-                            <!-- col left -->
+                        <div class="col-5"> <!-- col left -->
                             <label>Titre</label>
-                            <input type="text" class="form-control" name="$title" readonly /><br>
+                            <input type="text" class="form-control" value="<?= $result['title'] ?>" /><br>
                             <label>Année</label>
-                            <input type="text" class="form-control" name="year" readonly /><br>
+                            <input type="text" class="form-control" value="<?= $result['year'] ?>" /><br>
                             <label>Label</label>
-                            <input class="input-group-text form-control" name="label" readonly /><br>
+                            <input class="form-control" value="<?= $result['label'] ?>" /><br>
                             <!-- the image will be displayed by crossing the tables of the database -->
                             <label>Image</label><br>
-                            <img src="..." alt="..." class="rounded float-left img-fluid img-thumbnail">
+                            <img src="img/jaquettes/<?= $result['picture'] ?>" alt="..." class="rounded float-left img-fluid mb-5">
                         </div> <!-- End of col left -->
                         <div class="col-1"></div>
-                        <div class="col-5">
-                            <!-- col left -->
+                        <div class="col-5"> <!-- col right -->
                             <!-- right -->
                             <label>Artiste</label>
-                            <input type="text" class="form-control" name="artist" readonly /><br>
+                            <input type="text" class="form-control" value="<?= $result['artist'] ?>" /><br>
                             <label>Genre</label>
-                            <input type="text" class="form-control" name="genre" readonly /><br>
+                            <input type="text" class="form-control" value="<?= $result['genre'] ?>" /><br>
                             <label>Prix</label>
-                            <input type="text" class="form-control" name="price" readonly />
+                            <input type="text" class="form-control" value="<?= $result['price'] ?>" />
                             <br><br><br><br><br>
                         </div> <!-- End of col right -->
-                        <!-- Trois boutons ayant une couleurs inhérente leur utilité -->
+                        <!-- Trois boutons ayant une couleurs inhérente à leur utilité -->
                         <div class="d-flex">
                             <!-- bouton midifier -->
                             <button type="submit" class=" btn btn-secondary btn-sm mx-1">Modifier</button>
                             <!-- bouton retour -->
                             <button type="reset" class="btn btn-danger btn-sm mx-1">Supprimer</button>
                             <!-- bouton ajouter -->
-                            <button type="return" class=" btn btn-warning btn-sm mx-1">Retour</button>
+                            <a href="disc.php"><button type="submit" class=" btn btn-warning btn-sm mx-1">Retour</button></a>
                         </div> <!-- Fin de la div pour les bouttons -->
                 </form>
             </div> <!-- End of col-12 -->
