@@ -1,33 +1,24 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ajout</title>
-</head>
-<body>
+<?php
+// Get artist par l'id
+    include 'db.php';
+    
+    // Vérification des champs non vide
+    foreach ($_POST as $key => $value) {
+        $$key = $value;
+    }
+ 
+    $db = ConnexionBase();
+    $myArtist = $db->prepare("UPDATE artist SET artist_name = :name, artist_url = :url WHERE artist_id = :id;");
+    $myArtist->bindValue(':name', $name, PDO::PARAM_STR);
+    $myArtist->bindValue(':url', $url, PDO::PARAM_STR);
+    $myArtist->bindValue(':id', $id, PDO::PARAM_INT);
+    $myArtist->execute();
+    $myArtist->closeCursor();
 
-    <h1>Artiste n°<?= $resultat->artist_id; ?></h1>
+    header('Location: artists.php');
+    
 
-    <a href="artists.php">Retour à la liste des artistes</a>
-
-    <br>
-    <br>
-
-    <form action ="script_artist_modif.php" method="post">
-
-        <label for="nom_for_label">Nom de l'artiste :</label><br>
-        <input type="text" name="nom" id="nom_for_label">
-        <br><br>
-
-        <label for="url_for_label">Adresse site internet :</label><br>
-        <input type="text" name="url" id="url_for_label">
-        <br><br>
-
-        <input type="reset" value="Annuler">
-        <input type="submit" value="Modifier">
-
-    </form>
-</body>
-</html>
+    // $result = $myArtist->fetchAll(PDO::FETCH_ASSOC);
+    // $result = $myArtist->fetch(PDO::FETCH_ASSOC);
+    // print_r($result); // pour voir si les infos remontent
+?>

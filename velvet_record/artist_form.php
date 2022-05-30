@@ -7,30 +7,10 @@
     $myArtist = $requete->fetch();
     $requete->closeCursor();
 
+    $id = $_GET['id'];
     $name = '';
     $url = '';
-    // //  Get artist par l'id
-    
-    // Vérification des champs non vide
-    if ($_POST['submit'])
-    {
-        if($_POST['name'] != '' ){
-            $name = $_POST['name'];
-        }
-    }
- 
-    $myArtist = $db->prepare("SELECT * FROM artist WHERE artist_id = 1;");
-    $myArtist->bindValue(':artist_id', $artist_id);
-    $myArtist->bindValue(':artist_name', $artist_name);
-    $myArtist->bindValue(':artist_url', $artist_url);
-    $myArtist->execute();
-
-    
-
-
-    // $result = $myArtist->fetch(PDO::FETCH_ASSOC);
-    // print_r($result); // pour voir si les infos remontent
-
+   
 ?>
 
 <!DOCTYPE html>
@@ -57,7 +37,7 @@
     <!-- bouton midifier -->
     <button type="submit" class=" btn btn-secondary btn-sm mx-1">Modifier</button> <!-- le serveiller pour envoyer que les modifications -->
     <!-- bouton retour -->
-    <button type="reset" class="btn btn-danger btn-sm mx-1">Supprimer</button>
+    <a href="script_artist_delete.php?id=<?= $id ?>"><button type="button" class="btn btn-danger btn-sm mx-1">Supprimer</button></a>
 
 </form>
 </body>

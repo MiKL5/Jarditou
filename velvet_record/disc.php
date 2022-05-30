@@ -12,7 +12,7 @@
 </head>
 
 <?php
-    include "header.php";
+    include 'header.php';
 ?>
 
 <body>
@@ -33,7 +33,7 @@
         <h1 class="font-weight-bold">Liste des disques (<?= count($result) ?>)</h1> <!-- j'ai choisi de compter le nombre de résultats mais j'aurai pu faire une requête SQL qui est plus souvent utiliser -->
         </div> <!-- End of col-11 , liste des disques -->
         <div class="col-1"> <!-- Un lien vers le formulaire d'ajout doit se trouvé à côté du titre en bout de ligne -->
-        <a class="btnadd btn btn-sm btn-success mx-1" href="script_artist_ajout.php" role="button">Ajouter</a> <!--- vers le formulaire d'ajout (artist_ajout) -->
+        <a class="btnadd btn btn-sm btn-success mx-1" href="disc_new.php" role="button">Ajouter</a> <!--- vers le formulaire d'ajout (artist_ajout) -->
       </div> <!-- End of col-1 , button 'ajouter' -->
     </div> <!-- End of row -->
   </div> <!-- End of container -->
@@ -67,5 +67,5 @@
 </body>
 
 <?php
-    include "footer.php";
+    include 'footer.php';
 ?>
