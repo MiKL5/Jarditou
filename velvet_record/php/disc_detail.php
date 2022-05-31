@@ -54,7 +54,7 @@
                             <input class="form-control" value="<?= $result['label'] ?>" /><br>
                             <!-- the image will be displayed by crossing the tables of the database -->
                             <label>Image</label><br>
-                            <img src="img/jaquettes/<?= $result['picture'] ?>" alt="..." class="rounded float-left img-fluid mb-3">
+                            <img src="../img/jaquettes/<?= $result['picture'] ?>" alt="..." class="rounded float-left img-fluid mb-3">
                         </div> <!-- End of col left -->
                         <div class="col-1"></div>
                         <div class="col-5"> <!-- col right -->
@@ -70,7 +70,7 @@
                         <!-- Trois boutons ayant une couleurs inhérente à leur utilité -->
                         <div class="d-flex">
                             <!-- bouton midifier -->
-                            <a href="disc_form.php?disc_id=1"<button type="button" class=" btn btn-secondary btn-sm mx-1 mb-4">Modifier</button>
+                            <a href="disc_form.php?=disc_id"<button type="button" class=" btn btn-secondary btn-sm mx-1 mb-4">Modifier</button>
                             <!-- bouton retour -->
                             <a href="script"<button type="button" class="btn btn-danger btn-sm mx-1 mb-4">Supprimer</button>
                             <!-- bouton ajouter -->

@@ -73,5 +73,6 @@
     $_SESSION["login"] = "$_SESSION"; // Au départ "webmaster"
     
     echo $_SESSION["login"];
+    echo"- session ID : ".session_id(); // retourne une chaîne vide si y a pas de sessuib
 
 ?>

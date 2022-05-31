@@ -7,17 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/styles.css" rel="stylesheet"> <!-- Feuille de style générale -->
   <link href="css/styles_disc.css" rel="stylesheet"> <!-- Feuille de  syle excludive -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <title>Liste des disques</title>
 </head>
 
 <?php
-include 'header.php';
+include 'php/header.php';
 ?>
 
 <body>
 
-  <?php include "db.php"; // connexion à la base de données
+  <?php include "php/db.php"; // connexion à la base de données
   $db = ConnexionBase(); // connexion
   // éviter l'injection SQL [ prepare(la requête) puis execute() ]
   $disques = $db->prepare("SELECT * FROM disc, artist WHERE artist.artist_id = disc.artist_id ;"); // ORDER BY disc_title
@@ -59,7 +59,7 @@ include 'header.php';
                 <p>Année : <?= $disc->disc_year ?></p>
                 <p>Genre : <?= $disc->disc_genre ?></p>
                 <p>Prix : <?= $disc->disc_price ?></p>
-                <a href="disc_detail.php?id=<?= $disc->disc_id ?>"> <button type="button" class="btn btn-sm btn-primary">Détails</button></a>
+                <a href="php/disc_detail.php?id=<?= $disc->disc_id ?>"> <button type="button" class="btn btn-sm btn-primary">Détails</button></a>
                 <!--- vers disc_detail et pas artist_detail une fois disc_detail corrigé -->
               </div> <!-- End of div card -->
             </div> <!-- End of div pour les infos des disques -->
@@ -71,5 +71,5 @@ include 'header.php';
 </body>
 
 <?php
-include 'footer.php';
+include 'php/footer.php';
 ?>
