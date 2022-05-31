@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Bienvenue à Velvet record !</title>
 </head>
 
@@ -29,7 +28,7 @@
 
     <!-- 2 boutons -->
     <div class="text-center">
-        <a href="./php/login.php"><button type="button" class="btn btn-outline-dark btn-lg mx-5">S'inscrire</button></a>
-        <a href="./php/login.php"><button type="button" class="btn btn-outline-dark btn-lg mx-5">Se connecter</button></a>
+        <a href="./php/authentification.php"><button type="button" class="btn btn-outline-dark btn-lg mx-5">S'inscrire</button></a>
+        <a href="./php/authentification.php"><button type="button" class="btn btn-outline-dark btn-lg mx-5">Se connecter</button></a>
     </div> <!-- End of div button -->
 </div> <!-- End of container -->

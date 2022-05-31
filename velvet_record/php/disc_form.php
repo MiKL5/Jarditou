@@ -27,10 +27,10 @@
     ?>
 
     <form class="container" action="">
-        <h1>Modifier un vinyle</h1>
+        <h2>Modifier un vinyle</h2>
         <fieldset>
             <label>Titre</label>
-            <input type="text" class="form-control" id="NOM"><br>
+            <input type="text" class="form-control" id="NOM">
             <!-- <p>Artiste</p> -->
             <!-- La liste devra interroger une bdd -->
             <label for="exampleFormControlSelect1">Artiste</label>
@@ -41,17 +41,17 @@
                 <?php
                 endforeach;
                 ?>
-            </select><br>
+            </select>
             <label>Année</label>
-            <input type="text" class="form-control" id="Année"><br> <!-- si insactif readonly -->
+            <input type="text" class="form-control" id="Année"> <!-- si insactif readonly -->
             <label>Genre</label>
-            <input type="text" class="form-control" id="Genre"><br>
+            <input type="text" class="form-control" id="Genre">
             <label>Label</label>
-            <input type="text" class="form-control" id="Label" placeholder="EMI, Warner, Polygram, Universal ..."><br>
+            <input type="text" class="form-control" id="Label" placeholder="EMI, Warner, Polygram, Universal ...">
             <label>Prix</label>
-            <input type="text" class="form-control" id="Prix"><br>
-            <label>Image</label><br>
-            <input for="insertPicture" type="file" class="btn btn-light form-control-file" id="insertPicture"><br>
+            <input type="text" class="form-control" id="Prix">
+            <label>Jaquette</label><br>
+            <input for="insertPicture" type="file" class="btn btn-light form-control-file" id="insertPicture">
             <div class="d-flex">
                 <!-- les boutons ont une couleurs inhérente leur utilité -->
                 <!-- bouton ajouter -->
