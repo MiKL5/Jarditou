@@ -15,12 +15,4 @@
         }
     }
 
-    // function req(){
-    //     $conn = ConnexionBase();
-    //     $conn->prepare("SELECT artist_name, artist.artist_id FROM artist JOIN disc ON artist.artist_id = disc.artist_id GROUP BY artist_name");
-    //     $conn->execute();
-
-    //     $result = $conn->fetch(PDO::FETCH_ASSOC);
-    //     return $result;
-    // }
 ?>

@@ -42,7 +42,7 @@
                 <!-- bouton midifier -->
                 <a href="script_disc_ajout.php"<button type="submit" class="btn btn-success btn-sm mx-1 mb-3">Ajouter</button></a>
                 <!-- bouton ajouter -->
-                <a href="disc.php"<button type="button" class="btn btn-warning btn-sm mx-1 mb-3">Retour</button></a>
+                <a href="../disc.php"<button type="button" class="btn btn-warning btn-sm mx-1 mb-3">Retour</button></a>
             </div> <!-- End of div for button -->
         </form>
 

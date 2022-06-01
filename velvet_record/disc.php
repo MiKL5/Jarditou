@@ -35,7 +35,7 @@ include 'php/header.php';
       </div> <!-- End of col-11 , liste des disques -->
       <div class="col-1">
         <!-- Un lien vers le formulaire d'ajout doit se trouvé à côté du titre en bout de ligne -->
-        <a class="btnadd btn btn-sm btn-success mx-1" href="disc_new.php" role="button">Ajouter</a>
+        <a class="btnadd btn btn-sm btn-success mx-1" href="php/disc_new.php" role="button">Ajouter</a>
         <!--- vers le formulaire d'ajout (artist_ajout) -->
       </div> <!-- End of col-1 , button 'ajouter' -->
     </div> <!-- End of row -->
@@ -59,7 +59,7 @@ include 'php/header.php';
                 <p>Année : <?= $disc->disc_year ?></p>
                 <p>Genre : <?= $disc->disc_genre ?></p>
                 <p>Prix : <?= $disc->disc_price ?></p>
-                <a href="php/disc_detail.php?id=<?= $disc->disc_id ?>"> <button type="button" class="btn btn-sm btn-primary">Détails</button></a>
+                <a href="php/disc_detail.php?id=<?= $disc->disc_id ?>"> <button type="button" class="btn btn-sm btn-outline-primary mt-4 mx-2">Détails</button></a>
                 <!--- vers disc_detail et pas artist_detail une fois disc_detail corrigé -->
               </div> <!-- End of div card -->
             </div> <!-- End of div pour les infos des disques -->

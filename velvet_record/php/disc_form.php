@@ -57,7 +57,7 @@
                 <!-- bouton ajouter -->
                 <button type="submit" class="btn btn-secondary btn-sm mx-1 mt-3 mb-3">Modifier</button>
                 <!-- bouton retour -->
-                <a href="disc.php>"<button type="button" class="btn btn-warning btn-sm mx-1 mt-3 mb-3">Retour</button></a>
+                <a href="../disc.php"><button type="button" class="btn btn-warning btn-sm mx-1 mt-3 mb-3">Retour</button></a>
             </div> <!-- End of div for button -->
         </fieldset>
     </form><!-- End of container -->

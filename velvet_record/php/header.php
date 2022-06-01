@@ -11,7 +11,7 @@
 
     <nav class="col-12 navbar navbar-expand-lg bg-dark rounded justify-content">
         <div class="row">
-            <a class="navbar-brand text-light" href="index.php"><img src="../img/logotype/vinyle.png" alt="logo de Velvet record" width="30" height="24" class="">Velvet Record</a>          
+            <a class="navbar-brand text-light mx-2 " href="../index.php"><img src="img/logo/vinyle.png" alt="logo de Velvet record" width="auto" height="35" class="">Velvet Record</a>          
             <!-- <button class="col-1 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
             </button>
@@ -27,6 +27,7 @@
                 <input class="form-control" type="search" placeholder="Recherche">
                 <button class="btn btn-outline-light" type="submit">Rechercher</button>
             </div> -->
+            <!-- Afficher peut-être le nom de l'utilisateur -->
         </div>
         </div> <!-- End of list -->
             
