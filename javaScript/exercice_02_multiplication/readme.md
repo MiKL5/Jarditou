@@ -8,7 +8,7 @@
 * Par exemple, TableMultiplication(7) doit afficher :
     * *1 x 7 = 7*
     * *2 x 7 = 14*
-    * *3 x 7 = 21 ...*
+    * *3 x 7 = 21 et cetera,*
 
 
 
