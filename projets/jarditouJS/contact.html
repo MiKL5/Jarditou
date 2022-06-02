@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+        <link href="assets/css/styles.css" rel="stylesheet">
+        <title>Jarditou</title>
+
+    </head>
+
+    <body>
+        <header>
+            <script src="assets/javascript/script.js"></script>
+            <div class="titlebar">
+                <!-- le logo -->
+                <img class="logo"
+                src="src/img/jarditou_logo.jpg" 
+                alt="Logo de Jarditou"
+                title="Jarditou">
+                <!-- le slogan se place à côté du logo-->
+                <p class="slogan">Tout le jardin</p> 
+            </div>
+            <!-- Ceci sert de menu -->
+            <nav>                       
+                <div class="menu">                       
+                    <a href="index.html#Accueil" title="Accueil" alt="Accueil">Accueil</a>
+                    <a href="tableau.html#Tableau" title="Tableau" alt="Tableau">Tableau</a>
+                    <a href="contact.html#Contact" title="Formulaire" alt="Formulaire">Formulaire</a>
+                </div>
+                <!-- promotional ad : lames de terasses -->
+                <img class="ad"
+                src="src/img/promotion.jpg" 
+                alt="Promotion sur les lames de terrasse"
+                title="Promotion sur les lames de terasse">
+            </nav>
+        </header>
+
+        <h1 id="contact" title="Contact">Contact</h1>
+        <hr>
+            <p>* Ces zones sont obligatoires</p>
+            <form action="http://bienvu.net/script.php " method="post">
+                <fieldset>
+                    <legend>Coordonées</legend>
+                    <label for="nom">Nom* : </label><input type="text" name="nom" id="nom" placeholder="LOPER" required><br>
+                    <span id="errorNom"></span><br>
+
+                    <label for="prenom">Prénom* : </label><input type="text" name="prenom" id="prenom" placeholder="Dave" required><br>
+                    <span id="errorPrenom"></span><br>
+
+                    <label for="sexe">Sexe* : </label><input type="radio" name="sexe" value="féminin" id="sexe1" required>Féminin<input type="radio" name="sexe" value="masculin" id="sexe2" required checked>Masculin<br>
+                    <span id="errorSexe"></span><br>
+
+                    <label for="date">Date de naissance* : </label><input type="date" name="ddn" id="date" required><br>
+                    <span id = "errorDdn"></span><br>
+
+                    <label for="cp">Code postal* : </label><input type="text" name="cp" id="cp" placeholder="80000" required><br>
+                    <span id = "errorCp"></span><br>
+
+                    <label for="adresse">Adresse : </label><input type="text" name="adresse" id="adresse" placeholder="numéro et rue"><br>
+
+                    <label for="ville">Ville : </label><input type="text" name="ville" placeholder="Commune" id="ville"><br>
+
+                    <label for="email">Email* : </label><input type="email" id="email" placeholder="daveloper@afpa.fr" name="email" required><span id = "errorEmail"></span><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>
+                    Votre demande
+                    </legend>
+                    <label for="sujet">Sujet* : </label>
+                    <select name="sujet" id="sujet">
+                        <option disabled selected value="" >Veuillez séléctionner un sujet</option>
+                        <option value="c">Mes commandes</option> 
+                        <option value="q">Question sur produit</option> 
+                        <option value="r">Réclamation</option> 
+                        <option value="a">Autre</option>
+                    </select><br>
+                    <span id = "errorSujet"></span><br><br>
+                <label for="votre question">Votre question* : </label>
+                <textarea name="Commmentaire" rows="3" cols="17" id="commentaire" placeholder="Quelle est votre question ?" required></textarea><br><span id="errorCommentaire"></span>
+                </fieldset>
+                <input type="checkbox" name="accepter" value="Accepter"  required title="Vous avez oublier votre question">* J'accepte le traitement informatique de ce formulaire</id><br>
+                <br>
+                <input type="submit" name="Envoyer" value="Envoyer" id="submit">
+                <input type="reset" name="Annuler" value="Annuler" id="reset">
+            </form>
+        <hr>
+        <footer>
+            <!-- Ceci sert de menu -->
+            <nav class="menu">
+                <a href="" title="Mentions légales" alt="Mentions légales">Mentions légales</a>
+                <a href="" title="Horaires" alt="Horaires">Horaires</a>
+                <a href="" title="Plan du site" alt="Plan du site">Plan du site</a>
+            </nav>
+
+        </footer>
+        <script src="assets/javascript/script.js"></script>
+    </body>
+</html>
