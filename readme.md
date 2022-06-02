@@ -26,16 +26,16 @@ ___
 
 >> #### ***CE QUI SUIT EST EN JAVASCRIPT***
 
-* [Exercice  1](javaScript/exercice_01_tranchesDages) ·> Calcul du nombre de jeunes, de moyens et d'ainés
-* [Exercice  2](javaScript/exercice_02_multiplication) ·> Table de multiplication
-* [Exercice  3](javaScript/exercice_03_rchDePrenom) ·> Recherche de prénom
-* [Exercice  4](javaScript/exercice_04_totalDuneCommande) ·> Total d'une commande
+* [Exercice  1](javaScript/exercice_01_tranchesDages) ··> Calcul du nombre de jeunes, de moyens et d'ainés
+* [Exercice  2](javaScript/exercice_02_multiplication) ··> Table de multiplication
+* [Exercice  3](javaScript/exercice_03_rchDePrenom) ··> Recherche de prénom
+* [Exercice  4](javaScript/exercice_04_totalDuneCommande) ··> Total d'une commande
 
 >> #### ***CE QUI SUIT EST EN SQL***
 
-* [Exercice  5](SQL/exercice_05_casHotel) ·> Hotel
-* [Exercice  6](SQL/exercice_06_casPapyrus) ·> Papyrus
-* [Exercice  7](SQL/exercice_07_Northwind) ·> Northwind
+* [Exercice  5](SQL/exercice_05_casHotel) ··> Hotel
+* [Exercice  6](SQL/exercice_06_casPapyrus) ··> Papyrus
+* [Exercice  7](SQL/exercice_07_Northwind) ··> Northwind
 
 
 >> #### ***CE QUI SUIT EST EN PHP***
