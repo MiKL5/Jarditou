@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+        <link href="assets/css/styles.css" rel="stylesheet">
+        <title>Jarditou</title>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="titlebar">
+                <!-- le logo -->
+                <img class="logo"
+                src="src/img/jarditou_logo.jpg" 
+                alt="Logo de Jarditou"
+                title="Jarditou">
+                <!-- le slogan se place à côté du logo-->
+                <p class="slogan">Tout le jardin</p> 
+            </div>
+            <!-- Ceci sert de menu -->
+            <nav>                       
+                <div class="menu">                       
+                    <a href="index.html#Accueil" title="Accueil" alt="Accueil">Accueil</a>
+                    <a href="tableau.html#Tableau" title="Tableau" alt="Tableau">Tableau</a>
+                    <a href="contact.html#Contact" title="Contact" alt="Contact">Contact</a>
+                </div>
+                <!-- promotional ad : lames de terasses -->
+                <img class="ad"
+                src="src/img/promotion.jpg" 
+                alt="Promotion sur les lames de terrasse"
+                title="Promotion sur les lames de terasse">
+            </nav>
+        </header>
+
+        <h1 id="contact" title="Contact">Contact</h1>
+        <hr>
+        <section id="container">
+            <p>* Ces zones sont obligatoires</p>
+            <form action="http://bienvu.net/script.php " method="post">
+                <fieldset>
+                    <legend>Coordonées</legend>
+                    <label for="nom" id="nom">Nom* : </label><input type="text" name="nom" id="nom" placeholder="LOPER"><br>
+                    <label for="prenom" id=""prenom>Prénom* : </label><input type="text" name="prenom" placeholder="Dave"><br>
+                    <label for="sexe" id="sexe">Sexe* : </label><input type="radio" name="sexe" value="féminin">Féminin<input type="radio" name="sexe" value="masculin">Masculin<br>
+                    <label for="date">Date de naissance* : </label><input type="date" name="'ddn" id="date"><br>
+                    <label for="code postal">Code postal* : </label><input type="text" name="codepostal" maxlength="5" pattern="[0-9]" placeholder="80000"><br>
+                    <label for="adresse">Adresse : </label><input type="text" name="adresse" id="adresse" placeholder="numéro et rue"><br>
+                    <label for="ville">Ville : <input type="text" name="ville" placeholder="Commune" id="ville"></label><br>
+                    <label for="email">Email* : </label><input type="text" placeholder="daveloper@afpa.fr" name="email" id="Email">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>
+                    Votre demande
+                    </legend>
+                    <label required title="sujet" for="sujet" id="sujet">Sujet* : </label> <select>
+                        <option disabled selected class="sujet">Veuillez séléctionner un sujet</option>
+                        <option>Mes commandes</option> 
+                        <option>Question sur produit</option> 
+                        <option>Réclamation</option> 
+                        <option>Autre</option>
+                    </select><br>
+                <label for="votre question">Votre question* : </label>
+                <textarea name="Commmentaire" rows="3" cols="17" placeholder="Quelle est votre question ?"></textarea> <br>
+                </fieldset>
+                <br>
+                <input type="checkbox" name="accepter" value="Accepter">* J'accepte le traitement informatique de ce formulaire<br>
+                <br>
+                <input type="submit" name="Envoyer" value="Envoyer">
+                <input type="reset" name="Annuler" value="Annuler">
+            </form>
+        </section>
+        <hr>
+        <footer>
+            <!-- Ceci sert de menu -->
+            <nav class="menu">
+                <a href="" title="Mentions légales" alt="Mentions légales">Mentions légales</a>
+                <a href="" title="Horaires" alt="Horaires">Horaires</a>
+                <a href="" title="Plan du site" alt="Plan du site">Plan du site</a>
+            </nav>
+
+        </footer>
+    </body>
+</html>
