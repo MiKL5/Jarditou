@@ -1,11 +1,12 @@
-﻿
-# **Développement web**
+﻿# **Formation Développement web**
 
 ---
 
 > ## Projets
 
-
+```
+                                        Projets Jarditou (4)
+```
 ![Logo Jarditou](projets/jarditouCSS/src/img/jarditou_logo.jpg "Logo Jarditou")
 
 1. [JarditouHTML](projets/jarditouHTML) ······> HTML only
@@ -14,7 +15,7 @@
 4. [JarditouBootstrap](projets/jarditouBootstrap) ·> avec le framework Bootstrap
 
 ```
-Velvet Record
+                                      Projet Velvet Record
 ```
 ![Le mot record sera écrit par un câble mini jack le casque et le c le vinyle le o](velvet_record/img/logo/vinyle.png)
 
