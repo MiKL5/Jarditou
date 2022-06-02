@@ -15,7 +15,7 @@
 4. [JarditouBootstrap](projets/jarditouBootstrap) ·> avec le framework Bootstrap
 
 ```
-                             Projet Velvet Record
+                                Projet Velvet Record
 ```
 ![Le mot record sera écrit par un câble mini jack le casque et le c le vinyle le o](velvet_record/img/logo/vinyle.png)
 
@@ -47,7 +47,7 @@ ___
 * [Exercice 11](PHP/exercice_11_moisDeLanneeNonBisectile) ·> Mois de l'année non bissextile
 * [Exercice 12](PHP/exercice_12_Capitales) ·> Capitales
 * [Exercice 13](PHP/exercice_13_departements) ·> Départements
-* [Exercice 15](PHP/exercice_15_calculDeLaSommeDesValeursDunTableau) ·> Calcul de la somme des valeurs d'un tableau
-* [Exercice 16](PHP/exercice_16_pswd) ·> Vérifier la complexité d'un mot de passe
-* [Exercice 17](PHP/exercice_17_datesEtHeures) ·> Dates et heures
-* [Exercice 18](PHP/exercice_18_lectureDunFichier) ·> Lecture d'un fichier
+* [Exercice 14](PHP/exercice_14_calculDeLaSommeDesValeursDunTableau) ·> Calcul de la somme des valeurs d'un tableau
+* [Exercice 15](PHP/exercice_15_pswd) ·> Vérifier la complexité d'un mot de passe
+* [Exercice 16](PHP/exercice_16_datesEtHeures) ·> Dates et heures
+* [Exercice 17](PHP/exercice_17_lectureDunFichier) ·> Lecture d'un fichier
