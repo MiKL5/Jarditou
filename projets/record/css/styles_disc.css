@@ -1,0 +1,24 @@
+/* le boutton 'ajouter' doit-être plus espacé */
+.btnadd {
+    margin-top: 8px;
+}
+
+/* les éléments doit être écarter de la jaquette */
+h5, label, p, .btn-primary {
+    margin-left: 10px;
+}
+
+/* Le bouton 'détails" doit être aligné vers le bas */
+.btn-primary { /* PK ÇA NE FONCTIONNE PAS ? */
+    margin-top: 35px;
+}
+
+/* l'espacement doiêtre iniforme entre le titre & les labels */
+p {
+    /* line-height: 10px; */
+    line-height: 6px;
+}
+/* Ne pas prendre h5 car ça ne fonctionnera pas */
+.title {
+    line-height: 25px;
+}
