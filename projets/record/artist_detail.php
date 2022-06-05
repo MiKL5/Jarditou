@@ -41,7 +41,7 @@ $requete->closeCursor();
             Artiste N° <?php echo $myArtist->artist_id ?><br>
             <div class="input-group"><!-- Site de l'artiste -->
             <span class="input-group-text mt-3" id="basic-addon3">Artiste n°</span>
-            <input type="text" class="form-control mt-3" id="basic-url" placeholder="<?= $myArtist->artist_id ?>"  aria-describedby="basic-addon3" disabled>
+            <input type="text" class="form-control mt-3" id="basic-url" placeholder="<?= $myArtist->artist_id ?>"  aria-describedby="basic-addon3" disabled> <!-- value est conventionnel mais ceci fonctionne quand-même -->
             </div><br>
             <!-- Nom de l'artiste : <?= $myArtist->artist_name ?><br> -->
             <div class="input-group"><!-- Site de l'artiste -->
