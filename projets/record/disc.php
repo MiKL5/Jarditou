@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<!-- <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <link href="css/styles.css" rel="stylesheet"> <!-- Feuille de style générale -->
-  <!-- <link href="css/styles_disc.css" rel="stylesheet">-->  <!-- Feuille de  style exclusive -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <title>Liste des disques</title>
-</head> -->
-
 <?php
 include 'header.php';
 ?>
@@ -26,7 +13,7 @@ include 'header.php';
 
   $result = $disques->fetchAll(PDO::FETCH_OBJ);
   // print_r($result); // pour voir si les infos remontent
-  ?>
+?>
 
   <div class="container conteneur">
     <div class="row">
@@ -55,12 +42,12 @@ include 'header.php';
             <div class="col-md-7">
               <div class="card border-0">
                 <h5 class="title"><?= $disc->disc_title ?></h5>
-                <p><?= $disc->artist_name ?></p>
-                <p>Label : <?= $disc->disc_label ?></p>
-                <p>Année : <?= $disc->disc_year ?></p>
-                <p>Genre : <?= $disc->disc_genre ?></p>
-                <p>Prix : <?= $disc->disc_price ?></p>
-                <a href="disc_detail.php?id=<?= $disc->disc_id ?>"> <button type="button" class="btn btn-sm btn-outline-primary mt-4 mx-2">Détails</button></a>
+                <p class="label"><?= $disc->artist_name ?></p>
+                <p class="label">Label : <?= $disc->disc_label ?></p>
+                <p class="label">Année : <?= $disc->disc_year ?></p>
+                <p class="label">Genre : <?= $disc->disc_genre ?></p>
+                <p class="label">Prix : <?= $disc->disc_price ?></p>
+                <a href="disc_detail.php?id=<?= $disc->disc_id ?>"> <button type="button" class="btn btn-sm btn-outline-primary btndisc mx-2">Détails</button></a>
                 <!--- vers disc_detail et pas artist_detail une fois disc_detail corrigé -->
               </div> <!-- End of div card -->
             </div> <!-- End of div pour les infos des disques -->

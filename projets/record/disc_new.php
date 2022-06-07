@@ -21,17 +21,17 @@
         <!-- le contenu doit venir de la bdd record de la table disc -->
         <form action="script_disc_ajout.php" method="get"><!-- ou disc_form -->
             <label>Titre</label>
-            <input type="text" class="form-control" name="title" placeholder="Saisir le titre">
+            <input type="text" class="form-control" name="title" placeholder="Saisir le titre"><br>
             <label>Artist</label>
-            <input type=" text" class="form-control" name="artist" placeholder="Saisir le nom de l'artist">
+            <input type=" text" class="form-control" name="artist" placeholder="Saisir le nom de l'artist"><br>
             <label>Année</label>
-            <input type="text" class="form-control" name="year" placeholder="Saisir l'année"> <!-- value -->
+            <input type="text" class="form-control" name="year" placeholder="Saisir l'année"><br> <!-- value -->
             <label>Genre</label>
-            <input type=" text" class="form-control" name="genre" placeholder="Saisir le genre musical">
+            <input type=" text" class="form-control" name="genre" placeholder="Saisir le genre musical"><br>
             <label>Label</label>
-            <input type=" text" class="form-control" name="label" placeholder="EMI, Warner, Polygram, Universal ...)">
+            <input type=" text" class="form-control" name="label" placeholder="EMI, Warner, Polygram, Universal ...)"><br>
             <label>Prix</label>
-            <input type=" text" class="form-control" name="price" placeholder="Saisir le prix">
+            <input type=" text" class="form-control" name="price" placeholder="Saisir le prix"><br>
             <label>Jaquette</label><br>
             <label for="insertPicture"></label>
             <input type="file" class="form-control-file" id="insertPicture"><br><br>
@@ -40,9 +40,9 @@
             <div class="d-flex">
                 <!-- les boutons ont une couleurs inhérente leur utilité -->
                 <!-- bouton midifier -->
-                <a href="script_disc_add.php"<button type="submit" class="btn btn-success btn-sm mx-1 mb-3">Ajouter</button></a>
+                <a href="script_disc_add.php"<button type="submit" class="btn btn-success btn-sm mx-1 mb-5">Ajouter</button></a>
                 <!-- bouton ajouter -->
-                <a href="disc.php"<button type="button" class="btn btn-warning btn-sm mx-1 mb-3">Retour</button></a>
+                <a href="disc.php"<button type="button" class="btn btn-warning btn-sm mx-1 mb-5">Retour</button></a>
             </div> <!-- End of div for button -->
         </form>
 

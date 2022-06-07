@@ -62,7 +62,7 @@
                         <!-- Trois boutons ayant une couleurs inhérente à leur utilité -->
                         <div class="d-flex">
                             <!-- bouton midifier -->
-                            <a href="disc_form_modif.php?id=<?=$result['disc_id']?>"<button type="button" class=" btn btn-secondary btn-sm mx-1 mb-4">Modifier</button>
+                            <a href="disc_form_modif.php?id=<?=$result['disc_id']?>"<button type="button" class=" btn btn-primary btn-sm mx-1 mb-4">Modifier</button>
                             <!-- bouton retour -->
                             <a href="script_disc_delete"<button type="button" class="btn btn-danger btn-sm mx-1 mb-4">Supprimer</button>
                             <!-- bouton ajouter -->

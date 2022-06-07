@@ -3,6 +3,17 @@
 
 <?php
     include 'header.php';
+    include 'db.php';
+
+    $db = connexionBase();
+    $requete = $db->prepare("INSERT INTO artist VALUES (artist_id, artist_name, artist_url)");
+    $requete->execute(array($_POST["id"]));
+    $myArtist = $requete->fetchAll();
+    $requete->closeCursor();
+
+    $id = $_POST['id'];
+    $name = '';
+    $url = '';
 ?>
 
 <body>
@@ -18,15 +29,14 @@
         <div class="input-group"><!-- Site de l'artiste -->
             <span class="input-group-text mt-3">Nom de l'artiste</span><br>
             <!-- <input type="text" class="form-control mt-3" placeholder="Ajouter le nom de l'artiste"  aria-describedby="basic-addon3" name="nom" id="nom_for_label"> -->
-            <input type="text" class="form-control mt-3" name="nom" id="nom_for_label"> <!-- value="<?= //$myArtist->artist_name ?>-->
+            <input type="text" class="form-control mt-3" name="nom" id="nom_for_label" value="<?= $requete->artist_name ?>> 
         </div>
             
         
         <div class="input-group"><!-- Site de l'artiste -->
             <span class="input-group-text mt-3">Site Internet</span><br>
             <!-- <input type="text" class="form-control mt-3" id="basic-url" placeholder="Ajouter l'adresse du site web"  aria-describedby="basic-addon3" name="url" id="url_for_label"> -->
-            <input type="text" class="form-control mt-3" name="url" id="url_for_label"><!-- value="<?= //$myArtist->artist_url ?>-->
-        <br><br>
+            <input type="text" class="form-control mt-3" name="url" id="url_for_label" value="<?= $requete->artist_url ?>>
         </div>
 
         
