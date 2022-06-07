@@ -22,7 +22,13 @@
     $req->execute();
     $disc = $req->fetch(PDO::FETCH_OBJ);
     // print_r($result); // pour voir si les infos remontent
-?>
+
+    /* $modif = $db -> prepare("UPDATE disc, artist,
+        SET disc_id, artist_name, disc_year, disc_genre, disc_label, disc_price, disc picture
+        WHERE artist.artist_id = disc.artisct_id;")
+        $modif -> execute():
+    */
+    ?>
 <body>
 
     <form class="container" action="script_disc_modif.php?id=<?=$disc->disc_id?>" method="POST">
@@ -32,17 +38,18 @@
                 <span class="input-group-text" id="Titre">Titre</span>
                 <input type="text" class="form-control" placeholder="" aria-label="" value="<?=$disc->disc_title?>" aria-describedby="Titre">
             </div>
-            <div class="input-group">
+            <div class="input-group"><!-- La liste des artitistes est induite par l'interrogation de la base de données -->
                 <span class="input-group-text" id="Artist">Artiste</span>
                 <!-- La liste devra interroger une bdd -->
                 <select class="form-control" id="exampleFormControlSelect1">
                 <?php
                     foreach ($result as $name) : ?>
-            </div>
+            
                     <option value="<?= $name->id ?>"><?= $name->artist_name ?></option>
                 <?php
                 endforeach;
                 ?>
+            </div><!-- Fin de la liste des artist -->
             </select>
             <div class="input-group mt-4 mb-4">
                 <span class="input-group-text" id="annee">Année</span>

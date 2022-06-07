@@ -29,14 +29,14 @@
         <div class="input-group"><!-- Site de l'artiste -->
             <span class="input-group-text mt-3">Nom de l'artiste</span><br>
             <!-- <input type="text" class="form-control mt-3" placeholder="Ajouter le nom de l'artiste"  aria-describedby="basic-addon3" name="nom" id="nom_for_label"> -->
-            <input type="text" class="form-control mt-3" name="nom" id="nom_for_label" value="<?= $requete->artist_name ?>> 
+            <input type="text" class="form-control mt-3" name="nom" id="nom_for_label" value="<?= $requete->artist_name ?>">
         </div>
             
         
         <div class="input-group"><!-- Site de l'artiste -->
             <span class="input-group-text mt-3">Site Internet</span><br>
             <!-- <input type="text" class="form-control mt-3" id="basic-url" placeholder="Ajouter l'adresse du site web"  aria-describedby="basic-addon3" name="url" id="url_for_label"> -->
-            <input type="text" class="form-control mt-3" name="url" id="url_for_label" value="<?= $requete->artist_url ?>>
+            <input type="text" class="form-control mt-3" name="url" id="url_for_label" value="<?= $requete->artist_url ?>">
         </div>
 
         
@@ -48,7 +48,7 @@
         <label for="url">Adresse site internet :</label><br>
             <input type="text" name="artist_url" id="url" value="<?= $myArtist['artist_url'] ?>"> <br><br> -->
 
-        <input class="btn btn-success btn-sm mx-3 mt-3 mb-3" type="submit" value="Ajouter">
+        <input type="submit" class="btn btn-success btn-sm mx-3 mt-3 mb-3" value="Ajouter">
 
     </form>
     </div>
