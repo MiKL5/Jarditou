@@ -5,40 +5,40 @@
     include 'header.php';
     include 'db.php';
     // INSCRIPTION
-    // $connexion = ConnexionBase();
-    // $req = $connexion->prepare("select * from record where id = :id and name = :name");
-    // $req->bindValue(':id', $id);
-    // $req->bindValue(':name', $name);
-    // $req->execute();
+    $connexion = ConnexionBase();
+    $req = $connexion->prepare("select * from record where id = :id and name = :name");
+    $req->bindValue(':id', $id);
+    $req->bindValue(':name', $name);
+    $req->execute();
 
-    // $result = $req->fetch(PDO::FETCH_ASSOC);
+    $result = $req->fetch(PDO::FETCH_ASSOC);
 
-    // print_r($result);
+    print_r($result);
 
-    // // initialisation des variables
-    // $identifier = '';
-    // $passwd = '';
-    // $msg = '';
-    // // Vérification que l'identification est correcte
-    // function userexist($identifier, $passwd)
-    // {
-    //     return (bool) rand(0, 1);
-    // }
-    // // traitement du formulaire
-    // if (isset($_POST['connection'])) {
-    //     // récup des saisies
-    //     $identifier = $_POST['identifier'];
-    //     $passwd = $_POST['password'];
-    //     // Vérif userexist
-    //     if (userexist($identifier, $passwd)) {
-    //         header('location:disc.php'); // envoi un entête brut
-    //         exit; // affiche un msg et termine le script
-    //     } else {
-    //         $msg = 'Identifiant incorrect ou inexistant.';
-    //         $msg = 'Essayer à nouveau.';
-    //         // le formulaire se réaffichera
-    //     }
-    // }
+    // initialisation des variables
+    $identifier = '';
+    $passwd = '';
+    $msg = '';
+    // Vérification que l'identification est correcte
+    function userexist($identifier, $passwd)
+    {
+        return (bool) rand(0, 1);
+    }
+    // traitement du formulaire
+    if (isset($_POST['connection'])) {
+        // récup des saisies
+        $identifier = $_POST['identifier'];
+        $passwd = $_POST['password'];
+        // Vérif userexist
+        if (userexist($identifier, $passwd)) {
+            header('location:disc.php'); // envoi un entête brut
+            exit; // affiche un msg et termine le script
+        } else {
+            $msg = 'Identifiant incorrect ou inexistant.';
+            $msg = 'Essayer à nouveau.';
+            // le formulaire se réaffichera
+        }
+    }
 ?>
 
 <body>
