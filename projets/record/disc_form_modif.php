@@ -31,7 +31,7 @@
     ?>
 <body>
 
-    <form class="container" action="script_disc_modif.php?id=<?=$disc->disc_id?>" method="POST">
+    <form class="container" action="script_disc_modif.php?id=<?=$disc->disc_id?>" method="POST" enctype="multipart/form-data">
         <h2>Modifier un vinyle</h2>
         <fieldset>
             <div class="input-group mt-3 mb-4">
@@ -65,7 +65,7 @@
             </div>
             <div class="input-group mb-4">
                 <span class="input-group-text" id="Prix">Prix</span>
-                <input type="text" class="form-control" placeholder="" aria-label="" value="<?=$disc->disc_price?>" aria-describedby="Prix">
+                <input type="text" class="form-control" placeholder="" aria-label="" value="<?=$disc->disc_price?>" aria-describedby="Prix" name="price">
             </div>
             <div><!-- Without this divide the elements are not aligned -->
                 <p>Jaquette</p>

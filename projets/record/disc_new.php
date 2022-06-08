@@ -17,9 +17,8 @@
 <body>
     <div class="container">
         <h2>Ajouter un vinyle</h2>
-        <!-- les infos doivent s'ajouter à la table disc -->
-        <!-- le contenu doit venir de la bdd record de la table disc -->
-        <form action="script_disc_ajout.php" method="get"><!-- ou disc_form -->
+<br>
+<form action="script_disc_ajout.php" method="get"><!-- ou disc_form -->
             <label>Titre</label>
             <input type="text" class="form-control" name="title" placeholder="Saisir le titre"><br>
             <label>Artist</label>
@@ -35,8 +34,7 @@
             <label>Jaquette</label><br>
             <label for="insertPicture"></label>
             <input type="file" class="form-control-file" id="insertPicture"><br><br>
-            <!--<input type=" titre" class="form-control" name="jaquette"">-->
-            <!-- <img src=" inm/jaquette <?= $disc->disc_picture ?>" alt="..." class="rounded float-left img-fluid img-thumbnail"><br><br> -->
+            <input type=" titre" class="form-control" name="jaquette">
             <div class="d-flex">
                 <!-- les boutons ont une couleurs inhérente leur utilité -->
                 <!-- bouton midifier -->
