@@ -18,7 +18,7 @@
     <div class="container">
         <h2>Ajouter un vinyle</h2>
 <br>
-<form action="script_disc_ajout.php" method="get"><!-- ou disc_form -->
+<form action="script_disc_add.php" method="get" enctype="multipart/form-data">
             <label>Titre</label>
             <input type="text" class="form-control" name="title" placeholder="Saisir le titre"><br>
             <label>Artist</label>
@@ -33,8 +33,7 @@
             <input type=" text" class="form-control" name="price" placeholder="Saisir le prix"><br>
             <label>Jaquette</label><br>
             <label for="insertPicture"></label>
-            <input type="file" class="form-control-file" id="insertPicture"><br><br>
-            <input type=" titre" class="form-control" name="jaquette">
+            <input type="file" class="form-control-file" id="insertPicture" name="pics"><br><br>
             <div class="d-flex">
                 <!-- les boutons ont une couleurs inhérente leur utilité -->
                 <!-- bouton midifier -->
