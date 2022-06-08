@@ -17,17 +17,6 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="col-12 container list">
-                <ul>
-                    <li class="col-6">
-                        <a href="artists.php">Liste des artistes</a>
-                    </li>
-                    <li class="col-6">
-                        <a href="disc.php">Liste des disques</a>
-                    </li>
-                </ul>
-            </div>
-
             <!-- Afficher peut-être le nom de l'utilisateur -->
             <div class col-12>
             <!-- <p class="text-light labeluser">userName</p> -->
