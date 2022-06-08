@@ -39,5 +39,4 @@ Cas Hotel
             16 - Afficher la liste des hôtels pour lesquels Mr Squire a effectué une réservation
             17 - Afficher la durée moyenne des réservations par station
 
-Les requêtes sont dans '[hoteRequêtel](SQL/exercice_05_casHotel/hoteRequêtel.sql)'. 
-La base est '[ici](SQL/exercice_05_casHotel/hotel_complet.sql)'
+La [base](hotel_complet.sql) et les [requêtes](hoteRequêtel.sql).
