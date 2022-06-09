@@ -51,7 +51,7 @@
 	FROM products
     JOIN suppliers
     ON products.SupplierID = suppliers.SupplierID
- 	WHERE companyName = 'Exotic Liquids';
+    WHERE companyName = 'Exotic Liquids';
 
 -- 7- Chiffre d'affaires global sur les ventes de 1997 :
 ---NB: chiffre d'affaires (CA) = total des ventes
