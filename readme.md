@@ -5,7 +5,7 @@
 > ## Projets
 
 ```
-                        Projets Jarditou (4)
+                        Projets Jarditou **(4)**
 ```
 ![Logo Jarditou](projets/jarditouCSS/src/img/jarditou_logo.jpg "Logo Jarditou")
 
@@ -36,7 +36,7 @@ ___
 
 * [Exercice  5](SQL/exercice_05_casHotel "Cas Hotel") ··> Hotel
 * [Exercice  6](SQL/exercice_06_casPapyrus "Cas Papyrus") ··> Papyrus
-* [Exercice  7](SQL/exercice_07_Northwind "Étude de cas Northwind") ··> Northwind
+* [Exercice  7](SQL/exercice_07_Northwind "Évaluation, cas Northwind") ··> Northwind
 
 
 >> #### ***CE QUI SUIT EST EN PHP***
