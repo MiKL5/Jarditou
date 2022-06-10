@@ -17,7 +17,7 @@
 ```
                         Projet Velvet Record
 ```
-![Velvet Record](projets/record/img/logo/vinyle.png)
+![Velvet Record](projets/record/img/logo/vinyle.png "Velvet Record")
 
 5. [Velvet Record](projets/record) ·····> PHP and SQL (in progress ...)
 
