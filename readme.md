@@ -9,7 +9,7 @@
 ```
 ![Logo Jarditou](projets/jarditouCSS/src/img/jarditou_logo.jpg "Logo Jarditou")
 
-1. [JarditouHTML](projets/jarditouHTML) ······> HTML only
+1. [JarditouHTML](projets/jarditouHTML  "seulement en HTML") ······> HTML only
 2. [JarditouCSS](projets/jarditouCSS)  ········> with CSS
 3. [JarditouJS](projets/jarditouJS) ··········> includes Javascript
 4. [JarditouBootstrap](projets/jarditouBootstrap) ·> avec le framework Bootstrap
