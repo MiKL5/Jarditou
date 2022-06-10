@@ -17,7 +17,7 @@
 ```
                         Projet Velvet Record
 ```
-![Le mot record sera écrit par un câble mini jack le casque et le c le vinyle le o](projets/record/img/logo/vinyle.png)
+![Velvet Record](projets/record/img/logo/vinyle.png)
 
 5. [Velvet Record](projets/record) ·····> PHP and SQL (in progress ...)
 
