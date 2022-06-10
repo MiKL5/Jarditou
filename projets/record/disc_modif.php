@@ -17,9 +17,9 @@
 
     $result = $conn->fetchAll(PDO::FETCH_OBJ);
 
-    $req = $db->prepare(" SELECT * FROM disc WHERE disc_id = :id ");
-    $req->bindValue(':id', $id);
-    $req->execute();
+    $req = $db  ->prepare(" SELECT * FROM disc WHERE disc_id = :id ");
+    $req        ->bindValue(':id', $id);
+    $req        ->execute();
     $disc = $req->fetch(PDO::FETCH_OBJ);
     // print_r($result); // pour voir si les infos remontent
 
@@ -36,10 +36,10 @@
         <fieldset>
             <div class="input-group mt-3 mb-4">
                 <span class="input-group-text" id="Titre">Titre</span>
-                <input type="text" class="form-control" placeholder="" aria-label="" value="<?=$disc->disc_title?>" aria-describedby="Titre">
+                <input type="text" class="form-control" placeholder="" aria-label="" value="<?=$disc->disc_title?>" aria-describedby="Titre" name="title"> <!-- Ne pas oublier les names sinon les données ne vont pas dans la base de données -->
             </div>
             <div class="input-group"><!-- La liste des artitistes est induite par l'interrogation de la base de données -->
-                <span class="input-group-text" id="Artist">Artiste</span>
+                <span class="input-group-text" id="Artist" name="artist">Artiste</span>
                 <!-- La liste devra interroger une bdd -->
                 <select class="form-control" id="exampleFormControlSelect1">
                 <?php
@@ -53,15 +53,15 @@
             </select>
             <div class="input-group mt-4 mb-4">
                 <span class="input-group-text" id="annee">Année</span>
-                <input type="text" class="form-control" placeholder="" aria-label="" value="<?=$disc->disc_year?>" aria-describedby="Année">
+                <input type="text" class="form-control" placeholder="" aria-label="" value="<?=$disc->disc_year?>" aria-describedby="Année" name="y">
             </div>
             <div class="input-group mb-4">
                 <span class="input-group-text" id="Genre">Genre</span>
-                <input type="text" class="form-control" placeholder="" aria-label="" value="<?=$disc->disc_genre?>" aria-describedby="Genre">
+                <input type="text" class="form-control" placeholder="" aria-label="" value="<?=$disc->disc_genre?>" aria-describedby="Genre" name="genre">
             </div>
             <div class="input-group mb-4">
                 <span class="input-group-text" id="label">Label</span>
-                <input type="text" class="form-control" placeholder="" aria-label="" value="<?=$disc->disc_label?>" aria-describedby="label">
+                <input type="text" class="form-control" placeholder="" aria-label="" value="<?=$disc->disc_label?>" aria-describedby="label" name="lbl">
             </div>
             <div class="input-group mb-4">
                 <span class="input-group-text" id="Prix">Prix</span>

@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Ajouter un disc</title>
-</head>
-
 <?php
     include 'header.php';
     include 'db.php';
@@ -18,7 +7,7 @@
     <div class="container">
         <h2>Ajouter un vinyle</h2>
 <br>
-<form action="script_disc_add.php" method="get" enctype="multipart/form-data">
+<form action="script_disc_add.php" method="post" enctype="multipart/form-data">
             <label>Titre</label>
             <input type="text" class="form-control" name="title" placeholder="Saisir le titre"><br>
             <label>Artist</label>
@@ -37,43 +26,40 @@
             <div class="d-flex">
                 <!-- les boutons ont une couleurs inhérente leur utilité -->
                 <!-- bouton midifier -->
-                <a href="script_disc_add.php"<button type="submit" class="btn btn-success btn-sm mx-1 mb-5">Ajouter</button></a>
+                <button type="submit" class="btn btn-success btn-sm mx-1 mb-5">Ajouter</button>
                 <!-- bouton ajouter -->
                 <a href="disc.php"<button type="button" class="btn btn-warning btn-sm mx-1 mb-5">Retour</button></a>
             </div> <!-- End of div for button -->
         </form>
-
-
-
     </div> <!-- End of container -->
-
-    <!-- Correspondance avec la BBD -->
-    <?php
-    //checking if data has been entered
-    // if (isset($_GET['data']) && !empty($_GET['data'])) {
-        // $data = $_GET['data'];
-    // } else {
-        // header('location: disc.php'); // POUR L'INSTANT PAS D'EMPLACEMENT
-        // exit;
-    // }
-
-    //setting up mysql details
-    // $sql_server = 'localhost';
-    // $sql_user   = 'admin';
-    // $sql_pwd    = 'root';
-    // $sql_db     = 'disc';
-
-    //connecting to sql database
-    // $myslqi = new mysqli($sql_server, $sql_user, $sql_pwd, $sql_db) or die($mysqli->error);
-
-    //inserting details into table
-    // $insert = $mysqli->query("INSERT INTO table ( `data` ) VALUE ( '$data' )");
-
-    //closing mysqli connection
-    // $mysql->close;
-    ?>
-</body>
 
 <?php
     include 'footer.php';
 ?>
+    <!-- Correspondance avec la BBD -->
+    <!--
+    checking if data has been entered
+    if (isset($_GET['data']) && !empty($_GET['data'])) {
+        $data = $_GET['data'];
+    } else {
+        header('location: disc.php'); // POUR L'INSTANT PAS D'EMPLACEMENT
+        exit;
+    }
+
+    setting up mysql details
+    $sql_server = 'localhost';
+    $sql_user   = 'admin';
+    $sql_pwd    = 'root';
+    $sql_db     = 'disc';
+
+    connecting to sql database
+    $myslqi = new mysqli($sql_server, $sql_user, $sql_pwd, $sql_db) or die($mysqli->error);
+
+    inserting details into table
+    $insert = $mysqli->query("INSERT INTO table ( `data` ) VALUE ( '$data' )");
+
+    closing mysqli connection
+    $mysql->close;
+    -->
+</body>
+

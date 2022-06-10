@@ -45,7 +45,7 @@
                     $myDisc = $db->prepare("UPDATE disc SET disc_picture = :picture WHERE disc_id = :id;"); // finir les modif
                 
                     $myDisc->bindValue(':picture', $_FILES["pics"]["name"], PDO::PARAM_STR);
-                    $myDisc->bindValue(':id', $id, PDO::PARAM_INT);
+                    $myDisc->bindValue(':id',      $id,                     PDO::PARAM_INT);
                 
                 
                     $myDisc->execute();
@@ -58,7 +58,12 @@
                         die("Fin du script (script_disc_modif.php)");
                     }
                 }
-        } 
+        } else 
+        {
+        // Informé si le type n'est pas autorisé
+        echo "Seul les fichiers de moins de 2Mo en gif, jpeg, pjpeg, x-png, png ou tiff sont autorisés. Merci de choisir parmi ceux cités";    
+        exit;
+        }
         // else 
         // {
         // // Le type n'est pas autorisé, donc ERREUR
@@ -79,8 +84,7 @@
     $myDisc->bindValue(':title',    $title,     PDO::PARAM_STR);
     $myDisc->bindValue(':genre',    $genre,     PDO::PARAM_STR);
     $myDisc->bindValue(':label',    $lbl,       PDO::PARAM_STR);
-    // $myDisc->bindValue(':picture', $pics, PDO::PARAM_STR);
-    $myDisc->bindValue(':price',    $price,     PDO::PARAM_INT);
+    $myDisc->bindValue(':price',    $price,     PDO::PARAM_STR); // PARAM_STR pour avoir les deux chiffres aprés la virgule
     $myDisc->bindValue(':year',     $y,         PDO::PARAM_INT);
     $myDisc->bindValue(':id',       $id,        PDO::PARAM_INT);
 

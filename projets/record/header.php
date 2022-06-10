@@ -12,19 +12,13 @@
     <nav class="col-12 navbar navbar-expand-lg bg-dark rounded justify-content">
         <div class="row">
             <a class="navbar-brand text-light mx-2 " href="index.php"><img src="img/logo/vinyle.png" alt="logo de Velvet record" width="auto" height="35" class="">Velvet Record</a>
-
             <button class="col-1 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <!-- Afficher peut-être le nom de l'utilisateur -->
             <div class col-12>
             <!-- <p class="text-light labeluser">userName</p> -->
             </div>
         </div> <!-- End of row -->
-
     </nav>
-
-
-
 </head>

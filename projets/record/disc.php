@@ -23,7 +23,7 @@ include 'header.php';
       </div> <!-- End of col-11 , liste des disques -->
       <div class="col-1">
         <!-- Un lien vers le formulaire d'ajout doit se trouvé à côté du titre en bout de ligne -->
-        <a class="btnadd btn btn-sm btn-success mx-1" href="disc_new.php" role="button">Ajouter</a>
+        <a class="btnadd btn btn-sm btn-success mx-1" href="disc_add.php" role="button">Ajouter</a>
         <!--- vers le formulaire d'ajout (artist_ajout) -->
       </div> <!-- End of col-1 , button 'ajouter' -->
     </div> <!-- End of row -->
