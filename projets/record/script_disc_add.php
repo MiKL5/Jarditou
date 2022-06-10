@@ -99,10 +99,10 @@
     // enregistrer dans la bdd via INSERT INTO
     try{
         $myDisc = $db->prepare("INSERT INTO disc (disc_title, disc_genre, disc_label, disc_price, disc_year, disc_picture) VALUES (:title, :genre, :label, :price, :year, :picture");
-        $myArtist = $db->prepare("INSERT INTO artist (artist_name) VALUES (:artist")
-        // pour plus de clareté, jai fait des espaces, mais ça ne fonctione pas dans tou les langages
+        $myDisc = $db->prepare("INSERT INTO artist (artist_name) VALUES (:artist"); //myArtist
+        // pour plus de clareté, j'ai fait des espaces, mais ça ne fonctione pas dans tou les langages
         $myDisc->bindValue(':title',    $title,     PDO::PARAM_STR);
-        $myArtist->bindValue(':artist'  $artist,    PDO::PARAM_STR);
+        $myDisc->bindValue(':artist'    $artist,    PDO::PARAM_STR); // peut-etre myArtist
         $myDisc->bindValue(':genre',    $genre,     PDO::PARAM_STR);
         $myDisc->bindValue(':label',    $lbl,       PDO::PARAM_STR);
         $myDisc->bindValue(':price',    $price,     PDO::PARAM_STR); // PARAM_STR pour avoir les chiffres après la virgule
