@@ -12,11 +12,11 @@
                 <div class="col-12">
                     <form action="script_login.php" method="$_POST">
                         <div class="input-group col-5">
-                            <span class="input-group-text bg-dark text-light" id="login" name="login">Identifiant</span>
+                            <span class="input-group-text bg-dark text-light" id="login" name="login" require>Identifiant</span>
                             <input type="text" class="form-control" name="login" value="" placeholder="Saisissez votre identifiant"><br>
                         </div>
                         <div class="input-group col-5 mt-3 mb-5">
-                            <span class="input-group-text bg-dark text-light" id="password">Mot de passe</span>
+                            <span class="input-group-text bg-dark text-light" id="password" require>Mot de passe</span>
                             <input type="password" class="form-control" id="exampleInputPassword" name="password" placeholder="Password">
                         </div>
                         <!-- Inscription -->
