@@ -39,6 +39,31 @@
             // le formulaire se réaffichera
         // }
     // }
+
+
+
+    // Test de la session
+    session_start();
+    if ($_SESSION["login"]) 
+    {
+        header("Location:index.php");
+        exit;
+    } 
+    else 
+    {
+        echo"Cette page nécessite une identification.";  
+    }
+
+    // Détruire propement la session
+    unset($_SESSION["login"]); // destruction de la variable
+    unset($_SESSION["role"]);
+    if (ini_get("session.use_cookies")) // destruction des coockies
+    {
+        setcookie(session_name(), '', time()-42000);
+    }
+    session_destroy(); // destruction du reste
+
+
 ?>
 
 <body>
