@@ -17,7 +17,7 @@
                         </div>
                         <div class="input-group col-5 mt-3 mb-5">
                             <span class="input-group-text bg-dark text-light" id="password">Mot de passe</span>
-                            <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+                            <input type="password" class="form-control" id="exampleInputPassword" name="password" placeholder="Password">
                         </div>
                         <!-- Inscription -->
                         <a href="script_login.php"><button type="button" name="inscription" class=" btn btn-outline-success btn-sm mx-0 mb-4">Inscription</button></a>
