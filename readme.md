@@ -5,7 +5,7 @@
 > ## Projets
 
 ```
-                        Projets Jarditou **(4)**
+            Projets Jarditou
 ```
 ![Logo Jarditou](projets/jarditouCSS/src/img/jarditou_logo.jpg "Logo Jarditou")
 
@@ -15,11 +15,11 @@
 4. [JarditouBootstrap](projets/jarditouBootstrap "la mise en page se fait avec Bootstrap") ·> avec le framework Bootstrap
 
 ```
-                        Projet Velvet Record
+            Projet Velvet Record
 ```
 ![Velvet Record](projets/record/img/logo/vinyle.png "Velvet Record")
 
-5. [Velvet Record](projets/record "PHP et SQL") ·····> PHP and SQL (in progress ...)
+1. [Velvet Record](projets/record "PHP et SQL") ·····> PHP and SQL (in progress ...)
 
 ___
 
