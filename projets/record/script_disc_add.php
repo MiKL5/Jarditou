@@ -14,7 +14,6 @@
     } else {
         ($title = null);
             }
-   
 
     if (isset($_POST['artist']) && $_POST['artist'] != "")
     {
@@ -37,13 +36,6 @@
         $genre = null;
             }
 
-    if (isset($_POST['year']) && $_POST['year'] != "")
-    {
-        $y = $_POST['year'];
-    } else {
-        $y = null;
-            }
-
     if (isset($_POST['label']) && $_POST['label'] != "")
     {
         $lbl = $_POST['label'];
@@ -59,7 +51,7 @@
             }
 
     // En cas d'erreur, renvoyer vers le formulaire
-    if ($title == Null || $artist == Null || $y == Null) { //  || $genre == Null || $y == Null  || $lbl == Null || $price == Null
+    if ($title == Null || $artist == Null || $y == Null || $genre == Null || $lbl == Null || $price == Null) {
         // header("Location: disc_add.php");
         exit;
     }
@@ -101,13 +93,13 @@
         $myDisc = $db->prepare("INSERT INTO disc (disc_title, disc_genre, disc_label, disc_price, disc_year, disc_picture), artist (artist_name) VALUES (:title, :artist_name, :genre, :label, :price, :year, :picture)");
         // $myArtist = $db->prepare("INSERT INTO artist (artist_name) VALUES (:artist_name)"); //myArtist
         // pour plus de clareté, j'ai fait des espaces, mais ça ne fonctione pas dans tou les langages
-        $myDisc->bindValue(':title',    $title,     PDO::PARAM_STR);
+        $myDisc->bindValue(':title',        $title,     PDO::PARAM_STR);
         $myDisc->bindValue(':artist_name',  $artist,    PDO::PARAM_STR);
-        $myDisc->bindValue(':genre',    $genre,     PDO::PARAM_STR);
-        $myDisc->bindValue(':label',    $lbl,       PDO::PARAM_STR);
-        $myDisc->bindValue(':price',    $price,     PDO::PARAM_STR); // PARAM_STR pour avoir les chiffres après la virgule
-        $myDisc->bindValue(':year',     $y,         PDO::PARAM_INT);
-        $myDisc->bindValue(':pics',     $pics,      PDO::PARAM_STR);
+        $myDisc->bindValue(':genre',        $genre,     PDO::PARAM_STR);
+        $myDisc->bindValue(':label',        $lbl,       PDO::PARAM_STR);
+        $myDisc->bindValue(':price',        $price,     PDO::PARAM_STR); // PARAM_STR pour avoir les chiffres après la virgule
+        $myDisc->bindValue(':year',         $y,         PDO::PARAM_INT);
+        $myDisc->bindValue(':pics',         $pics,      PDO::PARAM_STR);
         $myDisc->execute();
         $myDisc->closeCursor();
         }
