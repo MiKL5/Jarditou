@@ -13,11 +13,12 @@ function cleandesctructsession(){
 // Envoyé un mail
 
 function sendmail() {
+    $emetteur = '<noreply@mail.fr>';
     $destinataire = 'Dave Loper <dave.loper@afpa.fr>';
     $objet = 'Validation de votre inscription';
     $message = 'Merci de votre incription.';
     $message = ' ';
-    $message = 'Velvet Record';
+
 }
 
 // Sécurité
@@ -43,4 +44,27 @@ function verifsaisies(){
     }
 
 } // fin de la fonction verifsaisies
+
+    // Vérification que l'identification est correcte
+    // function userexist($identifier, $passwd)
+    // {
+        // return (bool) rand(0, 1);
+    // }
+    // traitement du formulaire
+    // if (isset($_POST['connection'])) {
+        // récup des saisies
+        // $identifier = $_POST['identifier'];
+        // $passwd = $_POST['password'];
+        // Vérif userexist
+        // if (userexist($identifier, $passwd)) {
+            // header('location:disc.php'); // envoi un entête brut
+            // exit; // affiche un msg et termine le script
+        // } else {
+            // $msg = 'Identifiant incorrect ou inexistant.';
+            // $msg = 'Essayer à nouveau.';
+            // le formulaire se réaffichera
+        // }
+    // }
+
+    
 ?>

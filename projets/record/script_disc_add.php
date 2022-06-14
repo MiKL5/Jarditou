@@ -73,8 +73,9 @@
         // vérifier si le type d'image concorde à ce qui est autorisé ci-avant
         if (in_array($mimetype, $aMimeTypes))
         {
-            //
+            //vérif image
             var_dump($mimetype);
+            // var_dump($aMimeTypes);
             // Si le type est parmi ceux autorisés,il est déplacer et renommer le fichier en appliquant le nom d'origine est pas le nom temporaire
             if (move_uploaded_file($_FILES["pics"]["tmp_name"], "img/jaquettes/" . $_FILES["pics"]["name"])) {
                 $pics = $_FILES["pics"]["name"]; // name pour avoir le nom d'origine et pas le nom temporaire
@@ -93,18 +94,20 @@
         $myDisc = $db->prepare("INSERT INTO disc (disc_title, disc_genre, disc_label, disc_price, disc_year, disc_picture), artist (artist_name) VALUES (:title, :artist_name, :genre, :label, :price, :year, :picture)");
         // $myArtist = $db->prepare("INSERT INTO artist (artist_name) VALUES (:artist_name)"); //myArtist
         // pour plus de clareté, j'ai fait des espaces, mais ça ne fonctione pas dans tou les langages
-        $myDisc->bindValue(':title',        $title,     PDO::PARAM_STR);
-        $myDisc->bindValue(':artist_name',  $artist,    PDO::PARAM_STR);
-        $myDisc->bindValue(':genre',        $genre,     PDO::PARAM_STR);
-        $myDisc->bindValue(':label',        $lbl,       PDO::PARAM_STR);
-        $myDisc->bindValue(':price',        $price,     PDO::PARAM_STR); // PARAM_STR pour avoir les chiffres après la virgule
-        $myDisc->bindValue(':year',         $y,         PDO::PARAM_INT);
-        $myDisc->bindValue(':pics',         $pics,      PDO::PARAM_STR);
+        $myDisc->bindValue(':disc_title',  $title,  PDO::PARAM_STR);
+        
+        $myDisc->bindValue(':disc_genre',  $genre,  PDO::PARAM_STR);
+        $myDisc->bindValue(':disc_label',  $lbl,    PDO::PARAM_STR);
+        $myDisc->bindValue(':disc_price',  $price,  PDO::PARAM_STR); // PARAM_STR pour avoir les chiffres après la virgule
+        $myDisc->bindValue(':disc_year',   $y,      PDO::PARAM_INT);
+        $myDisc->bindValue(':disc_pics',   $pics,   PDO::PARAM_STR);
+        $myDisc->bindValue(':artist_name', $artist, PDO::PARAM_STR);
         $myDisc->execute();
         $myDisc->closeCursor();
         }
         catch (Exception $e) {
             var_dump($myDisc->errorInfo());
+            print_r($myDisc);
             print_r($_POST);
             echo "Erreur : " . $myDisc->errorInfo()[2] . "<br>";
             die("Fin du script (script_disc_modif.php)");

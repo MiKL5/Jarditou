@@ -28,18 +28,25 @@ h5, label, p, .btn-primary {
 }
 
 .navbar {
+    position: static;
     display: inline-block;
     display: grid;
     display: none;
     color: white;
 }
 
+/* header *//*
+.header{
+    position:static;
+    border-bottom: 0rem;
+}*/
+
 /* footer.php *//*
 .ftr {
     /* display: none; *//*
     position:static;
     border-bottom: 0rem;
-}*/
+*/
 /*
 .textfooter {
     text-align: center;
@@ -47,6 +54,8 @@ h5, label, p, .btn-primary {
     /* text-decoration: wavy; */
     /* vertical-align: center; *//*
 }*/
+
+/* disc.php */
 
 .list {
     display: inline-flexbox;
