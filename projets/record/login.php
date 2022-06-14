@@ -1,6 +1,10 @@
 <?php
     include 'header.php';
     include 'db.php';
+    include 'fn.php';
+
+    $usererror = "";
+    $passworderror = "";
 ?>
 
 <body>
@@ -14,10 +18,12 @@
                         <div class="input-group col-5">
                             <span class="input-group-text bg-dark text-light" id="login" name="login" require>Identifiant</span>
                             <input type="text" class="form-control" name="login" value="" placeholder="Saisissez votre identifiant"><br>
+                            <label class="comments"><?= $usererror ?></label>
                         </div>
                         <div class="input-group col-5 mt-3 mb-5">
                             <span class="input-group-text bg-dark text-light" id="password" require>Mot de passe</span>
                             <input type="password" class="form-control" id="exampleInputPassword" name="password" placeholder="Password">
+                            <p class="comments"><?= $passworderror ?></p>
                         </div>
                         <!-- Inscription -->
                         <a href="script_login.php"><button type="button" name="inscription" class=" btn btn-outline-success btn-sm mx-0 mb-4">Inscription</button></a>

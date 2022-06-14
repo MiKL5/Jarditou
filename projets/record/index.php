@@ -4,6 +4,13 @@
 <?php
     include 'header.php';
     include 'db.php';
+    include 'fn.php';
+
+    // Définition des varables
+    $identifier = "";
+    $passwd = "";
+    $msg = "";
+
     // INSCRIPTION
     // $connexion = ConnexionBase();
     // $req = $connexion->prepare("select * from record where id = :id and name = :name");

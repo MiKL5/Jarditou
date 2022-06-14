@@ -3,7 +3,7 @@
 
 </body>
 
-<foot class="ftr">
+<footer class="ftr">
   <!-- navbar du footer -->
   <nav class="navbar navbar-expend-lg bg-dark rounded">
     <!-- fixed-bottom pour l'attacher en bas-->
@@ -12,6 +12,6 @@
     </div>
   </nav>
 
-</foot>
+</footer>
 
 </html><!-- Les pages son fermés ici car c'est le fichier de bas de pages -->
