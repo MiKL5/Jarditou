@@ -41,6 +41,14 @@ $passwderror = "";
     // Déstruction propre de la session
     cleandesctructsession(); // cf fn.php
 
+// Mail de confirmation d'inscription
+$aHeaders = array('MIME-Version' => '1.0',
+                  'Content-Type' => 'text/html; charset=utf-8',
+                  'From' => 'Dave Loper <dave.loper@afpa.fr>',
+                  'Reply-To' => 'Velvet Record <noreply@velvet_record.com>',
+                  'X-Mailer' => 'PHP/' . phpversion()
+                  );
+// puis le body
 
-
+// essayer peut-être un exemple avec Boutstrap
 ?>
