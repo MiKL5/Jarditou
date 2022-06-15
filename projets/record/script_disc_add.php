@@ -118,31 +118,3 @@
     
     //redirection vers disc.php si l'ajout est réussi
     header("Location: disc.php");
-
-
-// REQUETE SQL ET BINDVALUE
-
-        // $myArtist = $db->prepare("INSERT INTO artist (artist_name) VALUES (:artist_name)"); //myArtist
-                                    // disc_id,
-                                    // ':disc_title', 
-                                    // :disc_year, 
-                                    // ':disc_picture',
-                                    // ':disc_label', 
-                                    // ':disc_genre', 
-                                    // ':disc_price', 
-                                    // :artist_id) 
-        // pour plus de clareté, j'ai fait des espaces, mais ça ne fonctione pas dans tou les langages
-        // $myDisc->bindValue(':disc_title',   $title,  PDO::PARAM_STR);
-        // var_dump($title);
-        // $myDisc->bindValue(':disc_year',    $y,      PDO::PARAM_INT);
-        // var_dump($y);
-        // $myDisc->bindValue(':disc_picture', $pics,   PDO::PARAM_STR);
-        // var_dump($pics);
-        // $myDisc->bindValue(':disc_label',   $lbl,    PDO::PARAM_STR);
-        // var_dump($lbl);
-        // $myDisc->bindValue(':disc_genre',   $genre,  PDO::PARAM_STR);
-        // var_dump($genre);
-        // $myDisc->bindValue(':disc_price',   $price,  PDO::PARAM_STR); // PARAM_STR pour avoir les chiffres après la virgule
-        // var_dump($price);
-        // $myDisc->bindValue(':artist_id',  $artist, PDO::PARAM_INT);
-        // var_dump($artist);
