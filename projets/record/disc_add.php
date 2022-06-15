@@ -1,6 +1,18 @@
 <?php
     include 'header.php';
     include 'db.php';
+
+    $db = ConnexionBase();
+
+    $conn = $db->prepare("SELECT 
+    artist_name, artist.artist_id as id 
+    FROM artist, disc 
+    WHERE artist.artist_id = disc.artist_id 
+    GROUP BY artist_name
+    ");
+    $conn->execute();
+
+    $artist = $conn->fetchAll(PDO::FETCH_OBJ);
 ?>
 
 <body>
@@ -11,7 +23,13 @@
             <label>Titre</label>
             <input type="text" class="form-control" name="title" placeholder="Saisir le titre"><br>
             <label>Artist</label>
-            <input type=" text" class="form-control" name="artist" placeholder="Saisir le nom de l'artist"><br>
+            <select class="form-control" name="artist" id="artist">
+                <?php foreach ($artist as $artist):?>
+                    <option value="<?=$artist->id?>"><?=$artist->artist_name?></option>
+                <?php endforeach; ?>
+            </select><br>
+            <!--
+            <input type=" text" class="form-control" name="artist" placeholder="Saisir le nom de l'artist"><br> -->
             <label>Année</label>
             <input type="text" class="form-control" name="year" placeholder="Saisir l'année"><br> <!-- value -->
             <label>Genre</label>
@@ -29,7 +47,7 @@
                 <button type="submit" class="btn btn-success btn-sm mx-1 mb-5">Ajouter</button>
                 <!-- bouton ajouter -->
                 <a href="disc.php"<button type="button" class="btn btn-warning btn-sm mx-1 mb-5">Retour</button></a>
-            </div> <!-- End of div for button -->
+            </div> <!-- End of div for buttons -->
         </form>
     </div> <!-- End of container -->
 

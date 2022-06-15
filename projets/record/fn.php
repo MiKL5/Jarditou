@@ -21,6 +21,19 @@ function sendmail() {
 
 }
 
+// Tester la session
+function testsession(){
+session_start();
+if ( ! isset($_SESSION["login"]) ) 
+{
+    header("Location:index.php");
+    echo"Veuillez vous authentifier";
+    exit;
+}
+// Reste du code (PHP/HTML)
+echo"Bonjour ".$_SESSION["login"];  
+}
+
 // Sécurité
 
 // Vérifier les saisies

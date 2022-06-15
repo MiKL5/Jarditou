@@ -16,6 +16,7 @@ $passwderror = "";
     echo"- session ID : ".session_id(); 
 
     // Test de la session
+    /*
     session_start();
     if ($_SESSION["login"]) 
     {
@@ -27,7 +28,8 @@ $passwderror = "";
         header("login.php");
         echo"Veuillez vous authentifier.";
         exit;
-    }
+    }*/
+    testsession();
 
     // Mot de passe utiliser password_verify() qui reçoit obligatoirement 2 paramètres
     password_verify($chaine_saisie_en_clair, $hash_stocke_en_bdd);

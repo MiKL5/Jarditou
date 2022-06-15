@@ -6,20 +6,22 @@
     // récupréer les infos transmises pas le formulaire
     // Vérifier que les données sont transmises
     var_dump($_POST);
+    print_r($_POST);
 
+    // $id = $_POST['id'];
     // Récupérer ce qui arrive au $_POST
     if (isset($_POST['title']) && $_POST['title'] != "")
     {
-        ($title = $_POST['title']);
+        $title = $_POST['title'];
     } else {
-        ($title = null);
+        $title = null;
             }
 
     if (isset($_POST['artist']) && $_POST['artist'] != "")
     {
-        ($artist = $_POST['artist']);
+        $artist = $_POST['artist'];
     } else {
-        ($artist = null);
+        $artist = null;
             }
 
     if (isset($_POST['year']) && $_POST['year'] != "")
@@ -27,7 +29,13 @@
         $y = $_POST['year'];
     } else {
         $y = null;
-            }
+    }
+
+    if (isset($_POST['pics']) && $_POST['pics'] != "") {
+        $pics = $_POST['pics'];
+    } else {
+        $pics = Null;
+    }   
 
     if (isset($_POST['genre']) && $_POST['genre'] != "")
     {
@@ -57,7 +65,7 @@
     }
 
     // Réupérer ce qui arrive au $_FILES
-    var_dump($_FILES);
+    // var_dump($_FILES);
     if ($_FILES["pics"]["error"] == 0) {
 
         // Types d'images utorisés dans un tableau
@@ -68,13 +76,13 @@
         $mimetype = finfo_file($finfo, $_FILES["pics"]["tmp_name"]);
         finfo_close($finfo);
 
-        var_dump($mimetype);// savoir s'l y bien reçu une image compatible
+        // var_dump($mimetype);// savoir s'l y bien reçu une image compatible
         // die;
         // vérifier si le type d'image concorde à ce qui est autorisé ci-avant
         if (in_array($mimetype, $aMimeTypes))
         {
             //vérif image
-            var_dump($mimetype);
+            // var_dump($mimetype);
             // var_dump($aMimeTypes);
             // Si le type est parmi ceux autorisés,il est déplacer et renommer le fichier en appliquant le nom d'origine est pas le nom temporaire
             if (move_uploaded_file($_FILES["pics"]["tmp_name"], "img/jaquettes/" . $_FILES["pics"]["name"])) {
@@ -88,33 +96,53 @@
         exit;
         }  
     }
-    
+    var_dump($pics);
     // enregistrer dans la bdd via INSERT INTO
     try{
-        $myDisc = $db->prepare("INSERT INTO disc (disc_title, disc_genre, disc_label, disc_price, disc_year, disc_picture), artist (artist_name) VALUES disc(:title, :genre, :label, :price, :year, :picture) artist(:artist_name)");
-        // $myArtist = $db->prepare("INSERT INTO artist (artist_name) VALUES (:artist_name)"); //myArtist
-        // pour plus de clareté, j'ai fait des espaces, mais ça ne fonctione pas dans tou les langages
-        $myDisc->bindValue(':disc_title',  $title,  PDO::PARAM_STR);
-        
-        $myDisc->bindValue(':disc_genre',  $genre,  PDO::PARAM_STR);
-        $myDisc->bindValue(':disc_label',  $lbl,    PDO::PARAM_STR);
-        $myDisc->bindValue(':disc_price',  $price,  PDO::PARAM_STR); // PARAM_STR pour avoir les chiffres après la virgule
-        $myDisc->bindValue(':disc_year',   $y,      PDO::PARAM_INT);
-        $myDisc->bindValue(':disc_pics',   $pics,   PDO::PARAM_STR);
-        $myDisc->bindValue(':artist_name', $artist, PDO::PARAM_STR);
-        $myDisc->execute();
-        $myDisc->closeCursor();
+        $myDisc = $db->prepare("INSERT INTO 
+                                    disc
+                                VALUES 
+                                    (disc_id,?,?,?,?,?,?,?)
+                                ");
+// disc_id est autoincrémenter donc il faut le renseinger et ? représente les colonnes qui seront remplacées par les variables ci-aprés
+        $myDisc->execute(array($title,$y,$pics,$lbl,$genre,$price,$artist));
+            $myDisc->closeCursor();
         }
         catch (Exception $e) {
             var_dump($myDisc->errorInfo());
             print_r($myDisc);
-            print_r($_POST);
             echo "Erreur : " . $myDisc->errorInfo()[2] . "<br>";
             die("Fin du script (script_disc_modif.php)");
         }
     // Prise en compte du fichier uploadé (l'image devra être récupérée et enregistrée sur votre serveur
     
-    //redirection vers disc_new.php si l'ajout est réussi
-    
+    //redirection vers disc.php si l'ajout est réussi
     header("Location: disc.php");
-?>
+
+
+// REQUETE SQL ET BINDVALUE
+
+        // $myArtist = $db->prepare("INSERT INTO artist (artist_name) VALUES (:artist_name)"); //myArtist
+                                    // disc_id,
+                                    // ':disc_title', 
+                                    // :disc_year, 
+                                    // ':disc_picture',
+                                    // ':disc_label', 
+                                    // ':disc_genre', 
+                                    // ':disc_price', 
+                                    // :artist_id) 
+        // pour plus de clareté, j'ai fait des espaces, mais ça ne fonctione pas dans tou les langages
+        // $myDisc->bindValue(':disc_title',   $title,  PDO::PARAM_STR);
+        // var_dump($title);
+        // $myDisc->bindValue(':disc_year',    $y,      PDO::PARAM_INT);
+        // var_dump($y);
+        // $myDisc->bindValue(':disc_picture', $pics,   PDO::PARAM_STR);
+        // var_dump($pics);
+        // $myDisc->bindValue(':disc_label',   $lbl,    PDO::PARAM_STR);
+        // var_dump($lbl);
+        // $myDisc->bindValue(':disc_genre',   $genre,  PDO::PARAM_STR);
+        // var_dump($genre);
+        // $myDisc->bindValue(':disc_price',   $price,  PDO::PARAM_STR); // PARAM_STR pour avoir les chiffres après la virgule
+        // var_dump($price);
+        // $myDisc->bindValue(':artist_id',  $artist, PDO::PARAM_INT);
+        // var_dump($artist);
