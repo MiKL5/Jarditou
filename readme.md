@@ -51,3 +51,7 @@ ___
 * [Exercice 15](PHP/exercice_15_pswd "Vérifier la compléxité d'un mot de passe") ·> Vérifier la complexité d'un mot de passe
 * [Exercice 16](PHP/exercice_16_datesEtHeures "Dates et heures") ·> Dates et heures
 * [Exercice 17](PHP/exercice_17_lectureDunFichier "Lecture d'un fichier") ·> Lecture d'un fichier
+
+>> #### ***MODÈLE VUE CONTRÔLEUR***
+
+* [Exercice 18](PHP/MVC/PDO/ "Les fondamentaux de la PDO") ··> Les fondamentaux de la PDO
