@@ -1,6 +1,6 @@
 <?php
     include 'db.php';
-    include 'fn.php';
+    include 'fn.php'; // inclu les fonctions
 // Si le login et le mot de passe sont corrects (pour exemple login='admin' et mot de passe='admin') alors nous initialisons une variable de session auth avec la valeur ok.
 // Sinon la variable de session auth est détruite.
 
@@ -16,19 +16,6 @@ $passwderror = "";
     echo"- session ID : ".session_id(); 
 
     // Test de la session
-    /*
-    session_start();
-    if ($_SESSION["login"]) 
-    {
-        header("Location:index.php");
-        exit;
-    } 
-    else 
-    {
-        header("login.php");
-        echo"Veuillez vous authentifier.";
-        exit;
-    }*/
     testsession();
 
     // Mot de passe utiliser password_verify() qui reçoit obligatoirement 2 paramètres

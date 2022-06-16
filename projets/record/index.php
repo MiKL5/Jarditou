@@ -60,8 +60,9 @@
 
     <!-- 2 boutons -->
     <div class="text-center">
-        <a href="disc.php"><button type="submit" class="btn btn-outline-primary btn-lg mx-5 mb-5">S'inscrire</button></a>
-        <button type="submit" class="btn btn-primary btn-lg mx-5 mb-5">Se connecter</button>
+        <!-- <a href="disc.php"><button type="submit" class="btn btn-outline-primary btn-lg mx-5 mb-5">S'inscrire</button></a> -->
+        <a href="script_login.php"><button type="submit" class="btn btn-outline-primary btn-sm mx-5 mb-5" value="">Se connecter / S'inscrire</button></a>
+        <!-- <button type="submit" class="btn btn-outline-primary btn-sm mx-5 mb-5">Déconnexion</button> -->
     </div> <!-- End of div button -->
 </div> <!-- End of container -->
 
