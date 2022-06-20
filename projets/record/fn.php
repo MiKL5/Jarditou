@@ -1,17 +1,5 @@
 <?php
-// Détruire proprement une session
-function cleandesctructsession(){
-    unset($_SESSION["login"]); // destruction de la variable
-    unset($_SESSION["role"]);
-    if (ini_get("session.use_cookies")) // destruction des coockies
-        {
-        setcookie(session_name(), '', time()-42000);// setcoockie permet de forcer la date d'expiration
-        }
-    session_destroy(); // destruction du reste
-}
-
 // Envoyé un mail
-
 function sendmail() {
     $emetteur = '<noreply@mail.fr>';
     $destinataire = 'Dave Loper <dave.loper@afpa.fr>';
@@ -24,8 +12,7 @@ function sendmail() {
 // Tester la session
 function testsession(){
 session_start();
-if ( ! isset($_SESSION["login"]) ) 
-{
+if ( ! isset($_SESSION["login"]) ) {
     header("Location:index.php");
     echo"Veuillez vous authentifier";
     exit;
@@ -47,16 +34,30 @@ function verifsaisies(){
         if(empty($password)){
             $passworderror = "Le mot de passe sécirise les données";
         }
-    }
+    } // fin de request_method
     // fonction  de vérification
     function verifyinput($input){
         $înput = trim($input); // supprime les caractères invisibles en début et fin de chaîne
         $input = stripslashes($input); // enlève les antislaches
         $input = htmlspecialchars($input); // enlève les caractères spéciaux
         return $input;
-    }
-
+    } // fun de verifyinput
 } // fin de la fonction verifsaisies
+
+// Détruire proprement une session
+function cleandesctructsession(){
+    session_start();
+    unset($_SESSION["login"]); // destruction de la variable
+    unset($_SESSION["role"]);
+    if (ini_get("session.use_cookies")) // destruction des coockies
+        {
+        setcookie(session_name(), '', time()-42000);// setcoockie permet de forcer la date d'expiration
+        }
+    session_destroy(); // destruction du reste
+}
+
+
+
 
     // Vérification que l'identification est correcte
     // function userexist($identifier, $passwd)

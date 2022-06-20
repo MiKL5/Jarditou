@@ -40,32 +40,40 @@
     </div><!-- End of div logo -->
 
 
-    <form action="script_login.php" method="$_POST">
+    <form action="script_login.php" method="POST">
         <div class="container d-flex">
             <div class="input-group mt-5 mx-3 mb-5">
                 <span class="input-group-text bg-dark text-light" id="basic-addon3">Identifiant</span>
-                <input type="text" class="form-control rounded" id="basic-url" placeholder="Veuillez saisir votre identifiant" value="<?= $usr ?>" aria-describedby="basic-addon3" require>
-                <p class="comments"><?= $usrerror ?></p>
+                <input type="text" class="form-control rounded" id="basic-url" name="login" placeholder="Veuillez saisir votre identifiant" value="<?= $usr ?>" aria-describedby="basic-addon3" require>
+                <p class="comments"><?php if (isset($_GET["err"]) && $_GET["err"] == "user") { echo "Identifiant incorrect"; } ?></p>
             </div>
 
             <div class="input-group mt-5 mx-3 mb-5">
                 <span class="input-group-text bg-dark text-light" id="basic-addon3">Mot de passe</span>
-                <input type="password" class="form-control rounded" id="basic-url" placeholder="Veuillez saisir votre mot de passe"value="<?= $passwd ?>" aria-describedby="basic-addon3" require>
-                <p class="comments"><?= $passwderror ?></p>
+                <input type="password" class="form-control rounded" id="basic-url" name="password" placeholder="Veuillez saisir votre mot de passe"value="<?= $passwd ?>" aria-describedby="basic-addon3" require>
+                <p class="comments"><?php if (isset($_GET["err"]) && $_GET["err"] == "pwd") { echo "Mot de passe incorrect"; } ?></p>
             </div>
             <p class="text-danger"><?= $msg ?></p>
             
         </div> <!-- End of container -->
-    </form>
 
-    <!-- 2 boutons -->
-    <div class="text-center">
-        <!-- <a href="disc.php"><button type="submit" class="btn btn-outline-primary btn-lg mx-5 mb-5">S'inscrire</button></a> -->
-        <a href="script_login.php"><button type="submit" class="btn btn-outline-primary btn-sm mx-5 mb-5" value="">Se connecter / S'inscrire</button></a>
-        <!-- <button type="submit" class="btn btn-outline-primary btn-sm mx-5 mb-5">Déconnexion</button> -->
-    </div> <!-- End of div button -->
+        <!-- 2 boutons -->
+        <div class="text-center">
+            <!-- <a href="disc.php"><button type="submit" class="btn btn-outline-primary btn-lg mx-5 mb-5">S'inscrire</button></a> -->
+            <button type="submit" class="btn btn-outline-primary btn-sm mx-5 mb-5" value="">Se connecter / S'inscrire</button>
+            <!-- <button type="submit" class="btn btn-outline-primary btn-sm mx-5 mb-5">Déconnexion</button> -->
+        </div> <!-- End of div button -->
+
+    </form>
 </div> <!-- End of container -->
 
 <?php
     include 'footer.php';
 ?>
+
+<!--
+    SI LE LOGIN ET LE MOT DE PASSE SONT CORRECTS ALORS INITIALISER UNE VARIABLE DE SESSION AUTH AVEC LA VALEUR OK
+    SINON LA VARIABLE DE SESSION AUTH EST DÉTRUITE
+    SI LA VALEUR EST OK À AUTH ALLER À DISC.PHP
+    SINON ALLSER À INDEX.PHP
+-->
