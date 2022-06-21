@@ -1,13 +1,12 @@
 <?php
 // Envoyé un mail
-function sendmail() {
-    $emetteur = '<noreply@mail.fr>';
-    $destinataire = 'Dave Loper <dave.loper@afpa.fr>';
-    $objet = 'Validation de votre inscription';
-    $message = 'Merci de votre incription.';
-    $message = ' ';
-
-}
+// function sendmail() {
+//     $emetteur = '<noreply@mail.fr>';
+//     $destinataire = 'Dave Loper <dave.loper@afpa.fr>';
+//     $objet = 'Validation de votre inscription';
+//     $message = 'Merci de votre incription.';
+//     $message = ' ';
+// }
 
 // Tester la session
 function testsession(){
@@ -56,7 +55,11 @@ function cleandesctructsession(){
     session_destroy(); // destruction du reste
 }
 
-
+function logout(){
+    cleandesctructsession();
+    header("Location: index.php");
+    exit;
+}
 
 
     // Vérification que l'identification est correcte
@@ -79,6 +82,6 @@ function cleandesctructsession(){
             // le formulaire se réaffichera
         // }
     // }
-
+// REGISTATION
     
 ?>

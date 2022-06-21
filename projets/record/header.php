@@ -9,34 +9,32 @@
 
     <title>Bienvenue à Velvet Record !</title>
 
-    <nav class=" header col-12 navbar navbar-expand-lg bg-dark rounded justify-content">
-        <div class="row">
-            <a class="navbar-brand text-light mx-2 " href="index.php"><img src="img/logo/vinyle.png" alt="logo de Velvet record" width="auto" height="35" class="">Velvet Record</a>
-            <button class="col-1 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Afficher peut-être le nom de l'utilisateur -->
-            <div class col-12>
-            <!-- <p class="text-light labeluser">userName</p> -->
-            </div>
+    <nav class=" header navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="col-10 navbar-brand text-light mx-2 " href="index.php"><img src="img/logo/vinyle.png" alt="logo de Velvet record" width="auto" height="35" class="">Velvet Record</a>
+
+            <!-- <div class="justify-content-between fst-italic "> -->
+                <?php
+
+                session_start(); // crée une session ou restaure celle trouvée sur le serveur, via l'id de session
+                // var_dump($_SESSION);
+                // var_dump(basename($_SERVER["PHP_SELF"]));
+
+                if (isset($_SESSION["login"]) && $_SESSION["login"] != "") { ?>
+                    <span class="fst-bold">Bienvenue <?= $_SESSION ["login"] ?> 
+                    <a href="script_logout.php" title="Fermer la session" alt="Fermer la session"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-box-arrow-right text-danger mx-2" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                        </svg></a></span>
+
+                <?php } elseif (basename($_SERVER["PHP_SELF"]) != "index.php") {
+                    header("Location: index.php");
+                    exit;
+                }
+                ?>
+
+            <!-- </div>End of div session -->
+        
         </div> <!-- End of row -->
     </nav>
 </head>
-
-<?php
-
-session_start();
-// var_dump($_SESSION);
-// var_dump(basename($_SERVER["PHP_SELF"]));
-
-if (isset($_SESSION["login"]) && $_SESSION["login"] != "") { ?>
-    <span>Bienvenue, <?= $_SESSION["login"] ?></span>
-
-    <a href="logout.php">Se déconnecter</a>
-<?php } 
-
-elseif (basename($_SERVER["PHP_SELF"]) != "index.php") {
-    header("Location: index.php");
-    exit;
-}
-?>

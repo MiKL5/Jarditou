@@ -79,13 +79,13 @@
 // die();
 
     try{
-    $myDisc = $db->prepare("UPDATE disc SET disc_title = :title, disc_genre = :genre, disc_label = :label, disc_price= :price, disc_year = :year WHERE disc_id = :id;"); // finir les modif
+    $myDisc = $db->prepare("UPDATE disc SET disc_title = :title, disc_year = :year disc_label = :label, disc_genre = :genre, disc_price= :price, WHERE disc_id = :id;"); // finir les modif
 
     $myDisc->bindValue(':title',    $title,     PDO::PARAM_STR);
-    $myDisc->bindValue(':genre',    $genre,     PDO::PARAM_STR);
-    $myDisc->bindValue(':label',    $lbl,       PDO::PARAM_STR);
-    $myDisc->bindValue(':price',    $price,     PDO::PARAM_STR); // PARAM_STR pour avoir les deux chiffres aprés la virgule
     $myDisc->bindValue(':year',     $y,         PDO::PARAM_INT);
+    $myDisc->bindValue(':label',    $lbl,       PDO::PARAM_STR);
+    $myDisc->bindValue(':genre',    $genre,     PDO::PARAM_STR);
+    $myDisc->bindValue(':price',    $price,     PDO::PARAM_STR); // PARAM_STR pour avoir les deux chiffres aprés la virgule
     $myDisc->bindValue(':id',       $id,        PDO::PARAM_INT);
 
 

@@ -60,8 +60,8 @@
         <!-- 2 boutons -->
         <div class="text-center">
             <!-- <a href="disc.php"><button type="submit" class="btn btn-outline-primary btn-lg mx-5 mb-5">S'inscrire</button></a> -->
-            <button type="submit" class="btn btn-outline-primary btn-sm mx-5 mb-5" value="">Se connecter / S'inscrire</button>
-            <!-- <button type="submit" class="btn btn-outline-primary btn-sm mx-5 mb-5">Déconnexion</button> -->
+            <button type="submit" class="btn btn-outline-primary btn-sm mx-5 mb-5" value="">Se connecter</button>
+            <button type="submit" class="btn btn-outline-primary btn-sm mx-5 mb-5">S'inscrire</button>
         </div> <!-- End of div button -->
 
     </form>

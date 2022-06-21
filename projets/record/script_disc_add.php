@@ -1,5 +1,5 @@
 <?php
-    include 'db.php';// si je l'appel pas ça marche pas en dessous
+    require 'db.php';// si je l'appel pas ça marche pas en dessous
     $db = ConnexionBase();
     $pics = ""; // décarer à vide
 

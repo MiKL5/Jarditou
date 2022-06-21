@@ -44,9 +44,13 @@
             <div class="d-flex">
                 <!-- les boutons ont une couleurs inhérente leur utilité -->
                 <!-- bouton midifier -->
-                <button type="submit" class="btn btn-success btn-sm mx-1 mb-5">Ajouter</button>
+                <button type="submit" class="btn btn-success btn-sm mx-1 mb-5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-save2" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v4.5h2a.5.5 0 0 1 .354.854l-2.5 2.5a.5.5 0 0 1-.708 0l-2.5-2.5A.5.5 0 0 1 5.5 6.5h2V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
+                </svg></button>
                 <!-- bouton ajouter -->
-                <a href="disc.php"<button type="button" class="btn btn-warning btn-sm mx-1 mb-5">Retour</button></a>
+                <a href="disc.php"<button type="button" class="btn btn-warning btn-sm mx-1 mb-5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-return-left text-light fw-bold" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
+                                </svg></button></a>
             </div> <!-- End of div for buttons -->
         </form>
     </div> <!-- End of container -->
