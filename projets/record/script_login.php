@@ -32,7 +32,7 @@ if ($login == $usr && password_verify($password, $passwd)) {
     $_SESSION["role"] = "visiteur"; // le rôle pas toujours admin
     echo"- session ID : ".session_id(); 
 
-    // // Test de la session, la fonction vent de fn.php
+    // // Test de la session, la fonction vient de fn.php
     // testsession();
 
     // // Mot de passe utiliser password_verify() qui reçoit obligatoirement 2 paramètres

@@ -15,7 +15,7 @@ include 'header.php';
   // print_r($result); // pour voir si les infos remontent
   ?>
 
-  <div class="container conteneur">
+  <div class="container conteneur mt-3">
     <div class="row">
       <div class="col col-8">
         <!-- le nombre de disques doit être calculer pas php par COUNT voir si RECURSIVE (car il faut mettre à jour en temps réel) est une bonne option sinon _NORMAL -->

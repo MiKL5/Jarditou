@@ -28,7 +28,7 @@
 
     ?>
 
-    <div class="container">
+    <div class="container mt-3">
         <h1>Détails</h1>
             <div class="row">
                 <div class=col-12>

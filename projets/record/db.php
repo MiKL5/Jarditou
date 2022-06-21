@@ -13,5 +13,4 @@
             die("Fin du script");
         }
     }
-
 ?>

@@ -1,6 +1,6 @@
 <?php
     // Contrôle de l'ID (si inexistant ou <= 0, retour à la liste) :
-    if (!(isset($_GET['id'])) || intval($_GET['id']) <= 1)  {
+    if (!(isset($_GET['id'])) || intval($_GET['id']) <= 0)  { // 0 = numéro d'id inf à 1
         // Si OK: redirection vers la page artists.php
         header("Location: disc.php");
         exit;// sinon il continu le traitement en bas il est pas obligatoire s'il n'y a rien en dessous

@@ -30,7 +30,7 @@
     <!--  pour remonter faire ../  -->
     <!-- PDO -> PHP Data Object -->
 
-<div class="mt-5">
+<div class="container mt-5">
     <!-- <p>Un câble mini-jack écrira re, passera devant le casque qui est le c,<br>puis derrière le vinyle pour ressortir par le trou <br> et écrire rd, la prise est donc la barre du d.</p><br> -->
     <div class="d-flex">
         <!-- record ecrit avec un câble jack le c est un casque et le o un vinyle le fil pas derrière le casque et ressot par le trou du vinyle pour donner une impressionde relief -->
@@ -59,13 +59,24 @@
 
         <!-- 2 boutons -->
         <div class="text-center">
-            <!-- <a href="disc.php"><button type="submit" class="btn btn-outline-primary btn-lg mx-5 mb-5">S'inscrire</button></a> -->
+            <a href="registration.php"><button type="button" class="btn btn-outline-primary btn-sm mx-5 mb-5">S'inscrire</button></a>
             <button type="submit" class="btn btn-outline-primary btn-sm mx-5 mb-5" value="">Se connecter</button>
-            <button type="submit" class="btn btn-outline-primary btn-sm mx-5 mb-5">S'inscrire</button>
+            <a href=""><button type="button" class="btn btn-outline-primary btn-sm mx-5 mb-5">Mot de passe oublier</button></a>
         </div> <!-- End of div button -->
 
     </form>
+
 </div> <!-- End of container -->
+<?php
+if (isset($_GET["register"]) && $_GET["register"] == "success") {?> <!-- register = param et success = valeur       si val = 1 je peux mettre true dans index -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Bravo !</strong>Vous avez presque fini. Un mail vous a été envoyé. Merci de surveiller les spams et de confirmer en cliquant sur le lien.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<?php
+}
+?>
+
 
 <?php
     include 'footer.php';

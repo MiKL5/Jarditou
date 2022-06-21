@@ -31,8 +31,8 @@
     ?>
 <body>
 
-    <form class="container" action="script_disc_modif.php?id=<?=$disc->disc_id?>" method="POST" enctype="multipart/form-data">
-        <h2>Modifier un vinyle</h2>
+    <form class="container mt-3" action="script_disc_modif.php?id=<?=$disc->disc_id?>" method="POST" enctype="multipart/form-data">
+        <h1>Modifier un vinyle</h1>
         <fieldset>
             <div class="input-group mt-3 mb-4">
                 <span class="input-group-text" id="Titre">Titre</span>

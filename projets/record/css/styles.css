@@ -35,25 +35,20 @@ h5, label, p, .btn-primary {
     color: white;
 }
 
-/* header *//*
+/* header */
+
 .header{
     position:static;
     border-bottom: 0rem;
-}*/
+}
 
-/* footer.php *//*
-.ftr {
-    /* display: none; *//*
-    position:static;
-    border-bottom: 0rem;
-*/
-/*
-.textfooter {
-    text-align: center;
-    color: white;
-    /* text-decoration: wavy; */
-    /* vertical-align: center; *//*
-}*/
+/* footer.php */
+
+.textfootr {
+    margin-left :auto;
+    margin-right :auto;
+    margin-top: 1rem;  
+}
 
 /* disc.php */
 

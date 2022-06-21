@@ -16,8 +16,8 @@
 ?>
 
 <body>
-    <div class="container">
-        <h2>Ajouter un vinyle</h2>
+    <div class="container mt-3">
+        <h1>Ajouter un vinyle</h1>
 <br>
 <form action="script_disc_add.php" method="post" enctype="multipart/form-data">
             <label>Titre</label>

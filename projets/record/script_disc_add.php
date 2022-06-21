@@ -103,6 +103,7 @@
                                     disc
                                 VALUES 
                                     (disc_id,?,?,?,?,?,?,?)
+                                    -- (disc_id, disc_
                                 ");
 // disc_id est autoincrémenter donc il faut le renseinger et ? représente les colonnes qui seront remplacées par les variables ci-aprés
         $myDisc->execute(array($title,$y,$pics,$lbl,$genre,$price,$artist));
