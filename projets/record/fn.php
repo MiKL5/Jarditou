@@ -1,13 +1,4 @@
 <?php
-// Envoyé un mail
-// function sendmail() {
-//     $emetteur = '<noreply@mail.fr>';
-//     $destinataire = 'Dave Loper <dave.loper@afpa.fr>';
-//     $objet = 'Validation de votre inscription';
-//     $message = 'Merci de votre incription.';
-//     $message = ' ';
-// }
-
 // Tester la session
 function testsession(){
 session_start();
@@ -61,27 +52,31 @@ function logout(){
     exit;
 }
 
-
-    // Vérification que l'identification est correcte
-    // function userexist($identifier, $passwd)
-    // {
-        // return (bool) rand(0, 1);
-    // }
-    // traitement du formulaire
-    // if (isset($_POST['connection'])) {
-        // récup des saisies
-        // $identifier = $_POST['identifier'];
-        // $passwd = $_POST['password'];
-        // Vérif userexist
-        // if (userexist($identifier, $passwd)) {
-            // header('location:disc.php'); // envoi un entête brut
-            // exit; // affiche un msg et termine le script
-        // } else {
-            // $msg = 'Identifiant incorrect ou inexistant.';
-            // $msg = 'Essayer à nouveau.';
-            // le formulaire se réaffichera
-        // }
-    // }
-// REGISTATION
+// le mail
+function sendmailsubscribe($destinataire){
+    // Objet
+    $subject = 'Merci de votre inscription';
+    // -> origine du message 
+    $header  = 'From: \'Velvet Record\' <suscribe.noreply@velvetrecord.com>'.'<br>';  
+    // -> message au format Multipart MIME 
+    $header .= 'MIME-Version: 1.0'.'<br>'; 
+    $header .= 'Content-Type: multipart/mixed;'.'<br>'; 
+    $header .= 'boundary=\'ligne\''.'<br>'; 
+    $header .= 'Content-Type: text/html'.'<br>'; //text/plain
+    $header .= 'charset=iso-8859-1'.'<br>'; 
+    $header .= 'Content-Transfer-Encoding: 8bit'.'<br>'; 
     
+    $message  = 'Vous pouvez maintenant vous connecter avec votre mail et le mot de passe.'.'<br>'; 
+    $message .= 'Cordialement'.'<br>';
+    $message .= ''.'<br>';   // ligne vide 
+    $message .= 'L\'équipe Velvet Record'.'<br>'; 
+    // Envoi. 
+    $send = mail($destinataire, 
+                    'Merci de votre inscription',
+                    $message,
+                    $header,
+                    );
+                    // var_dump($send);
+                    // die;
+    }
 ?>

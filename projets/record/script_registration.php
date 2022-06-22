@@ -1,9 +1,10 @@
 <?php
 require 'db.php';
 $db = ConnexionBase();
-var_dump($_POST);
-print_r($_POST);
+// var_dump($_POST);
+// print_r($_POST);
 // die;
+include 'fn.php';
 
 // Récup du nom d'utilisateur
 if (isset($_POST['user_name']) && $_POST['user_name'] != "") {
@@ -46,15 +47,15 @@ try {
                             VALUES
                                 (user_id, ?, ?, ?, ?);");
 $usr->execute(array($username, $userfirstname, $usermail, password_hash($userpwd, PASSWORD_DEFAULT)));
-
 $usr->closeCursor();
-var_dump($usr);
+// var_dump($usr);
+sendmailsubscribe($usermail);
+header("Location: index.php?register=success");
 }
 // gestion des erreurs
     catch (exception $e){
-        var_dump($usr->errorInfo());
-        print_r($usr);
+        // var_dump($usr->errorInfo());
+        // print_r($usr);
         echo "Erreur : ". $usr->errorInfo()[2] . "<br>";
         // die;
     }
-header("Location: index.php?register=success");

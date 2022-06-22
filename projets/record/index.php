@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-
 <?php
     include 'header.php';
     include 'db.php';
@@ -63,15 +60,22 @@
             <button type="submit" class="btn btn-outline-primary btn-sm mx-5 mb-5" value="">Se connecter</button>
             <a href=""><button type="button" class="btn btn-outline-primary btn-sm mx-5 mb-5">Mot de passe oublier</button></a>
         </div> <!-- End of div button -->
-
     </form>
-
 </div> <!-- End of container -->
-<?php
+<?php // msg de confimation d'inscrption
 if (isset($_GET["register"]) && $_GET["register"] == "success") {?> <!-- register = param et success = valeur       si val = 1 je peux mettre true dans index -->
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Bravo !</strong>Vous avez presque fini. Un mail vous a été envoyé. Merci de surveiller les spams et de confirmer en cliquant sur le lien.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <div class="alert alter-sm alert-success alert-dismissible fade show text-center" role="alert">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+        </svg>
+        <strong>Bravo !</strong><br><br>
+        C'est presque fini. Vous allez recevoir un mail vous permettant de confirmation.<br>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+            <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+        </svg>
+        <em> Pensez à vérifier les spams.</em>
+        <button type="button" class="btn-close" data-bs-dismiss="close" aria-label="Close"></button>
     </div>
 <?php
 }

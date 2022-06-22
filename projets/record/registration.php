@@ -25,13 +25,13 @@ require 'db.php';
                         </div>
                         <div class="input-group mt-4 mb-4">
                             <span class="input-group-text" id="userpwd">Mot de passe</span>
-                            <input type="text" class="form-control" aria-label="userpwd" aria-describedby="userpwd" name="user_password">
+                            <input type="password" class="form-control" aria-label="userpwd" aria-describedby="userpwd" name="user_password">
                         </div>
                     </div>
                     <!-- Aprés avoir cliquer sur le boutton un mail de confirmation doit être généré -->
                     <button type="submit" class="mt-4 mb-5 btn btn-sm btn-success" title="S'inscrire" alt="S'inscrire"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-save2" viewBox="0 0 16 16">
                             <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v4.5h2a.5.5 0 0 1 .354.854l-2.5 2.5a.5.5 0 0 1-.708 0l-2.5-2.5A.5.5 0 0 1 5.5 6.5h2V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z" />
-                        </svg></button><!-- Et un msg vert à côté informe de l'envoi d'un mail de confimaation -->
+                        </svg> S'inscrire</button><!-- Et un msg vert à côté informe de l'envoi d'un mail de confimaation -->
                 </form>
             </div>
         </div>
