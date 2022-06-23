@@ -4,14 +4,9 @@
 }
 
 /* les éléments doit être écarter de la jaquette */
-h5, label, p, .btn-primary {
+h5, label, p .btn-primary {
     margin-left: 10px;
 }
-
-/* Le bouton 'détails" doit être aligné vers le bas */
-/*.btn-primary { /* PK ÇA NE FONCTIONNE PAS ? */
-/*    margin-top: 35px;
-}*/
 
 /* l'espacement doiêtre iniforme entre le titre & les labels */
 .label {
@@ -22,47 +17,36 @@ h5, label, p, .btn-primary {
     line-height: 25px;
 }
 
-/* Les titres doit être éloigner du bord */
+/* Les titres doivent être éloigner du bord */
 .conteneur {
     padding: 5px 0px 0px 0px;
 }
 
 .navbar {
     position: static;
-    display: inline-block;
-    display: grid;
-    display: none;
+    /* display: inline-block; */
+    /* display: grid; */
     color: white;
 }
 
 /* header */
-
 .header{
     position:static;
     border-bottom: 0rem;
 }
 
 /* footer.php */
-
-.textfootr {
-    margin-left :auto;
-    margin-right :auto;
-    margin-top: 1rem;  
+.ftr {
+    margin-top: 1rem;
 }
 
 /* disc.php */
-
 .list {
     display: inline-flexbox;
     text-align: center;
-    /* text-decoration: wavy; */
 }
 
 /* Bouton détail dans disc.php */
 .btndisc {
     margin-top: 40px;
 }
-
-/* .labeluser {
-    text-align: right;
-} */

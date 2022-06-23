@@ -1,5 +1,5 @@
-<!-- Database function library -->
 <?php
+// Database function library
     function ConnexionBase() {
         //  try catch essai attrape
         try 

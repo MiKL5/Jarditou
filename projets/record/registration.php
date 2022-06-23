@@ -1,7 +1,6 @@
 <?php
-include 'header.php';
-require 'db.php';
-// require 'script_registration.php';
+    include 'header.php';
+    require 'db.php';
 ?>
 
 <body>
@@ -37,13 +36,8 @@ require 'db.php';
         </div>
     </div>
 </body>
+
 <?php
-
-$user = "";
-// 
-
-include 'footer.php';
-
-// value="<?= $user->user_firstname 
+    $user = "";
+    include 'footer.php';
 ?>
-<!-- ?> -->

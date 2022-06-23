@@ -1,38 +1,19 @@
 <?php
-    include 'header.php';
-    include 'db.php';
+    require 'db.php';
     include 'fn.php';
+    include 'header.php';
 
     // Initialisation des varables
     $usr = "";
     $passwd = "";
     $msg = "";
-    $usrerror = "";
-    $passwderror = "";
-
-    // INSCRIPTION
-    // $connexion = ConnexionBase();
-    // $req = $connexion->prepare("select * from record where id = :id and name = :name");
-    // $req->bindValue(':id', $id);
-    // $req->bindValue(':name', $name);
-    // $req->execute();
-
-    // $result = $req->fetch(PDO::FETCH_ASSOC);
-
-    // print_r($result);
-
 ?>
-
-<body>
-    <!--  pour remonter faire ../  -->
-    <!-- PDO -> PHP Data Object -->
 
 <div class="container mt-5">
     <!-- <p>Un câble mini-jack écrira re, passera devant le casque qui est le c,<br>puis derrière le vinyle pour ressortir par le trou <br> et écrire rd, la prise est donc la barre du d.</p><br> -->
     <div class="d-flex">
-        <!-- record ecrit avec un câble jack le c est un casque et le o un vinyle le fil pas derrière le casque et ressot par le trou du vinyle pour donner une impressionde relief -->
         <!-- <img src="img/logo/casque.png" alt="casque" title="casque" class="rounded mx-auto d-block mb-8"> -->
-        <img src="img/logo/vinyle.png" alt="disque" title="disque" class="rounded mx-auto d-block mb-8">
+        <img src="img/logo/vinyle.png" alt="logo" title="logo" class="rounded mx-auto d-block mb-8">
         <br><br><br><br>
     </div><!-- End of div logo -->
 
@@ -40,14 +21,14 @@
     <form action="script_login.php" method="POST">
         <div class="container d-flex">
             <div class="input-group mt-5 mx-3 mb-5">
-                <span class="input-group-text bg-dark text-light" id="basic-addon3">Identifiant</span>
-                <input type="text" class="form-control rounded" id="basic-url" name="login" placeholder="Veuillez saisir votre identifiant" value="<?= $usr ?>" aria-describedby="basic-addon3" require>
+                <span class="input-group-text bg-dark text-light" id="basic-addon3" title="C'est l'adresse mail">Identifiant</span>
+                <input type="text" class="form-control rounded" id="login" name="login" placeholder="Veuillez saisir votre identifiant" value="<?= $usr ?>" aria-describedby="basic-addon3" title="C'est l'adresse mail" require>
                 <p class="comments"><?php if (isset($_GET["err"]) && $_GET["err"] == "user") { echo "Identifiant incorrect"; } ?></p>
             </div>
 
             <div class="input-group mt-5 mx-3 mb-5">
-                <span class="input-group-text bg-dark text-light" id="basic-addon3">Mot de passe</span>
-                <input type="password" class="form-control rounded" id="basic-url" name="password" placeholder="Veuillez saisir votre mot de passe"value="<?= $passwd ?>" aria-describedby="basic-addon3" require>
+                <span class="input-group-text bg-dark text-light" id="basic-addon3" title="La sécurité, c'est essentiel">Mot de passe</span>
+                <input type="password" class="form-control rounded" id="password" name="password" placeholder="Veuillez saisir votre mot de passe" value="<?= $passwd ?>" aria-describedby="basic-addon3" title="La sécutité, c'est essentiel" require>
                 <p class="comments"><?php if (isset($_GET["err"]) && $_GET["err"] == "pwd") { echo "Mot de passe incorrect"; } ?></p>
             </div>
             <p class="text-danger"><?= $msg ?></p>
@@ -56,9 +37,9 @@
 
         <!-- 2 boutons -->
         <div class="text-center">
-            <a href="registration.php"><button type="button" class="btn btn-outline-primary btn-sm mx-5 mb-5">S'inscrire</button></a>
-            <button type="submit" class="btn btn-outline-primary btn-sm mx-5 mb-5" value="">Se connecter</button>
-            <a href=""><button type="button" class="btn btn-outline-primary btn-sm mx-5 mb-5">Mot de passe oublier</button></a>
+            <a href="registration.php"><button type="button" class="btn btn-outline-primary btn-sm mx-5 mb-5" alt="S'inscrir" title="Je m'inscris">S'inscrire</button></a>
+            <button type="submit" class="btn btn-outline-primary btn-sm mx-5 mb-5" alt="Se connecter" title="Je me connecte" value="">Se connecter</button>
+            <a href="forgotpassword.php"><button type="button" class="btn btn-outline-primary btn-sm mx-5 mb-5" alt="Mot de passe oublié" title="Oh zut ! J'ai oublié mon mot de passe">Mot de passe oublié</button></a>
         </div> <!-- End of div button -->
     </form>
 </div> <!-- End of container -->
@@ -76,7 +57,10 @@ if (isset($_GET["register"]) && $_GET["register"] == "success") {?> <!-- registe
         </svg>
         <em> Pensez à vérifier les spams.</em>
         <button type="button" class="btn-close" data-bs-dismiss="close" aria-label="Close"></button>
+        <span aria-hidden="true">&times;</span>
     </div>
+
+
 <?php
 }
 ?>
