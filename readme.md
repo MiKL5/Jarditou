@@ -19,8 +19,7 @@
 ```
 ![Velvet Record](projets/record/img/logo/vinyle.png "Velvet Record")
 
-1. [Velvet Record](projets/record "PHP et SQL") ·····> PHP and SQL (in progress ...)
-
+1. [Velvet Record](projets/record "PHP et SQL") ·····> PHP and SQL
 ___
 
 > ## Exercices
