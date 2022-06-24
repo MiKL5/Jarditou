@@ -34,7 +34,7 @@
 
                     <?php } else {
                         $mapage = basename($_SERVER["PHP_SELF"]);
-                        $pagesautorisees = array("index.php", "registration.php", "forgotpassword.php");
+                        $pagesautorisees = array("index.php", "registration.php", "forgotpassword.php", "confirmomission.php");
                         $recherche = array_search($mapage, $pagesautorisees);
                         // var_dump($recherche === false);
                         // die;

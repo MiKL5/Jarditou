@@ -39,7 +39,7 @@
         <div class="text-center">
             <a href="registration.php"><button type="button" class="btn btn-outline-primary btn-sm mx-5 mb-5" alt="S'inscrir" title="Je m'inscris">S'inscrire</button></a>
             <button type="submit" class="btn btn-outline-primary btn-sm mx-5 mb-5" alt="Se connecter" title="Je me connecte" value="">Se connecter</button>
-            <a href="forgotpassword.php"><button type="button" class="btn btn-outline-primary btn-sm mx-5 mb-5" alt="Mot de passe oublié" title="Oh zut ! J'ai oublié mon mot de passe">Mot de passe oublié</button></a>
+            <a href="confirmomission.php"><button type="button" class="btn btn-outline-primary btn-sm mx-5 mb-5" alt="Mot de passe oublié" title="Oh zut ! J'ai oublié mon mot de passe">Mot de passe oublié</button></a>
         </div> <!-- End of div button -->
     </form>
 </div> <!-- End of container -->
@@ -62,17 +62,7 @@ if (isset($_GET["register"]) && $_GET["register"] == "success") {?> <!-- registe
 
 
 <?php
-}
-?>
+} // End of if isset
 
-
-<?php
     include 'footer.php';
 ?>
-
-<!--
-    SI LE LOGIN ET LE MOT DE PASSE SONT CORRECTS ALORS INITIALISER UNE VARIABLE DE SESSION AUTH AVEC LA VALEUR OK
-    SINON LA VARIABLE DE SESSION AUTH EST DÉTRUITE
-    SI LA VALEUR EST OK À AUTH ALLER À DISC.PHP
-    SINON ALLSER À INDEX.PHP
--->
