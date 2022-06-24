@@ -4,16 +4,9 @@
     include 'header.php';
 ?>
 <div class="container mt-5">
-    <!-- <p>Un câble mini-jack écrira re, passera devant le casque qui est le c,<br>puis derrière le vinyle pour ressortir par le trou <br> et écrire rd, la prise est donc la barre du d.</p><br> -->
-    <div class="d-flex">
-        <!-- record ecrit avec un câble jack le c est un casque et le o un vinyle le fil pas derrière le casque et ressot par le trou du vinyle pour donner une impressionde relief -->
-        <!-- <img src="img/logo/casque.png" alt="casque" title="casque" class="rounded mx-auto d-block mb-8"> -->
-    </div><!-- End of div logo -->
-
-
     <form action="script_login.php" method="POST">
         <div class="alert alert-primary" role="alert">
-            <h4 class="alert-heading text-center">Voici le formulaire de changemnt de mot de passe.</h4>
+            <h4 class="alert-heading text-center">Voici le formulaire de changement de mot de passe.</h4>
             <br>
             <p class="text-center">Pour votre sécurité, veuillez saisir un mot de passe sûre.</p>
             <hr>
