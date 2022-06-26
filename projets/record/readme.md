@@ -50,5 +50,5 @@
 **CRUD**       
 **C**rate   -> Créer   
 **R**ead    -> Lire    
-**U**padate -> Mettre à jour     
+**U**pdate -> Mettre à jour     
 **D**elete  -> Supprimer
