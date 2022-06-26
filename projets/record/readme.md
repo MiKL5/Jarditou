@@ -1,6 +1,6 @@
-# **Velvet Record**
+# **Velvet Record**git add .
 
-> En language PHP
+> En langage PHP
 
 *Mettre en place la gestion CRUD*
 
