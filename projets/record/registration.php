@@ -24,7 +24,7 @@
                         </div>
                         <div class="input-group mt-4 mb-4">
                             <span class="input-group-text" id="userpwd" title="Mot de passe">Mot de passe</span>
-                            <input type="password" class="form-control" title="Veillez saisir un mot se passe" placeholder="Ceci est un '|V|0t2p/\55e' sûre, enfin presque ; il est en claire pour l'exemple" aria-label="userpwd" aria-describedby="userpwd" name="user_password">
+                            <input type="password" class="form-control" title="Veillez saisir un mot se passe" placeholder="Ceci est un '|V|0t2p/\55e' sûre. Enfin presque ; il est en clair pour l'exemple" aria-label="userpwd" aria-describedby="userpwd" name="user_password">
                         </div>
                     </div>
                     <!-- Aprés avoir cliquer sur le boutton un mail de confirmation doit être généré -->
