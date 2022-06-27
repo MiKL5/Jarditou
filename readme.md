@@ -53,4 +53,4 @@ ___
 
 >> #### ***MODÈLE VUE CONTRÔLEUR***
 
-* [Exercice 18](PHP/MVC/pdoFondamentaux "Les fondamentaux de la PDO") ··> Les fondamentaux de la PDO
+* [Exercice 18](PHP/MVC/pdoFondamentaux "Les fondamentaux de la PDO") ··> Les fondamentaux de la PDO (in progress ...)
