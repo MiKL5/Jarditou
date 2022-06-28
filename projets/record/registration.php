@@ -12,15 +12,15 @@
                     <div class="row">
                         <div class="input-group mt-4 mb-4">
                             <span class="input-group-text" title="NOM" id="username">Nom</span>
-                            <input type="text" class="form-control" title="Quel est votre nom" aria-label="username" name="user_name" aria-describedby="username" name="username">
+                            <input type="text" class="form-control" placeholder="Quel est votre nom ?" title="Quel est votre nom" aria-label="username" name="user_name" aria-describedby="username" name="username">
                         </div>
                         <div class="input-group mt-4 mb-4">
-                            <span class="input-group-text"title="Mot de passe" id="userfirstname">Prénom</span>
-                            <input type="text" class="form-control" title="Quel est votre prénom" aria-label="userfirstname" name="user_firstname" aria-describedby="userfirstname" name="userfirstname">
+                            <span class="input-group-text"title="Prénom" id="userfirstname">Prénom</span>
+                            <input type="text" class="form-control" placeholder="Quel est votre prénom ?" title="Quel est votre prénom" aria-label="userfirstname" name="user_firstname" aria-describedby="userfirstname" name="userfirstname">
                         </div>
                         <div class="input-group mt-4 mb-4">
                             <span class="input-group-text" title="Courriel" id="basic-addon1">M@il</span>
-                            <input type="text" class="form-control" title="Veuillez saisir une adresse de courriel valide" aria-label="courriel" name="user_mail" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" placeholder="Vore courriel est utile pour ouvrir une session" title="Veuillez saisir une adresse de courriel valide" aria-label="courriel" name="user_mail" aria-describedby="basic-addon1">
                         </div>
                         <div class="input-group mt-4 mb-4">
                             <span class="input-group-text" id="userpwd" title="Mot de passe">Mot de passe</span>

@@ -41,6 +41,18 @@
         - un script permet de supprimer le disc ;
 - La session permettre de conserver les donnèes de l'utilisateur entre les pages ;
 - La gestion des mots de passe est requise ;
+    ```
+
+        L'utilsateur s'appel 
+            Mario NET
+            
+        son courriel est 
+            mario.net@gmail.com
+
+        le mot de passe est
+            |V|Ot2p/\55e
+
+    ```
 - Un mail sera envoyé pour chaque création de compte ;
 - L'en-tête et le pied de page sont deux fichiers à part ;
 - La connexion à la base de donnée est aussi isolée ;

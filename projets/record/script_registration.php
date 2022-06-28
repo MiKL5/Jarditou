@@ -1,7 +1,7 @@
 <?php
 require 'db.php';
 $db = ConnexionBase();
-// var_dump($_POST);
+var_dump($_POST);
 // print_r($_POST);
 // die;
 include 'fn.php';
@@ -54,7 +54,7 @@ header("Location: index.php?register=success");
 }
 // gestion des erreurs
     catch (exception $e){
-        // var_dump($usr->errorInfo());
+        var_dump($usr->errorInfo());
         // print_r($usr);
         echo "Erreur : ". $usr->errorInfo()[2] . "<br>";
         // die;
