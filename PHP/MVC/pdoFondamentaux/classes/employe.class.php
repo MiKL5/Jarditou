@@ -14,11 +14,10 @@ class employe{
     public $service;
     public $chqvancance;
     public $chqnoel;
-}
     // méthode permettant de savoir l'ancièneté de l'employé (la méthode est une fonction qui appartient à une classe)
-    public function ancienete(){
-        $result = $date_embauche - $mktime;
-        echo "l'anciéneté est de ".result." années.";
+    public function ancienete() {
+        $result = $this->date_embauche - mktime();
+        echo "l'anciéneté est de ".$result." années.";
     }
     // prime annuelle (5% du salaire brut)
     
@@ -38,5 +37,6 @@ class employe{
         // Afficher si l'employé a le droit d'avoir des chèques Noël (Oui/Non). Pour ce faire, établir les conditions nécessaires dans le programme.
         // Si la réponse est Oui, afficher combien de chèques de chaque montant sera distribué à l'employé.
         // Si aucun chèque n'est distribué pour une tranche d'âge, ne pas afficher.
+}
 
 ?>
