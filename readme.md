@@ -19,8 +19,8 @@
 ```
 ![Velvet Record](projets/record/img/logo/vinyle.png "Velvet Record")
 
-1. [Velvet Record](projets/record "PHP et SQL") · · · · · · · · · · · · ·> PHP and SQL
-2. [Velvet Record avec synfony](https://github.com/MiKL5/afpaDevSymfony/tree/main/recordsymfony "Velvet Record avec le cadre de travail Synfony 5") ·> avec le framawork Symfony (in progress ...)
+1. [Velvet Record](projets/record "PHP et SQL") · · · · · · · · · · ·> PHP and SQL
+2. [Velvet Record avec synfony](https://github.com/MiKL5/afpaDevSymfony/tree/main/RecordSymfony "Velvet Record avec le cadre de travail Synfony 5") ·> avec le framawork Symfony (in progress ...)
 ___
 
 > ## Exercices
