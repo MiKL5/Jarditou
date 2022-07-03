@@ -41,7 +41,13 @@
         - un script permet de supprimer le disc ;
 - La session permettre de conserver les donnèes de l'utilisateur entre les pages ;
 - La gestion des mots de passe est requise ;
+
+| Nom | Prénom | Couriel | Mot de passe |
+|---|---|---|---|
+| Mario | NET | mario.net@gmail.com | |V|Ot2p/\55e |
+
     ```
+        -> Si le tableau s'affiche mal
 
         L'utilsateur s'appel 
             Mario NET
@@ -54,13 +60,6 @@
 
     ```
 
-| Utilisateur |
-| Nom | Prénom | Couriel | Mot de passe |
-|---|---|---|---|
-| Mario | NET | mario.net@gmail.com | |V|Ot2p/\55e |
-
-
-
 - Un mail sera envoyé pour chaque création de compte ;
 - L'en-tête et le pied de page sont deux fichiers à part ;
 - La connexion à la base de donnée est aussi isolée ;
@@ -68,7 +67,7 @@
 ---
 >>>NOTA :       
 **CRUD**       
-**C**rate   -> Créer   
-**R**ead    -> Lire    
+**C**rate -> Créer   
+**R**ead -> Lire    
 **U**pdate -> Mettre à jour     
-**D**elete  -> Supprimer
+**D**elete -> Supprimer
