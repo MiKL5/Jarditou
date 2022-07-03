@@ -53,6 +53,14 @@
             |V|Ot2p/\55e
 
     ```
+
+| Utilisateur |
+| Nom | Prénom | Couriel | Mot de passe |
+|---|---|---|---|
+| Mario | NET | mario.net@gmail.com | |V|Ot2p/\55e |
+
+
+
 - Un mail sera envoyé pour chaque création de compte ;
 - L'en-tête et le pied de page sont deux fichiers à part ;
 - La connexion à la base de donnée est aussi isolée ;
