@@ -46,9 +46,8 @@
 |---|---|---|---|
 | Mario | NET | mario.net@gmail.com | |V|Ot2p/\55e |
 
+***-> Si le tableau s'affiche mal***
 ```
--> Si le tableau s'affiche mal
-
     L'utilsateur s'appel 
         Mario NET
 
@@ -57,7 +56,6 @@
 
     le mot de passe est
         |V|Ot2p/\55e
-
 ```
 
 - Un mail sera envoyé pour chaque création de compte ;
