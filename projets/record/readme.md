@@ -46,19 +46,19 @@
 |---|---|---|---|
 | Mario | NET | mario.net@gmail.com | |V|Ot2p/\55e |
 
-    ```
-        -> Si le tableau s'affiche mal
+```
+-> Si le tableau s'affiche mal
 
-        L'utilsateur s'appel 
-            Mario NET
-            
-        son courriel est 
-            mario.net@gmail.com
+    L'utilsateur s'appel 
+        Mario NET
 
-        le mot de passe est
-            |V|Ot2p/\55e
+    son courriel (identifiant de connexion) est 
+        mario.net@gmail.com
 
-    ```
+    le mot de passe est
+        |V|Ot2p/\55e
+
+```
 
 - Un mail sera envoyé pour chaque création de compte ;
 - L'en-tête et le pied de page sont deux fichiers à part ;
