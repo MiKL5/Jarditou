@@ -48,14 +48,14 @@
 
 ***-> Si le tableau s'affiche mal***
 ```
-    L'utilsateur s'appel 
-        Mario NET
+L'utilsateur s'appel 
+    Mario NET
 
-    son courriel (identifiant de connexion) est 
-        mario.net@gmail.com
+son courriel (identifiant de connexion) est 
+    mario.net@gmail.com
 
-    le mot de passe est
-        |V|Ot2p/\55e
+le mot de passe est
+    |V|Ot2p/\55e
 ```
 
 - Un mail sera envoyé pour chaque création de compte ;
