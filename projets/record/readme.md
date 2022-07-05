@@ -45,10 +45,11 @@
 | Nom | Prénom | Couriel | Mot de passe |
 |---|---|---|---|
 | Mario | NET | mario.net@gmail.com | |V|Ot2p/\55e |
+| Ann | O'NYM | ann.o-nym@gmial.com | azerty |
 
 ***-> Si le tableau s'affiche mal***
 ```
-L'utilsateur s'appel 
+L'utilsateur 1 s'appel 
     Mario NET
 
 son courriel (identifiant de connexion) est 

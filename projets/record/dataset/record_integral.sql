@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : mar. 28 juin 2022 à 10:33
+-- Généré le : mar. 05 juil. 2022 à 13:29
 -- Version du serveur : 10.6.7-MariaDB-2ubuntu1
 -- Version de PHP : 8.1.7
 
@@ -106,7 +106,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `user_name`, `user_firstname`, `user_mail`, `user_password`) VALUES
-(1, 'NET', 'Mario', 'mario.net@gmail.com', '$2y$10$IIxP4/bSUa5D9WDAKCmQFOPEGV0K9zdKeidOt/q6yG39iwUW0O73q');
+(1, 'NET', 'Mario', 'mario.net@gmail.com', '$2y$10$IIxP4/bSUa5D9WDAKCmQFOPEGV0K9zdKeidOt/q6yG39iwUW0O73q'),
+(2, 'O\'NYM', 'Ann', 'ann.o-nym@gmail.com', '$2y$10$wAQ7nJsv4juDfzSEKjHLoujWc3xep7MJeFR4Hoh7rO//K1hSO7bwu');
 
 --
 -- Index pour les tables déchargées
@@ -151,7 +152,7 @@ ALTER TABLE `disc`
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Contraintes pour les tables déchargées
