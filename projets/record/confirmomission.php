@@ -10,7 +10,7 @@
         <p class="text-success text-center">Pas de panique.</p>
         <hr>
         <p class="text-center">Merci de saisir l'adresse mail lié à au compte pour recevoir un lien par mail.<br>
-            Ce lien vous dirigera vers la page de changement de mot de passe.</p>
+            Ce lien vous permettra de changer de mot de passe.</p>
         </div>
     <div class="input-group mt-5 mx-3 mb-5">
         <span class="input-group-text bg-dark text-light" id="basic-addon3" title="C'est l'adresse mail">Identifiant</span>

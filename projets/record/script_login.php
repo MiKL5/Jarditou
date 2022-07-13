@@ -35,7 +35,7 @@ if ($result !== false) {
         // Identifiant de session
         session_start(); // pour débuter la session et contient autant de valeur que je veux (âge, etc).
         $_SESSION["login"] = $login; // l'id
-        $_SESSION["role"] = "visiteur"; // le rôle parfois admin
+        $_SESSION["role"] = "client"; // le rôle parfois admin // à la base c'était visiteur
         echo". session ID : ".session_id(); 
         // // Test de la session, la fonction vient de fn.php
         // testsession();
