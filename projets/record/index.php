@@ -13,7 +13,7 @@
     <!-- <p>Un câble mini-jack écrira re, passera devant le casque qui est le c,<br>puis derrière le vinyle pour ressortir par le trou <br> et écrire rd, la prise est donc la barre du d.</p><br> -->
     <div class="d-flex">
         <!-- <img src="img/logo/casque.png" alt="casque" title="casque" class="rounded mx-auto d-block mb-8"> -->
-        <img src="img/logo/vinyle.png" alt="logo" title="logo" class="rounded mx-auto d-block mb-8">
+        <img src="img/logo/record.png" alt="logo" title="logo" class="rounded mx-auto d-block mb-8">
         <br><br><br><br>
     </div><!-- End of div logo -->
 
