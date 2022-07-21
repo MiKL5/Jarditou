@@ -20,7 +20,11 @@
 ![Velvet Record](projets/record/img/logo/record.png "Velvet Record")
 
 1. [Velvet Record](projets/record "PHP et SQL") · · · · · · · · · · ·> PHP and SQL
-2. [Velvet Record avec synfony](https://github.com/MiKL5/afpaDevSymfony/tree/main/recordsymfony "Velvet Record avec le cadre de travail Synfony 5") ·> avec le framawork Symfony
+2. [Velvet Record avec synfony](https://github.com/MiKL5/afpaDevSymfony/tree/main/recordsymfony "Velvet Record avec le cadre de travail Synfony 5") ·> avec le framework Symfony
+```
+            Projet personel
+```
+1. [Ebboks](https://github.com/MiKL5/afpaDevSymfony/tree/main/ebooks)"Ebooks" ··········> avec le framework Symfonuy (en cours ... )
 ___
 
 > ## Exercices
