@@ -24,7 +24,7 @@
 ```
             Projet personel
 ```
-1. [Ebboks](https://github.com/MiKL5/afpaDevSymfony/tree/main/ebooks)"Ebooks" ··········> avec le framework Symfonuy (en cours ... )
+1. [Ebboks](https://github.com/MiKL5/afpaDevSymfony/tree/main/ebooks "Ebooks") ··········> avec le framework Symfonuy (en cours ... )
 ___
 
 > ## Exercices
