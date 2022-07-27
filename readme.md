@@ -22,9 +22,9 @@
 1. [Velvet Record](projets/record "PHP et SQL") · · · · · · · · · · ·> PHP and SQL
 2. [Velvet Record avec synfony](https://github.com/MiKL5/afpaDevSymfony/tree/main/recordsymfony "Velvet Record avec le cadre de travail Synfony 5") ·> avec le framework Symfony
 ```
-            Projet personel
+            Autre projet
 ```
-1. [eB00Ks](https://github.com/MiKL5/afpaDevSymfony/tree/main/ebooks "eB00Ks") ··········> avec le framework Symfonuy (en cours ... )
+1. [eB00Ks](https://github.com/MiKL5/others/tree/main/ebooks "eB00Ks") ··> avec le framework Symfonuy (en cours ... )
 ___
 
 > ## Exercices
