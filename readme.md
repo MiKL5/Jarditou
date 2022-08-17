@@ -24,7 +24,7 @@
 ```
             Autre projet
 ```
-1. [eB00Ks](https://github.com/MiKL5/afpaDevSymfony/tree/main/ebooks "eB00Ks") ··> avec le framework Symfonuy (en cours ... )
+1. [eB00Ks](https://github.com/MiKL5/afpaDevSymfony/tree/main/ebook "eB00Ks") ··> avec le framework Symfonuy (en cours ... )
 ___
 
 > ## Exercices
