@@ -63,6 +63,10 @@ le mot de passe est
 - L'en-tête et le pied de page sont deux fichiers à part ;
 - La connexion à la base de donnée est aussi isolée ;
 - Préparer les requêtes pour les sécurisées
+
+[Voir les captures](screenshot.md "Screenshots")
+
+
 ---
 >>>NOTA :       
 **CRUD**       
