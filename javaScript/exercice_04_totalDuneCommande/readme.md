@@ -1,4 +1,4 @@
-# **Exercice 4 : total d'une commande**
+# **Exercice 4 : total d'une commande** <img align="right" src="../../src/img/JavaScript.svg.png" alt="JavaScript" title="JavaScript" widht="auto" height="64px">
 > ### ***Cet exercice est en javascript***
 
 *À partir de la saisie du prix unitaire noté PU d'un produit et de la quantité commandée QTECOM, afficher le prix à payer PAP, en détaillant la remise REM et le port PORT, sachant que :*
