@@ -1,4 +1,4 @@
-# **Évalutation SQL**
+# **Évalutation SQL, Cas Northwind** <img align="right" src="../../src/img/SQL.png" alt="SQL" title="Struured Query Language" widht="auto" height="64px">
 
 > ### ***En SQL***
 
@@ -17,4 +17,4 @@
         9- A quand remonte la dernière commande du client nommé "Du monde entier" ?
         10- Quel est le délai moyen de livraison en jours ?
 
-Voici la [table](northwind_mysql.sql) et les [requêtes](Requêtes.sql).
+Voici la **[BDD](northwind_mysql.sql)** et les **[requêtes](Requêtes.sql)**.
