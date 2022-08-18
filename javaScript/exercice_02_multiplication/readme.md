@@ -1,4 +1,4 @@
-# **Exercice 2 : Table de multiplication**
+# **Exercice 2 : Table de multiplication** <img align="right" src="../../src/img/JavaScript.svg.png" alt="JavaScript" title="JavaScript" widht="auto" height="64px">
 
 > ### ***Cet exercice est en javascript***
 
@@ -12,5 +12,5 @@
 
 
 
->>>**NOTA BENE** :
+>>>**NOTA BENE** :  
     *L'affichage à lieu dans une console*
