@@ -1,4 +1,4 @@
-# **Lecture d'un fichier**
+# **Lecture d'un fichier** <img align="right" src="../../src/img/php.gif" alt="PHP" title="PHP" widht="auto" height="64px">
 
 > ### ***En PHP***
     Téléchargez ce fichier, qui contient une liste de sites indispensables à la compréhension du monde moderne.
