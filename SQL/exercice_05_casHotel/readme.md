@@ -1,4 +1,4 @@
-Cas Hotel
+# **Cas Hotel** <img align="right" src="../../src/img/SQL.png" alt="homepage" title="Struured Query Language" widht="auto" height="64px">
 
 > ### ***En SQL***
 
@@ -39,4 +39,4 @@ Cas Hotel
             16 - Afficher la liste des hôtels pour lesquels Mr Squire a effectué une réservation
             17 - Afficher la durée moyenne des réservations par station
 
-La [base](hotel_complet.sql) et les [requêtes](hoteRequêtel.sql).
+Voici la **[base](hotel_complet.sql)** et les **[requêtes](hoteRequêtel.sql)**.
