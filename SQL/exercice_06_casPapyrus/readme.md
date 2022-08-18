@@ -1,4 +1,4 @@
-Cas Papyrus
+# **Cas Papyrus**  <img align="right" src="../../src/img/SQL.png" alt="homepage" title="Struured Query Language" widht="auto" height="64px">
 
 > ### ***En SQL***
 
@@ -35,4 +35,4 @@ Cas Papyrus
         19. Calculer le chiffre d'affaire par fournisseur pour l'année 2018, sachant que les prix indiqués sont hors taxes et que le taux de TVA est 20%.
 
 
-Voici [la base](papyrus_complet.sql) et les [requêtes](papyrusRequête.sql).
+Voici **[la base](papyrus_complet.sql)** et les **[requêtes](papyrusRequête.sql)**.
