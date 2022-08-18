@@ -29,21 +29,21 @@ ___
 
 > ## Exercices
 
->> #### ***CE QUI SUIT EST EN JAVASCRIPT***
+ >> #### ***CE QUI SUIT EST EN JAVASCRIPT*** <img align="right" src="src/img/JavaScript.svg.png" alt="homepage" title="JavaScript" widht="auto" height="64px">
 
 * [Exercice  1](javaScript/exercice_01_tranchesDages "Calcul du nombre de jeunes, de moyens et d'ainés") ··> Calcul du nombre de jeunes, de moyens et d'ainés
 * [Exercice  2](javaScript/exercice_02_multiplication "Table de muliplication (choisir un chiffre et elle est caluler jusqu'à 10)") ··> Table de multiplication
 * [Exercice  3](javaScript/exercice_03_rchDePrenom "Recherche d'un prénom (si le prénom est trouvé, il est supprimer de la liste)") ··> Recherche de prénom
 * [Exercice  4](javaScript/exercice_04_totalDuneCommande "Total d'une commande") ··> Total d'une commande
 
->> #### ***CE QUI SUIT EST EN SQL***
+>> #### ***CE QUI SUIT EST EN SQL*** <img align="right" src="src/img/SQL.png" alt="homepage" title="JavaScript" widht="auto" height="64px">
 
 * [Exercice  5](SQL/exercice_05_casHotel "Cas Hotel") ··> Hotel
 * [Exercice  6](SQL/exercice_06_casPapyrus "Cas Papyrus") ··> Papyrus
 * [Exercice  7](SQL/exercice_07_Northwind "Évaluation, cas Northwind") ··> Northwind
 
 
->> #### ***CE QUI SUIT EST EN PHP***
+>> #### ***CE QUI SUIT EST EN PHP*** <img align="right" src="src/img/php.gif" alt="homepage" title="JavaScript" widht="auto" height="64px">
 
 * [Exercice  8](PHP/exercice_08_nbImpairs "Nombres impairs") ··> Nombres impairs
 * [Exercice  9](PHP/exercice_09_sentence "La phrase (se répète en boucle)") ··> Sentence
@@ -56,6 +56,7 @@ ___
 * [Exercice 16](PHP/exercice_16_datesEtHeures "Dates et heures") ·> Dates et heures
 * [Exercice 17](PHP/exercice_17_lectureDunFichier "Lecture d'un fichier") ·> Lecture d'un fichier
 
->> #### ***MODÈLE VUE CONTRÔLEUR***
+>> #### ***MODÈLE VUE CONTRÔLEUR*** <img align="right" src="src/img/symfony-framework.png" alt="homepage" title="JavaScript" widht="auto" height="64px">
+
 
 * [Exercice 18](PHP/MVC/pdoFondamentaux "Les fondamentaux de la PDO") ·> Les fondamentaux de la PDO (in progress ...)
