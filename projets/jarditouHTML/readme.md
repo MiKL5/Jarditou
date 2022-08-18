@@ -1,4 +1,5 @@
-# **JARDITOU**
+# **JARDITOU**  <img align="right" src="../../src/img/HTML5.png" alt="HTML" title="HTML" widht="auto" height="64px">
+
 
 > HTML uniquement
 
