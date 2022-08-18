@@ -1,4 +1,4 @@
-Model View Controller <img align="right" src="../../src/img/modeleMVC.png" alt="Modèle Vue Contrôleur" title="Modèle Vue Contrôleur" widht="auto" height="256px">
+Model View Controller <img align="right" src="../../src/img/modeleMVC.png" alt="Modèle Vue Contrôleur" title="Modèle Vue Contrôleur" widht="auto" height="384px">
 
 Modèle-vue-contrôleur ou MVC est un motif d'architecture logicielle destiné aux interfaces graphiques. Le motif est composé de trois types de modules ayant trois responsabilités différentes : les modèles, les vues et les contrôleurs.
 -Un modèle (Model) contient les données à afficher.
