@@ -1,4 +1,4 @@
-# Les dates et les heures
+# Les dates et les heures <img align="right" src="../../src/img/php.gif" alt="PHP" title="PHP" widht="auto" height="64px">
 
 > ### ***En PHP***
     1. Trouvez le numéro de semaine de la date suivante : 14/07/2019.
