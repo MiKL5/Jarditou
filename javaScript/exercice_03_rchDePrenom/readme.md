@@ -1,4 +1,4 @@
-# **Exercice 3 : recherche d'un prénom**
+# **Exercice 3 : recherche d'un prénom** <img align="right" src="../../src/img/JavaScript.svg.png" alt="JavaScript" title="JavaScript" widht="auto" height="64px">
 
 > ### ***Cet exercice est en javascript***
 
