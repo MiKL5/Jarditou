@@ -1,4 +1,4 @@
-Model View Controller (frameworks PHP)
+Model View Controller (frameworks PHP) <img align="right" src="../../../src/img/mvc.png" alt="Modèle Vue Contrôleur" title="Modèle Vue Contrôleur" widht="auto" height="64px">
 
 Exercices
 Exercice 1 : création d'un personnage
