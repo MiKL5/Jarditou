@@ -1,4 +1,4 @@
-# **Phrase**
+# **Phrase**  <img align="right" src="../../src/img/php.gif" alt="PHP" title="PHP" widht="auto" height="64px">
 
 > ### ***en PHP***
 
