@@ -49,7 +49,7 @@ ___
 * [Exercice  7](SQL/exercice_07_Northwind "Évaluation, cas Northwind") ··> Northwind
 
 
->> #### ***CE QUI SUIT EST EN PHP*** <img align="right" src="src/img/php.gif" alt="PHP" title="PHP" widht="auto" height="64px"> <img align="right" src="src/img/php_anim.jpg" alt="PHP" title="PHP" widht="auto" height="64px">
+>> #### ***CE QUI SUIT EST EN PHP*** <img align="right" src="src/img/php.gif" alt="PHP" title="PHP" widht="auto" height="64px"> <img align="center" src="src/img/php_anim.jpg" alt="PHP" title="PHP" widht="auto" height="64px">
 
 * [Exercice  8](PHP/exercice_08_nbImpairs "Nombres impairs") ··> Nombres impairs
 * [Exercice  9](PHP/exercice_09_sentence "La phrase (se répète en boucle)") ··> Sentence
