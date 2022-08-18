@@ -1,4 +1,4 @@
-# **Vérifier le niveau de complésité d'un mot de passe**
+# **Vérifier le niveau de complésité d'un mot de passe** <img align="right" src="../../src/img/php.gif" alt="PHP" title="PHP" widht="auto" height="64px">
 
 > ### ***En PHP***
     Créer une fonction qui vérifie le niveau de complexité d'un mot de passe
