@@ -1,4 +1,4 @@
-# **Cas Hotel** <img align="right" src="../../src/img/SQL.png" alt="homepage" title="Struured Query Language" widht="auto" height="64px">
+# **Cas Hotel** <img align="right" src="../../src/img/SQL.png" alt="SQL" title="Struured Query Language" widht="auto" height="64px">
 
 > ### ***En SQL***
 
