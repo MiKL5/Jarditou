@@ -1,4 +1,4 @@
-# **JARDITOU**
+# **JARDITOU** <img align="right" src="../../src/img/Bootstrap.svg.png" alt="Bootstrap" title="Bootstrap" widht="auto" height="64px">
 
 > Avec le framework Bootstrap
 
