@@ -1,4 +1,4 @@
-# **Exercice 1 - Calcul du nombre de jeunes, de moyens et de vieux**
+# **Exercice 1 - Calcul du nombre de jeunes, de moyens et de vieux** <img align="right" src="../../src/img/JavaScript.svg.png" alt="JavaScript" title="JavaScript" widht="auto" height="64px">
 
 > ### ***Cet exercice est en javascript***
 
