@@ -1,4 +1,4 @@
-# **JARDITOU**
+# **JARDITOU** <img align="right" src="../../src/img/JavaScript.svg.png" alt="JavaScript" title="JavaScript" widht="auto" height="64px">
 
 > Avec javascript
 
