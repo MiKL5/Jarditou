@@ -62,7 +62,7 @@ ___
 * [Exercice 16](PHP/exercice_16_datesEtHeures "Dates et heures") ·> Dates et heures
 * [Exercice 17](PHP/exercice_17_lectureDunFichier "Lecture d'un fichier") ·> Lecture d'un fichier
 
->> #### ***MODÈLE VUE CONTRÔLEUR*** <img align="right" src="src/img/modele_mvc.png" alt="Modèle Vue Contrôleur" title="Modèle Vue Contrôleur" widht="auto" height="64px">
+>> #### ***MODÈLE VUE CONTRÔLEUR*** <img align="right" src="src/img/mvc.png" alt="Modèle Vue Contrôleur" title="Modèle Vue Contrôleur" widht="auto" height="64px">
 
 
 * [Exercice 18](PHP/MVC/pdoFondamentaux "Les fondamentaux de la PDO") ·> Les fondamentaux de la PDO (in progress ...)
