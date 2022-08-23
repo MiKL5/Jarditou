@@ -10,6 +10,7 @@
 ![Logo Jarditou](projets/jarditouCSS/src/img/jarditou_logo.jpg "Logo Jarditou")
 
 1. [JarditouHTML](projets/jarditouHTML "uniquement en HTML") ······> HTML only
+<img align="left" src="src/img/HTML5.png" alt="homepage" title="HTML" widht="auto" height="20px">
 2. [JarditouCSS](projets/jarditouCSS "HTML + CSS")  ········> with CSS
 3. [JarditouJS](projets/jarditouJS "le javascript est utilisé pour le formulaire") ··········> includes Javascript
 4. [JarditouBootstrap](projets/jarditouBootstrap "la mise en page se fait avec Bootstrap") ·> avec le framework Bootstrap
