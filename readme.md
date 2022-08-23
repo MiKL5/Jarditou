@@ -15,7 +15,7 @@
 4. [JarditouBootstrap](projets/jarditouBootstrap "la mise en page se fait avec Bootstrap") ·> avec le framework Bootstrap
 
 ```
-            Projet Velvet Record
+            Projets Velvet Record
 ```
 ![Velvet Record](src/img/record-transparent.png "Velvet Record")
 
