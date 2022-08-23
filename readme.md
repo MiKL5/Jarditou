@@ -22,7 +22,7 @@
 1. [Velvet Record](projets/record "PHP et SQL") · · · · · · · · · · ·> PHP and SQL
  >> #### ***CE QUI SUIT EST CODER AVEC LE FRAMEWORK SYMFONY*** <img align="right" src="src/img/symfony-framework.png" alt="framework Symfony" title="framework Symfony" widht="auto" height="56x">
 
-2. [Velvet Record avec synfony](https://github.com/MiKL5/afpaDevSymfony/tree/main/recordsymfony "Velvet Record avec le cadre de travail Synfony 5") ·> avec le framework Symfony
+2. [Velvet Record avec synfony](https://github.com/MiKL5/afpaDevSymfony/tree/main/recordsymfony "Velvet Record avec le cadre de travail Synfony") ·> avec le framework Symfony
 
 ```
             Autre projet
@@ -61,3 +61,8 @@ ___
 * [Exercice 15](PHP/exercice_15_pswd "Vérifier la compléxité d'un mot de passe") ·> Vérifier la complexité d'un mot de passe
 * [Exercice 16](PHP/exercice_16_datesEtHeures "Dates et heures") ·> Dates et heures
 * [Exercice 17](PHP/exercice_17_lectureDunFichier "Lecture d'un fichier") ·> Lecture d'un fichier
+
+>> #### ***MODÈLE VUE CONTRÔLEUR*** <img align="right" src="src/img/mvc.png" alt="Modèle Vue Contrôleur" title="Modèle Vue Contrôleur" widht="auto" height="64px">
+
+
+* [Exercice 18](PHP/MVC/pdoFondamentaux "Les fondamentaux de la PDO") ·> Les fondamentaux de la PDO (in progress ...)
