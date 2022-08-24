@@ -2,6 +2,8 @@
 
 > En langage PHP
 
+[Comment afficher le contenu](instructions4use.md "Instructions")
+
 *Mettre en place la gestion CRUD*
 
 - la liste des disques doit interroger la base de donées ;
