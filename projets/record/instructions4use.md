@@ -12,4 +12,4 @@ Une page PHP <img align="right" src="../../src/img/php_anim.jpg" alt="PHP" title
 ---
 >>>NOTE  
 J'utlise Visual Studio Code pour développer c'est pourquoi les instructions sont pour cet IDE*.  
-*IDE : **E**nvironnement de **D**éveloppement **I**ntégré
+*IDE : **E**nvironnement de **D**éveloppement **I**ntégré.
