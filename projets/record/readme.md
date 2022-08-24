@@ -2,8 +2,6 @@
 
 > En langage PHP
 
-[Comment afficher le contenu](instructions4use.md "Instructions")
-
 *Mettre en place la gestion CRUD*
 
 - la liste des disques doit interroger la base de donées ;
@@ -67,6 +65,9 @@ le mot de passe est
 - Préparer les requêtes pour les sécurisées
 
 [Voir les captures](screenshot.md "Screenshots")
+
+[Comment afficher le contenu](instructions4use.md "Instructions")
+
 
 
 ---
