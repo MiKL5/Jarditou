@@ -7,7 +7,7 @@
 ```
             Projets Jarditou
 ```
-![Logo Jarditou](projets/jarditouCSS/src/img/jarditou_logo.jpg "Logo Jarditou")
+![Logo Jarditou](src/img/jarditou.png "Logo Jarditou")
 
 1. [JarditouHTML](projets/jarditouHTML "uniquement en HTML") ······> HTML only
 2. [JarditouCSS](projets/jarditouCSS "HTML + CSS")  ········> with CSS
