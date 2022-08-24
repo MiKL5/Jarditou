@@ -9,4 +9,4 @@
     - "fopen"
     - et la fonction "file"
 
-<img align="left" src="../../src/icon/eye.png" alt="Side bar" title="Side bar" widht="auto" height="24px"> [Afficher le contenu](instructions4use.md "Instructions")
+<img align="left" src="../../src/icon/eye.png" alt="see content" title="see content" widht="auto" height="24px"> [Afficher le contenu](instructions4use.md "Instructions")
