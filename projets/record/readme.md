@@ -66,7 +66,7 @@ le mot de passe est
 
 [Voir les captures](screenshot.md "Screenshots")
 
-[Comment afficher le contenu](afpaDev/docs/instructions4use.md "Instructions")
+[Comment afficher le contenu](https://github.com/MiKL5/afpaDev/blob/131a3646052438ae6c7bc4356124f476d255d072/docs/instructions4use.md "Instructions")
 
 
 
@@ -75,5 +75,6 @@ le mot de passe est
 **CRUD**       
 **C**rate -> Créer   
 **R**ead -> Lire    
+**R**etrieve -> Récupérer  
 **U**pdate -> Mettre à jour     
 **D**elete -> Supprimer
