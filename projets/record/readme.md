@@ -66,7 +66,7 @@ le mot de passe est
 
 [Voir les captures](screenshot.md "Screenshots")
 
-[Comment afficher le contenu](../docs/instructions4use.md "Instructions")
+[Comment afficher le contenu](afpaDev/docs/instructions4use.md "Instructions")
 
 
 
