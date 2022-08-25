@@ -66,7 +66,7 @@ le mot de passe est
 
 [Voir les captures](https://github.com/MiKL5/afpaDev/blob/master/projets/record/docs/screenshot.md "Captures d'écran")
 
-[Comment afficher le contenu](docs/instructions4use.md "Instructions")
+[Comment afficher le contenu](https://github.com/MiKL5/afpaDev/blob/master/docs/instructions4use.md "Instructions")
 
 
 
