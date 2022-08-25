@@ -64,7 +64,7 @@ le mot de passe est
 - La connexion à la base de donnée est aussi isolée ;
 - Préparer les requêtes pour les sécurisées
 
-[Voir les captures](screenshot.md "Screenshots")
+[Voir les captures](docs/screenshot.md "Screenshots")
 
 [Comment afficher le contenu](https://github.com/MiKL5/afpaDev/blob/131a3646052438ae6c7bc4356124f476d255d072/docs/instructions4use.md "Instructions")
 
