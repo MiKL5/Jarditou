@@ -65,3 +65,7 @@ ___
 
 
 * [Exercice 18](../PHP/MVC/pdoFondamentaux "Les fondamentaux de la PDO") ·> Les fondamentaux de la PDO (in progress ...)
+
+
+>>>NOTA :  
+Pour téléharger le contenu du dépot : https://github.com/MiKL5/afpaDev.git
