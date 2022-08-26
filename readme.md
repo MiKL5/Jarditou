@@ -33,7 +33,7 @@
  >> #### ***CE QUI SUIT EST EN JAVASCRIPT*** <img align="right" src="src/img/JavaScript.svg.png" alt="JavaScript" title="JavaScript" widht="auto" height="64px">
 
 
-2. [Snake](https://github.com/MiKL5/Snake/blob/master/index..html "Snake") ··> jeu en JavaScript
+2. [Snake](https://github.com/MiKL5/Snake/blob/master/ "Snake") ··> jeu en JavaScript
 
 ___
 
