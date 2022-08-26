@@ -64,9 +64,9 @@ le mot de passe est
 - La connexion à la base de donnée est aussi isolée ;
 - Préparer les requêtes pour les sécurisées
 
-[Voir les captures](https://mikl5.github.io/afpaDev/projets/record//docs/screenshot/projets/record/docs/screenshot.md "Captures d'écran")
+[Voir les captures](https://mikl5.github.io/afpaDev/projets/record//docs/screenshot.md "Captures d'écran")
 
-[Comment afficher le contenu](https://mikl5.github.io/afpaDev/projets/record//record/docs/screenshot/projets/record/docs/screenshot/docs/instructions4use.md "Instructions")
+[Comment afficher le contenu](https://mikl5.github.io/afpaDev/docs/instructions4use.md "Instructions")
 
 
 
