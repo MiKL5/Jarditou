@@ -24,7 +24,7 @@
 2. [Velvet Record avec synfony](https://github.com/MiKL5/afpaDevSymfony/tree/main/recordsymfony "Velvet Record avec le cadre de travail Synfony") ·> avec le framework Symfony
 
 ```
-            Autre projet
+            Autres projets
 ```
  >> #### ***CE QUI SUIT EST CODER AVEC LE FRAMEWORK SYMFONY*** <img align="right" src="src/img/symfony-framework.png" alt="framework Symfony" title="framework Symfony" widht="auto" height="56px">
 
