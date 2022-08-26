@@ -1,5 +1,4 @@
 # **Capitales** <img align="right" src="../../src/img/php.gif" alt="PHP" title="PHP" widht="auto" height="64px">
-
 > ### ***en PHP***
 
     1. Afficher la liste des pays (par ordre alphabétique) suivie du nom de la capitale ;
