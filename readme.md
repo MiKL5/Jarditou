@@ -30,6 +30,11 @@
 
 1. [eB00Ks](https://github.com/MiKL5/eB00Ks "eB00Ks") ··> avec le framework Symfonuy (en cours ... )
 
+ >> #### ***CE QUI SUIT EST EN JAVASCRIPT*** <img align="right" src="src/img/JavaScript.svg.png" alt="JavaScript" title="JavaScript" widht="auto" height="64px">
+
+
+2. [Snake](https://github.com/MiKL5/Snake/blob/master/index..html "Snake") ··> jeu en JavaScript
+
 ___
 
 > ## Exercices
