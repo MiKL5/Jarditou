@@ -1,6 +1,4 @@
 #  **Mois de l annee non bisextile** <img align="right" src="../../src/img/php.gif" alt="PHP" title="PHP" widht="auto" height="64px">
-
-
 > ### ***en PHP***
 
     Créer un tableau associant à chaque mois de l’année le nombre de jours du mois.
