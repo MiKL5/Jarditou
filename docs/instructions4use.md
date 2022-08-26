@@ -8,7 +8,7 @@ Aprés avoir récupérer l'archive
 2. L'onglet extensions est maintenant ouvert. Dans la zone de recherche entrer PHP Server  
 <img align="center" src="https://github.com/MiKL5/afpaDev/blob/master/docs/assets/searchPhpServer.png" alt="rechercher PHP Server" title="rechercher PHP Server">
 3. Cliquer dessus (c'est souvent le premier lien) puis l'installer.  
-<img align="center" src="https://github.com/MiKL5/afpaDev/blob/master/docs/assets/img/php_anim.jpgphpServer.png" alt="PHP Server" title="PHP Server">
+<img align="center" src="https://github.com/MiKL5/afpaDev/blob/master/docs/assets/phpServer.png" alt="PHP Server" title="PHP Server">
 4. Maintenant ouvrer l'index.php dans visual studio code puis faites un clique droit et sur 'PHP Server: Serve project' pour l'afficher dans le navigateur.  
 <img align="center" src="https://github.com/MiKL5/afpaDev/blob/master/docs/assets/execPhpServer.png" alt="Exécuter PHP Server" title="Exécuter PHP Server">
 
