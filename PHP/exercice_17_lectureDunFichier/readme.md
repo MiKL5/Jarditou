@@ -1,5 +1,4 @@
 # **Lecture d'un fichier** <img align="right" src="../../src/img/php.gif" alt="PHP" title="PHP" widht="auto" height="64px">
-
 > ### ***En PHP***
     Téléchargez ce fichier, qui contient une liste de sites indispensables à la compréhension du monde moderne.
     Écrire un programme qui lit ce fichier et qui construit une page web contenant une liste de liens hypertextes.
