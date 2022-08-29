@@ -26,9 +26,6 @@
 ```
             Autres projets
 ```
- >> #### ***CE QUI SUIT EST CODER AVEC LE FRAMEWORK SYMFONY*** <img align="right" src="src/img/symfony-framework.png" alt="framework Symfony" title="framework Symfony" widht="auto" height="56px">
-
-1. [eB00Ks](https://github.com/MiKL5/eB00Ks "eB00Ks") ··> avec le framework Symfonuy (en cours ... )
 
  >> #### ***CE QUI SUIT EST EN JAVASCRIPT*** <img align="right" src="src/img/JavaScript.svg.png" alt="JavaScript" title="JavaScript" widht="auto" height="64px">
 
@@ -66,10 +63,6 @@ ___
 * [Exercice 16](PHP/exercice_16_datesEtHeures "Dates et heures") ·> Dates et heures
 * [Exercice 17](PHP/exercice_17_lectureDunFichier "Lecture d'un fichier") ·> Lecture d'un fichier
 
->> #### ***MODÈLE VUE CONTRÔLEUR*** <img align="right" src="src/img/mvc.png" alt="Modèle Vue Contrôleur" title="Modèle Vue Contrôleur" widht="auto" height="64px">
-
-
-* [Exercice 18](PHP/MVC/pdoFondamentaux "Les fondamentaux de la PDO") ·> Les fondamentaux de la PDO (in progress ...)
 
 ___
 >>>NOTA :  
