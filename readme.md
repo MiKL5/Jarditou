@@ -23,15 +23,6 @@
 
 2. [Velvet Record avec synfony](https://github.com/MiKL5/afpaDevSymfony/tree/main/recordsymfony "Velvet Record avec le cadre de travail Synfony") ·> avec le framework Symfony
 
-```
-            Autres projets
-```
-
- >> #### ***CE QUI SUIT EST EN JAVASCRIPT*** <img align="right" src="src/img/JavaScript.svg.png" alt="JavaScript" title="JavaScript" widht="auto" height="64px">
-
-
-2. [Snake](https://mikl5.github.io/Snake/ "Snake") ··> jeu en JavaScript
-
 ___
 
 > ## Exercices
