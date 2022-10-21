@@ -55,6 +55,6 @@ ___
 * [Exercice 17](PHP/exercice_17_lectureDunFichier "Lecture d'un fichier") ·> Lecture d'un fichier
 
 
-___
+<!-- ___
 >>>NOTA :  
-[Pour téléchargerl le contenu du dépôt cliquer ici](https://github.com/MiKL5/afpaDev.git "Dépôt")
+[Pour téléchargerl le contenu du dépôt cliquer ici](https://github.com/MiKL5/afpaDev.git "Dépôt") -->
