@@ -44,20 +44,8 @@
 
 | Nom | Prénom | Couriel | Mot de passe |
 |---|---|---|---|
-| Mario | NET | mario.net@gmail.com | |V|Ot2p/\55e |
+| Mario | NET | mario.net@gmail.com | \|V\|Ot2p/\55e |
 | Ann | O'NYM | ann.o-nym@gmial.com | azerty |
-
-***-> Si le tableau s'affiche mal***
-```
-L'utilsateur 1 s'appel 
-    Mario NET
-
-son courriel (identifiant de connexion) est 
-    mario.net@gmail.com
-
-le mot de passe est
-    |V|Ot2p/\55e
-```
 
 - Un mail sera envoyé pour chaque création de compte ;
 - L'en-tête et le pied de page sont deux fichiers à part ;
