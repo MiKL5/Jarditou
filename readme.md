@@ -2,7 +2,7 @@
 
 ---
 
-> ## Projets
+> ## **Projets**
 
 ```
             Projets Jarditou
@@ -29,7 +29,7 @@
 
 ---
 
-> ## Exercices
+> ## **Exercices**
 
 > > #### **_CE QUI SUIT EST EN JAVASCRIPT_** <img align="right" src="src/img/JavaScript.svg.png" alt="JavaScript" title="JavaScript" widht="auto" height="64px">
 
